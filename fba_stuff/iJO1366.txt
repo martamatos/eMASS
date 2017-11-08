@@ -1,0 +1,2591 @@
+
+# Text based model representation
+# Format: "Reaction id : substrates --> products [lower bound, upper bound] (score)"
+# valid identifiers can contain letters, numbers or underscore (_) but must begin with a letter (for SBML compatibility)
+# Use --> or <-> for irreversible or reversible reactions respectively
+# bounds are optional and can be specified only in one direction, eg: [-10.0,]
+# begin with # to comment out any line
+
+R_DM_4crsol_c: M_4crsol_c --> 
+R_DM_5drib_c: M_5drib_c --> 
+R_DM_aacald_c: M_aacald_c --> 
+R_DM_amob_c: M_amob_c --> 
+R_DM_mththf_c: M_mththf_c --> 
+R_DM_oxam_c: M_oxam_c --> 
+R_BIOMASS_Ec_iJO1366_WT_53p95M: 0.000223 M_10fthf_c + 0.000223 M_2dmmql8_c + 2.5e-05 M_2fe2s_c + 0.000248 M_4fe4s_c + 0.000223 M_5mthf_c + 0.000279 M_accoa_c + 0.000223 M_adocbl_c + 0.499149 M_ala__L_c + 0.000223 M_amet_c + 0.28742 M_arg__L_c + 0.234232 M_asn__L_c + 0.234232 M_asp__L_c + 54.119975 M_atp_c + 0.000116 M_bmocogdp_c + 2e-06 M_btn_c + 0.004952 M_ca2_c + 0.000223 M_chor_c + 0.004952 M_cl_c + 0.002944 M_clpn160_p + 0.00229 M_clpn161_p + 0.00118 M_clpn181_p + 0.000168 M_coa_c + 2.4e-05 M_cobalt2_c + 0.008151 M_colipa_e + 0.129799 M_ctp_c + 0.000674 M_cu2_c + 0.088988 M_cys__L_c + 0.024805 M_datp_c + 0.025612 M_dctp_c + 0.025612 M_dgtp_c + 0.024805 M_dttp_c + 0.000223 M_enter_c + 0.000223 M_fad_c + 0.006388 M_fe2_c + 0.007428 M_fe3_c + 0.255712 M_gln__L_c + 0.255712 M_glu__L_c + 0.595297 M_gly_c + 0.154187 M_glycogen_c + 0.000223 M_gthrd_c + 0.209121 M_gtp_c + 48.752916 M_h2o_c + 0.000223 M_hemeO_c + 0.092056 M_his__L_c + 0.282306 M_ile__L_c + 0.18569 M_k_c + 0.437778 M_leu__L_c + 3e-06 M_lipopb_c + 0.333448 M_lys__L_c + 3.1e-05 M_malcoa_c + 0.149336 M_met__L_c + 0.008253 M_mg2_c + 0.000223 M_mlthf_c + 0.000658 M_mn2_c + 7e-06 M_mobd_c + 7e-06 M_mococdp_c + 7e-06 M_mocogdp_c + 0.000223 M_mql8_c + 0.001345 M_murein3p3p_p + 0.000605 M_murein3px4p_p + 0.005381 M_murein4p4p_p + 0.005448 M_murein4px4p_p + 0.000673 M_murein4px4px4p_p + 0.001787 M_nad_c + 4.5e-05 M_nadh_c + 0.000112 M_nadp_c + 0.000335 M_nadph_c + 0.012379 M_nh4_c + 0.000307 M_ni2_c + 0.012366 M_pe160_c + 0.031798 M_pe160_p + 0.009618 M_pe161_c + 0.024732 M_pe161_p + 0.004957 M_pe181_c + 0.012747 M_pe181_p + 0.005707 M_pg160_c + 0.004892 M_pg160_p + 0.004439 M_pg161_c + 0.003805 M_pg161_p + 0.002288 M_pg181_c + 0.001961 M_pg181_p + 0.180021 M_phe__L_c + 0.000223 M_pheme_c + 0.214798 M_pro__L_c + 0.03327 M_ptrc_c + 0.000223 M_pydx5p_c + 0.000223 M_q8h2_c + 0.000223 M_ribflv_c + 0.209684 M_ser__L_c + 0.000223 M_sheme_c + 0.004126 M_so4_c + 0.006744 M_spmd_c + 9.8e-05 M_succoa_c + 0.000223 M_thf_c + 0.000223 M_thmpp_c + 0.246506 M_thr__L_c + 0.055234 M_trp__L_c + 0.133993 M_tyr__L_c + 5.5e-05 M_udcpdp_c + 0.140101 M_utp_c + 0.411184 M_val__L_c + 0.000324 M_zn2_c --> 53.95 M_adp_c + 53.95 M_h_c + 53.945874 M_pi_c + 0.749831 M_ppi_c
+R_BIOMASS_Ec_iJO1366_core_53p95M: 0.000223 M_10fthf_c + 2.6e-05 M_2fe2s_c + 0.000223 M_2ohph_c + 0.00026 M_4fe4s_c + 0.513689 M_ala__L_c + 0.000223 M_amet_c + 0.295792 M_arg__L_c + 0.241055 M_asn__L_c + 0.241055 M_asp__L_c + 54.124831 M_atp_c + 0.000122 M_bmocogdp_c + 2e-06 M_btn_c + 0.005205 M_ca2_c + 0.005205 M_cl_c + 0.000576 M_coa_c + 2.5e-05 M_cobalt2_c + 0.133508 M_ctp_c + 0.000709 M_cu2_c + 0.09158 M_cys__L_c + 0.026166 M_datp_c + 0.027017 M_dctp_c + 0.027017 M_dgtp_c + 0.026166 M_dttp_c + 0.000223 M_fad_c + 0.006715 M_fe2_c + 0.007808 M_fe3_c + 0.26316 M_gln__L_c + 0.26316 M_glu__L_c + 0.612638 M_gly_c + 0.215096 M_gtp_c + 48.601527 M_h2o_c + 0.094738 M_his__L_c + 0.290529 M_ile__L_c + 0.195193 M_k_c + 0.019456 M_kdo2lipid4_e + 0.450531 M_leu__L_c + 0.343161 M_lys__L_c + 0.153686 M_met__L_c + 0.008675 M_mg2_c + 0.000223 M_mlthf_c + 0.000691 M_mn2_c + 7e-06 M_mobd_c + 0.013894 M_murein5px4p_p + 0.001831 M_nad_c + 0.000447 M_nadp_c + 0.013013 M_nh4_c + 0.000323 M_ni2_c + 0.017868 M_pe160_c + 0.045946 M_pe160_p + 0.054154 M_pe161_c + 0.02106 M_pe161_p + 0.185265 M_phe__L_c + 0.000223 M_pheme_c + 0.221055 M_pro__L_c + 0.000223 M_pydx5p_c + 0.000223 M_ribflv_c + 0.215792 M_ser__L_c + 0.000223 M_sheme_c + 0.004338 M_so4_c + 0.000223 M_thf_c + 0.000223 M_thmpp_c + 0.253687 M_thr__L_c + 0.056843 M_trp__L_c + 0.137896 M_tyr__L_c + 5.5e-05 M_udcpdp_c + 0.144104 M_utp_c + 0.423162 M_val__L_c + 0.000341 M_zn2_c --> 53.95 M_adp_c + 53.95 M_h_c + 53.945662 M_pi_c + 0.773903 M_ppi_c
+R_EX_12ppd__R_e: M_12ppd__R_e --> 
+R_EX_12ppd__S_e: M_12ppd__S_e --> 
+R_EX_14glucan_e: M_14glucan_e --> 
+R_EX_15dap_e: M_15dap_e --> 
+R_EX_23camp_e: M_23camp_e --> 
+R_EX_23ccmp_e: M_23ccmp_e --> 
+R_EX_23cgmp_e: M_23cgmp_e --> 
+R_EX_23cump_e: M_23cump_e --> 
+R_EX_23dappa_e: M_23dappa_e --> 
+R_EX_26dap__M_e: M_26dap__M_e --> 
+R_EX_2ddglcn_e: M_2ddglcn_e --> 
+R_EX_34dhpac_e: M_34dhpac_e --> 
+R_EX_3amp_e: M_3amp_e --> 
+R_EX_3cmp_e: M_3cmp_e --> 
+R_EX_3gmp_e: M_3gmp_e --> 
+R_EX_3hcinnm_e: M_3hcinnm_e --> 
+R_EX_3hpp_e: M_3hpp_e --> 
+R_EX_3hpppn_e: M_3hpppn_e --> 
+R_EX_3ump_e: M_3ump_e --> 
+R_EX_4abut_e: M_4abut_e --> 
+R_EX_4hoxpacd_e: M_4hoxpacd_e --> 
+R_EX_5dglcn_e: M_5dglcn_e --> 
+R_EX_5mtr_e: M_5mtr_e --> 
+R_EX_LalaDglu_e: M_LalaDglu_e --> 
+R_EX_LalaDgluMdap_e: M_LalaDgluMdap_e --> 
+R_EX_LalaDgluMdapDala_e: M_LalaDgluMdapDala_e --> 
+R_EX_LalaLglu_e: M_LalaLglu_e --> 
+R_EX_ac_e: M_ac_e --> 
+R_EX_acac_e: M_acac_e --> 
+R_EX_acald_e: M_acald_e --> 
+R_EX_acgal_e: M_acgal_e --> 
+R_EX_acgal1p_e: M_acgal1p_e --> 
+R_EX_acgam_e: M_acgam_e --> 
+R_EX_acgam1p_e: M_acgam1p_e --> 
+R_EX_acmana_e: M_acmana_e --> 
+R_EX_acmum_e: M_acmum_e --> 
+R_EX_acnam_e: M_acnam_e --> 
+R_EX_acolipa_e: M_acolipa_e --> 
+R_EX_acser_e: M_acser_e --> 
+R_EX_ade_e: M_ade_e --> 
+R_EX_adn_e: M_adn_e --> 
+R_EX_adocbl_e: M_adocbl_e --> 
+R_EX_ag_e: M_ag_e --> 
+R_EX_agm_e: M_agm_e --> 
+R_EX_akg_e: M_akg_e --> 
+R_EX_ala_B_e: M_ala_B_e --> 
+R_EX_ala__D_e: M_ala__D_e --> 
+R_EX_ala__L_e: M_ala__L_e --> 
+R_EX_alaala_e: M_alaala_e --> 
+R_EX_all__D_e: M_all__D_e --> 
+R_EX_alltn_e: M_alltn_e --> 
+R_EX_amp_e: M_amp_e --> 
+R_EX_anhgm_e: M_anhgm_e --> 
+R_EX_arab__L_e: M_arab__L_e --> 
+R_EX_arbt_e: M_arbt_e --> 
+R_EX_arbtn_e: M_arbtn_e --> 
+R_EX_arbtn_fe3_e: M_arbtn_fe3_e --> 
+R_EX_arg__L_e: M_arg__L_e --> 
+R_EX_ascb__L_e: M_ascb__L_e --> 
+R_EX_asn__L_e: M_asn__L_e --> 
+R_EX_aso3_e: M_aso3_e --> 
+R_EX_asp__L_e: M_asp__L_e --> 
+R_EX_btn_e: M_btn_e --> 
+R_EX_but_e: M_but_e --> 
+R_EX_butso3_e: M_butso3_e --> 
+R_EX_ca2_e: M_ca2_e <-> 
+R_EX_cbi_e: M_cbi_e --> 
+R_EX_cbl1_e: M_cbl1_e <-> 
+R_EX_cd2_e: M_cd2_e --> 
+R_EX_cgly_e: M_cgly_e --> 
+R_EX_chol_e: M_chol_e --> 
+R_EX_chtbs_e: M_chtbs_e --> 
+R_EX_cit_e: M_cit_e --> 
+R_EX_cl_e: M_cl_e <-> 
+R_EX_cm_e: M_cm_e --> 
+R_EX_cmp_e: M_cmp_e --> 
+R_EX_co2_e: M_co2_e <-> 
+R_EX_cobalt2_e: M_cobalt2_e <-> 
+R_EX_colipa_e: M_colipa_e --> 
+R_EX_colipap_e: M_colipap_e --> 
+R_EX_cpgn_e: M_cpgn_e --> 
+R_EX_cpgn_un_e: M_cpgn_un_e --> 
+R_EX_crn_e: M_crn_e --> 
+R_EX_crn__D_e: M_crn__D_e --> 
+R_EX_csn_e: M_csn_e --> 
+R_EX_cu_e: M_cu_e --> 
+R_EX_cu2_e: M_cu2_e <-> 
+R_EX_cyan_e: M_cyan_e --> 
+R_EX_cynt_e: M_cynt_e --> 
+R_EX_cys__D_e: M_cys__D_e --> 
+R_EX_cys__L_e: M_cys__L_e --> 
+R_EX_cytd_e: M_cytd_e --> 
+R_EX_dad_2_e: M_dad_2_e --> 
+R_EX_damp_e: M_damp_e --> 
+R_EX_dca_e: M_dca_e --> 
+R_EX_dcmp_e: M_dcmp_e --> 
+R_EX_dcyt_e: M_dcyt_e --> 
+R_EX_ddca_e: M_ddca_e --> 
+R_EX_dgmp_e: M_dgmp_e --> 
+R_EX_dgsn_e: M_dgsn_e --> 
+R_EX_dha_e: M_dha_e --> 
+R_EX_dimp_e: M_dimp_e --> 
+R_EX_din_e: M_din_e --> 
+R_EX_dms_e: M_dms_e --> 
+R_EX_dmso_e: M_dmso_e --> 
+R_EX_dopa_e: M_dopa_e --> 
+R_EX_doxrbcn_e: M_doxrbcn_e --> 
+R_EX_dtmp_e: M_dtmp_e --> 
+R_EX_dump_e: M_dump_e --> 
+R_EX_duri_e: M_duri_e --> 
+R_EX_eca4colipa_e: M_eca4colipa_e --> 
+R_EX_enlipa_e: M_enlipa_e --> 
+R_EX_enter_e: M_enter_e --> 
+R_EX_etha_e: M_etha_e --> 
+R_EX_ethso3_e: M_ethso3_e --> 
+R_EX_etoh_e: M_etoh_e --> 
+R_EX_f6p_e: M_f6p_e --> 
+R_EX_fald_e: M_fald_e --> 
+R_EX_fe2_e: M_fe2_e <-> 
+R_EX_fe3_e: M_fe3_e <-> 
+R_EX_fe3dcit_e: M_fe3dcit_e --> 
+R_EX_fe3dhbzs_e: M_fe3dhbzs_e --> 
+R_EX_fe3hox_e: M_fe3hox_e --> 
+R_EX_fe3hox_un_e: M_fe3hox_un_e --> 
+R_EX_fecrm_e: M_fecrm_e --> 
+R_EX_fecrm_un_e: M_fecrm_un_e --> 
+R_EX_feenter_e: M_feenter_e --> 
+R_EX_feoxam_e: M_feoxam_e --> 
+R_EX_feoxam_un_e: M_feoxam_un_e --> 
+R_EX_for_e: M_for_e --> 
+R_EX_fru_e: M_fru_e --> 
+R_EX_frulys_e: M_frulys_e --> 
+R_EX_fruur_e: M_fruur_e --> 
+R_EX_fuc__L_e: M_fuc__L_e --> 
+R_EX_fum_e: M_fum_e --> 
+R_EX_fusa_e: M_fusa_e --> 
+R_EX_g1p_e: M_g1p_e --> 
+R_EX_g3pc_e: M_g3pc_e --> 
+R_EX_g3pe_e: M_g3pe_e --> 
+R_EX_g3pg_e: M_g3pg_e --> 
+R_EX_g3pi_e: M_g3pi_e --> 
+R_EX_g3ps_e: M_g3ps_e --> 
+R_EX_g6p_e: M_g6p_e --> 
+R_EX_gal_e: M_gal_e --> 
+R_EX_gal_bD_e: M_gal_bD_e --> 
+R_EX_gal1p_e: M_gal1p_e --> 
+R_EX_galct__D_e: M_galct__D_e --> 
+R_EX_galctn__D_e: M_galctn__D_e --> 
+R_EX_galctn__L_e: M_galctn__L_e --> 
+R_EX_galt_e: M_galt_e --> 
+R_EX_galur_e: M_galur_e --> 
+R_EX_gam_e: M_gam_e --> 
+R_EX_gam6p_e: M_gam6p_e --> 
+R_EX_gbbtn_e: M_gbbtn_e --> 
+R_EX_gdp_e: M_gdp_e --> 
+R_EX_glc__D_e: M_glc__D_e <-> 
+R_EX_glcn_e: M_glcn_e --> 
+R_EX_glcr_e: M_glcr_e --> 
+R_EX_glcur_e: M_glcur_e --> 
+R_EX_glcur1p_e: M_glcur1p_e --> 
+R_EX_gln__L_e: M_gln__L_e --> 
+R_EX_glu__L_e: M_glu__L_e --> 
+R_EX_gly_e: M_gly_e --> 
+R_EX_glyald_e: M_glyald_e --> 
+R_EX_glyb_e: M_glyb_e --> 
+R_EX_glyc_e: M_glyc_e --> 
+R_EX_glyc__R_e: M_glyc__R_e --> 
+R_EX_glyc2p_e: M_glyc2p_e --> 
+R_EX_glyc3p_e: M_glyc3p_e --> 
+R_EX_glyclt_e: M_glyclt_e --> 
+R_EX_gmp_e: M_gmp_e --> 
+R_EX_gsn_e: M_gsn_e --> 
+R_EX_gthox_e: M_gthox_e --> 
+R_EX_gthrd_e: M_gthrd_e --> 
+R_EX_gtp_e: M_gtp_e --> 
+R_EX_gua_e: M_gua_e --> 
+R_EX_h_e: M_h_e <-> 
+R_EX_h2_e: M_h2_e --> 
+R_EX_h2o_e: M_h2o_e <-> 
+R_EX_h2o2_e: M_h2o2_e --> 
+R_EX_h2s_e: M_h2s_e --> 
+R_EX_hacolipa_e: M_hacolipa_e --> 
+R_EX_halipa_e: M_halipa_e --> 
+R_EX_hdca_e: M_hdca_e --> 
+R_EX_hdcea_e: M_hdcea_e --> 
+R_EX_hg2_e: M_hg2_e --> 
+R_EX_his__L_e: M_his__L_e --> 
+R_EX_hom__L_e: M_hom__L_e --> 
+R_EX_hxa_e: M_hxa_e --> 
+R_EX_hxan_e: M_hxan_e --> 
+R_EX_idon__L_e: M_idon__L_e --> 
+R_EX_ile__L_e: M_ile__L_e --> 
+R_EX_imp_e: M_imp_e --> 
+R_EX_indole_e: M_indole_e --> 
+R_EX_inost_e: M_inost_e --> 
+R_EX_ins_e: M_ins_e --> 
+R_EX_isetac_e: M_isetac_e --> 
+R_EX_k_e: M_k_e <-> 
+R_EX_kdo2lipid4_e: M_kdo2lipid4_e --> 
+R_EX_lac__D_e: M_lac__D_e --> 
+R_EX_lac__L_e: M_lac__L_e --> 
+R_EX_lcts_e: M_lcts_e --> 
+R_EX_leu__L_e: M_leu__L_e --> 
+R_EX_lipa_e: M_lipa_e --> 
+R_EX_lipa_cold_e: M_lipa_cold_e --> 
+R_EX_lipoate_e: M_lipoate_e --> 
+R_EX_lys__L_e: M_lys__L_e --> 
+R_EX_lyx__L_e: M_lyx__L_e --> 
+R_EX_mal__D_e: M_mal__D_e --> 
+R_EX_mal__L_e: M_mal__L_e --> 
+R_EX_malt_e: M_malt_e --> 
+R_EX_malthx_e: M_malthx_e --> 
+R_EX_maltpt_e: M_maltpt_e --> 
+R_EX_malttr_e: M_malttr_e --> 
+R_EX_maltttr_e: M_maltttr_e --> 
+R_EX_man_e: M_man_e --> 
+R_EX_man6p_e: M_man6p_e --> 
+R_EX_manglyc_e: M_manglyc_e --> 
+R_EX_melib_e: M_melib_e --> 
+R_EX_meoh_e: M_meoh_e --> 
+R_EX_met__D_e: M_met__D_e --> 
+R_EX_met__L_e: M_met__L_e --> 
+R_EX_metsox_R__L_e: M_metsox_R__L_e --> 
+R_EX_metsox_S__L_e: M_metsox_S__L_e --> 
+R_EX_mg2_e: M_mg2_e <-> 
+R_EX_mincyc_e: M_mincyc_e --> 
+R_EX_minohp_e: M_minohp_e --> 
+R_EX_mmet_e: M_mmet_e --> 
+R_EX_mn2_e: M_mn2_e <-> 
+R_EX_mnl_e: M_mnl_e --> 
+R_EX_mobd_e: M_mobd_e <-> 
+R_EX_mso3_e: M_mso3_e --> 
+R_EX_n2o_e: M_n2o_e --> 
+R_EX_na1_e: M_na1_e <-> 
+R_EX_nac_e: M_nac_e --> 
+R_EX_nh4_e: M_nh4_e <-> 
+R_EX_ni2_e: M_ni2_e <-> 
+R_EX_nmn_e: M_nmn_e --> 
+R_EX_no_e: M_no_e --> 
+R_EX_no2_e: M_no2_e --> 
+R_EX_no3_e: M_no3_e --> 
+R_EX_novbcn_e: M_novbcn_e --> 
+R_EX_o16a4colipa_e: M_o16a4colipa_e --> 
+R_EX_o2_e: M_o2_e <-> 
+R_EX_o2s_e: M_o2s_e --> 
+R_EX_ocdca_e: M_ocdca_e --> 
+R_EX_ocdcea_e: M_ocdcea_e --> 
+R_EX_octa_e: M_octa_e --> 
+R_EX_orn_e: M_orn_e --> 
+R_EX_orot_e: M_orot_e --> 
+R_EX_pacald_e: M_pacald_e --> 
+R_EX_peamn_e: M_peamn_e --> 
+R_EX_phe__L_e: M_phe__L_e --> 
+R_EX_pheme_e: M_pheme_e --> 
+R_EX_pi_e: M_pi_e <-> 
+R_EX_pnto__R_e: M_pnto__R_e --> 
+R_EX_ppa_e: M_ppa_e --> 
+R_EX_ppal_e: M_ppal_e --> 
+R_EX_pppn_e: M_pppn_e --> 
+R_EX_ppt_e: M_ppt_e --> 
+R_EX_pro__L_e: M_pro__L_e --> 
+R_EX_progly_e: M_progly_e --> 
+R_EX_psclys_e: M_psclys_e --> 
+R_EX_pser__L_e: M_pser__L_e --> 
+R_EX_ptrc_e: M_ptrc_e --> 
+R_EX_pydam_e: M_pydam_e --> 
+R_EX_pydx_e: M_pydx_e --> 
+R_EX_pydxn_e: M_pydxn_e --> 
+R_EX_pyr_e: M_pyr_e --> 
+R_EX_quin_e: M_quin_e --> 
+R_EX_r5p_e: M_r5p_e --> 
+R_EX_rfamp_e: M_rfamp_e --> 
+R_EX_rib__D_e: M_rib__D_e --> 
+R_EX_rmn_e: M_rmn_e --> 
+R_EX_sbt__D_e: M_sbt__D_e --> 
+R_EX_sel_e: M_sel_e <-> 
+R_EX_ser__D_e: M_ser__D_e --> 
+R_EX_ser__L_e: M_ser__L_e --> 
+R_EX_skm_e: M_skm_e --> 
+R_EX_slnt_e: M_slnt_e <-> 
+R_EX_so2_e: M_so2_e --> 
+R_EX_so3_e: M_so3_e --> 
+R_EX_so4_e: M_so4_e <-> 
+R_EX_spmd_e: M_spmd_e --> 
+R_EX_succ_e: M_succ_e --> 
+R_EX_sucr_e: M_sucr_e --> 
+R_EX_sulfac_e: M_sulfac_e --> 
+R_EX_tartr__D_e: M_tartr__D_e --> 
+R_EX_tartr__L_e: M_tartr__L_e --> 
+R_EX_taur_e: M_taur_e --> 
+R_EX_tcynt_e: M_tcynt_e --> 
+R_EX_thm_e: M_thm_e --> 
+R_EX_thr__L_e: M_thr__L_e --> 
+R_EX_thrp_e: M_thrp_e --> 
+R_EX_thym_e: M_thym_e --> 
+R_EX_thymd_e: M_thymd_e --> 
+R_EX_tma_e: M_tma_e --> 
+R_EX_tmao_e: M_tmao_e --> 
+R_EX_tre_e: M_tre_e --> 
+R_EX_trp__L_e: M_trp__L_e --> 
+R_EX_tsul_e: M_tsul_e --> 
+R_EX_ttdca_e: M_ttdca_e --> 
+R_EX_ttdcea_e: M_ttdcea_e --> 
+R_EX_ttrcyc_e: M_ttrcyc_e --> 
+R_EX_tungs_e: M_tungs_e <-> 
+R_EX_tym_e: M_tym_e --> 
+R_EX_tyr__L_e: M_tyr__L_e --> 
+R_EX_tyrp_e: M_tyrp_e --> 
+R_EX_uacgam_e: M_uacgam_e --> 
+R_EX_udpacgal_e: M_udpacgal_e --> 
+R_EX_udpg_e: M_udpg_e --> 
+R_EX_udpgal_e: M_udpgal_e --> 
+R_EX_udpglcur_e: M_udpglcur_e --> 
+R_EX_ump_e: M_ump_e --> 
+R_EX_ura_e: M_ura_e --> 
+R_EX_urea_e: M_urea_e --> 
+R_EX_uri_e: M_uri_e --> 
+R_EX_val__L_e: M_val__L_e --> 
+R_EX_xan_e: M_xan_e --> 
+R_EX_xmp_e: M_xmp_e --> 
+R_EX_xtsn_e: M_xtsn_e --> 
+R_EX_xyl__D_e: M_xyl__D_e --> 
+R_EX_xylu__L_e: M_xylu__L_e --> 
+R_EX_zn2_e: M_zn2_e <-> 
+R_12DGR120tipp: M_12dgr120_p --> M_12dgr120_c
+R_12DGR140tipp: M_12dgr140_p --> M_12dgr140_c
+R_12DGR141tipp: M_12dgr141_p --> M_12dgr141_c
+R_12DGR160tipp: M_12dgr160_p --> M_12dgr160_c
+R_12DGR161tipp: M_12dgr161_p --> M_12dgr161_c
+R_12DGR180tipp: M_12dgr180_p --> M_12dgr180_c
+R_12DGR181tipp: M_12dgr181_p --> M_12dgr181_c
+R_12PPDRtex: M_12ppd__R_e <-> M_12ppd__R_p
+R_12PPDRtpp: M_12ppd__R_p <-> M_12ppd__R_c
+R_12PPDStex: M_12ppd__S_e <-> M_12ppd__S_p
+R_12PPDStpp: M_12ppd__S_p <-> M_12ppd__S_c
+R_14GLUCANabcpp: M_14glucan_p + M_atp_c + M_h2o_c --> M_14glucan_c + M_adp_c + M_h_c + M_pi_c
+R_14GLUCANtexi: M_14glucan_e --> M_14glucan_p
+R_23CAMPtex: M_23camp_e <-> M_23camp_p
+R_23CCMPtex: M_23ccmp_e <-> M_23ccmp_p
+R_23CGMPtex: M_23cgmp_e <-> M_23cgmp_p
+R_23CUMPtex: M_23cump_e <-> M_23cump_p
+R_23DAPPAt2pp: M_23dappa_p + M_h_p --> M_23dappa_c + M_h_c
+R_23DAPPAtex: M_23dappa_e <-> M_23dappa_p
+R_23PDE2pp: M_23cump_p + M_h2o_p --> M_3ump_p + M_h_p
+R_23PDE4pp: M_23ccmp_p + M_h2o_p --> M_3cmp_p + M_h_p
+R_23PDE7pp: M_23camp_p + M_h2o_p --> M_3amp_p + M_h_p
+R_23PDE9pp: M_23cgmp_p + M_h2o_p --> M_3gmp_p + M_h_p
+R_26DAHtex: M_26dap__M_e <-> M_26dap__M_p
+R_2AGPA120tipp: M_2ddecg3p_p --> M_2ddecg3p_c
+R_2AGPA140tipp: M_2tdecg3p_p --> M_2tdecg3p_c
+R_2AGPA141tipp: M_2tdec7eg3p_p --> M_2tdec7eg3p_c
+R_2AGPA160tipp: M_2hdecg3p_p --> M_2hdecg3p_c
+R_2AGPA161tipp: M_2hdec9eg3p_p --> M_2hdec9eg3p_c
+R_2AGPA180tipp: M_2odecg3p_p --> M_2odecg3p_c
+R_2AGPA181tipp: M_2odec11eg3p_p --> M_2odec11eg3p_c
+R_2AGPE120tipp: M_2agpe120_p --> M_2agpe120_c
+R_2AGPE140tipp: M_2agpe140_p --> M_2agpe140_c
+R_2AGPE141tipp: M_2agpe141_p --> M_2agpe141_c
+R_2AGPE160tipp: M_2agpe160_p --> M_2agpe160_c
+R_2AGPE161tipp: M_2agpe161_p --> M_2agpe161_c
+R_2AGPE180tipp: M_2agpe180_p --> M_2agpe180_c
+R_2AGPE181tipp: M_2agpe181_p --> M_2agpe181_c
+R_2AGPEAT120: M_2agpe120_c + M_atp_c + M_ddca_c --> M_amp_c + M_pe120_c + M_ppi_c
+R_2AGPEAT140: M_2agpe140_c + M_atp_c + M_ttdca_c --> M_amp_c + M_pe140_c + M_ppi_c
+R_2AGPEAT141: M_2agpe141_c + M_atp_c + M_ttdcea_c --> M_amp_c + M_pe141_c + M_ppi_c
+R_2AGPEAT160: M_2agpe160_c + M_atp_c + M_hdca_c --> M_amp_c + M_pe160_c + M_ppi_c
+R_2AGPEAT161: M_2agpe161_c + M_atp_c + M_hdcea_c --> M_amp_c + M_pe161_c + M_ppi_c
+R_2AGPEAT180: M_2agpe180_c + M_atp_c + M_ocdca_c --> M_amp_c + M_pe180_c + M_ppi_c
+R_2AGPEAT181: M_2agpe181_c + M_atp_c + M_ocdcea_c --> M_amp_c + M_pe181_c + M_ppi_c
+R_2AGPG120tipp: M_2agpg120_p --> M_2agpg120_c
+R_2AGPG140tipp: M_2agpg140_p --> M_2agpg140_c
+R_2AGPG141tipp: M_2agpg141_p --> M_2agpg141_c
+R_2AGPG160tipp: M_2agpg160_p --> M_2agpg160_c
+R_2AGPG161tipp: M_2agpg161_p --> M_2agpg161_c
+R_2AGPG180tipp: M_2agpg180_p --> M_2agpg180_c
+R_2AGPG181tipp: M_2agpg181_p --> M_2agpg181_c
+R_2AGPGAT120: M_2agpg120_c + M_atp_c + M_ddca_c --> M_amp_c + M_pg120_c + M_ppi_c
+R_2AGPGAT140: M_2agpg140_c + M_atp_c + M_ttdca_c --> M_amp_c + M_pg140_c + M_ppi_c
+R_2AGPGAT141: M_2agpg141_c + M_atp_c + M_ttdcea_c --> M_amp_c + M_pg141_c + M_ppi_c
+R_2AGPGAT160: M_2agpg160_c + M_atp_c + M_hdca_c --> M_amp_c + M_pg160_c + M_ppi_c
+R_2AGPGAT161: M_2agpg161_c + M_atp_c + M_hdcea_c --> M_amp_c + M_pg161_c + M_ppi_c
+R_2AGPGAT180: M_2agpg180_c + M_atp_c + M_ocdca_c --> M_amp_c + M_pg180_c + M_ppi_c
+R_2AGPGAT181: M_2agpg181_c + M_atp_c + M_ocdcea_c --> M_amp_c + M_pg181_c + M_ppi_c
+R_2DGULRGx: M_2dhguln_c + M_h_c + M_nadh_c --> M_glcn_c + M_nad_c
+R_2DGULRGy: M_2dhguln_c + M_h_c + M_nadph_c --> M_glcn_c + M_nadp_c
+R_2DGULRx: M_2dhguln_c + M_h_c + M_nadh_c --> M_idon__L_c + M_nad_c
+R_2DGULRy: M_2dhguln_c + M_h_c + M_nadph_c --> M_idon__L_c + M_nadp_c
+R_2MAHMP: M_2mahmp_c + M_h2o_c --> M_4ampm_c + M_h_c + M_pi_c
+R_34dhpactex: M_34dhpac_e <-> M_34dhpac_p
+R_3AMACHYD: M_3amac_c + M_h2o_c + M_h_c --> M_msa_c + M_nh4_c
+R_3AMPtex: M_3amp_e <-> M_3amp_p
+R_3CMPtex: M_3cmp_e <-> M_3cmp_p
+R_3GMPtex: M_3gmp_e <-> M_3gmp_p
+R_3HAD100: M_3hdecACP_c --> M_h2o_c + M_tdec2eACP_c
+R_3HAD120: M_3hddecACP_c --> M_h2o_c + M_tddec2eACP_c
+R_3HAD121: M_3hcddec5eACP_c --> M_h2o_c + M_t3c5ddeceACP_c
+R_3HAD140: M_3hmrsACP_c --> M_h2o_c + M_tmrs2eACP_c
+R_3HAD141: M_3hcmrs7eACP_c --> M_h2o_c + M_t3c7mrseACP_c
+R_3HAD160: M_3hpalmACP_c --> M_h2o_c + M_tpalm2eACP_c
+R_3HAD161: M_3hcpalm9eACP_c --> M_h2o_c + M_t3c9palmeACP_c
+R_3HAD180: M_3hoctaACP_c --> M_h2o_c + M_toctd2eACP_c
+R_3HAD181: M_3hcvac11eACP_c --> M_h2o_c + M_t3c11vaceACP_c
+R_3HAD40: M_3haACP_c --> M_but2eACP_c + M_h2o_c
+R_3HAD60: M_3hhexACP_c --> M_h2o_c + M_thex2eACP_c
+R_3HAD80: M_3hoctACP_c --> M_h2o_c + M_toct2eACP_c
+R_3HCINNMH: M_3hcinnm_c + M_h_c + M_nadh_c + M_o2_c --> M_dhcinnm_c + M_h2o_c + M_nad_c
+R_3HPPPNH: M_3hpppn_c + M_h_c + M_nadh_c + M_o2_c --> M_dhpppn_c + M_h2o_c + M_nad_c
+R_3HPPtex: M_3hpp_e <-> M_3hpp_p
+R_3HPPtpp: M_3hpp_c + M_h_c --> M_3hpp_p + M_h_p
+R_3KGK: M_3dhguln_c + M_atp_c --> M_3dhgulnp_c + M_adp_c + M_h_c
+R_3NTD2pp: M_3ump_p + M_h2o_p --> M_pi_p + M_uri_p
+R_3NTD4pp: M_3cmp_p + M_h2o_p --> M_cytd_p + M_pi_p
+R_3NTD7pp: M_3amp_p + M_h2o_p --> M_adn_p + M_pi_p
+R_3NTD9pp: M_3gmp_p + M_h2o_p --> M_gsn_p + M_pi_p
+R_3OAR100: M_3odecACP_c + M_h_c + M_nadph_c <-> M_3hdecACP_c + M_nadp_c
+R_3OAR120: M_3oddecACP_c + M_h_c + M_nadph_c <-> M_3hddecACP_c + M_nadp_c
+R_3OAR121: M_3ocddec5eACP_c + M_h_c + M_nadph_c --> M_3hcddec5eACP_c + M_nadp_c
+R_3OAR140: M_3omrsACP_c + M_h_c + M_nadph_c <-> M_3hmrsACP_c + M_nadp_c
+R_3OAR141: M_3ocmrs7eACP_c + M_h_c + M_nadph_c --> M_3hcmrs7eACP_c + M_nadp_c
+R_3OAR160: M_3opalmACP_c + M_h_c + M_nadph_c <-> M_3hpalmACP_c + M_nadp_c
+R_3OAR161: M_3ocpalm9eACP_c + M_h_c + M_nadph_c --> M_3hcpalm9eACP_c + M_nadp_c
+R_3OAR180: M_3ooctdACP_c + M_h_c + M_nadph_c <-> M_3hoctaACP_c + M_nadp_c
+R_3OAR181: M_3ocvac11eACP_c + M_h_c + M_nadph_c --> M_3hcvac11eACP_c + M_nadp_c
+R_3OAR40: M_actACP_c + M_h_c + M_nadph_c <-> M_3haACP_c + M_nadp_c
+R_3OAR60: M_3ohexACP_c + M_h_c + M_nadph_c <-> M_3hhexACP_c + M_nadp_c
+R_3OAR80: M_3ooctACP_c + M_h_c + M_nadph_c <-> M_3hoctACP_c + M_nadp_c
+R_3OAS100: M_h_c + M_malACP_c + M_ocACP_c --> M_3odecACP_c + M_ACP_c + M_co2_c
+R_3OAS120: M_dcaACP_c + M_h_c + M_malACP_c --> M_3oddecACP_c + M_ACP_c + M_co2_c
+R_3OAS121: M_cdec3eACP_c + M_h_c + M_malACP_c --> M_3ocddec5eACP_c + M_ACP_c + M_co2_c
+R_3OAS140: M_ddcaACP_c + M_h_c + M_malACP_c --> M_3omrsACP_c + M_ACP_c + M_co2_c
+R_3OAS141: M_cddec5eACP_c + M_h_c + M_malACP_c --> M_3ocmrs7eACP_c + M_ACP_c + M_co2_c
+R_3OAS160: M_h_c + M_malACP_c + M_myrsACP_c --> M_3opalmACP_c + M_ACP_c + M_co2_c
+R_3OAS161: M_h_c + M_malACP_c + M_tdeACP_c --> M_3ocpalm9eACP_c + M_ACP_c + M_co2_c
+R_3OAS180: M_h_c + M_malACP_c + M_palmACP_c --> M_3ooctdACP_c + M_ACP_c + M_co2_c
+R_3OAS181: M_h_c + M_hdeACP_c + M_malACP_c --> M_3ocvac11eACP_c + M_ACP_c + M_co2_c
+R_3OAS60: M_butACP_c + M_h_c + M_malACP_c --> M_3ohexACP_c + M_ACP_c + M_co2_c
+R_3OAS80: M_h_c + M_hexACP_c + M_malACP_c --> M_3ooctACP_c + M_ACP_c + M_co2_c
+R_3OXCOAT: M_coa_c + M_oxadpcoa_c --> M_accoa_c + M_succoa_c
+R_3PEPTabcpp: M_LalaDgluMdap_p + M_atp_c + M_h2o_c --> M_LalaDgluMdap_c + M_adp_c + M_h_c + M_pi_c
+R_3PEPTtex: M_LalaDgluMdap_e <-> M_LalaDgluMdap_p
+R_3UMPtex: M_3ump_e <-> M_3ump_p
+R_42A12BOOXpp: M_dopa_p + M_h2o_p + M_o2_p --> M_34dhpac_p + M_h2o2_p + M_nh4_p
+R_4HOXPACDtex: M_4hoxpacd_e <-> M_4hoxpacd_p
+R_4HTHRS: M_h2o_c + M_phthr_c --> M_4hthr_c + M_pi_c
+R_4PCP: M_LalaDgluMdapDala_c + M_h2o_c --> M_LalaDgluMdap_c + M_ala__D_c
+R_4PCPpp: M_LalaDgluMdapDala_p + M_h2o_p --> M_LalaDgluMdap_p + M_ala__D_p
+R_4PEPTabcpp: M_LalaDgluMdapDala_p + M_atp_c + M_h2o_c --> M_LalaDgluMdapDala_c + M_adp_c + M_h_c + M_pi_c
+R_4PEPTtex: M_LalaDgluMdapDala_e <-> M_LalaDgluMdapDala_p
+R_5DGLCNR: M_5dglcn_c + M_h_c + M_nadph_c <-> M_glcn_c + M_nadp_c
+R_5DGLCNt2rpp: M_5dglcn_p + M_h_p <-> M_5dglcn_c + M_h_c
+R_5DGLCNtex: M_5dglcn_e <-> M_5dglcn_p
+R_5DOAN: M_dad_5_c + M_h2o_c --> M_5drib_c + M_ade_c
+R_5MTRtex: M_5mtr_e <-> M_5mtr_p
+R_5MTRtpp: M_5mtr_c + M_h_c --> M_5mtr_p + M_h_p
+R_A5PISO: M_ru5p__D_c <-> M_ara5p_c
+R_AACPS1: M_ACP_c + M_atp_c + M_ttdca_c --> M_amp_c + M_myrsACP_c + M_ppi_c
+R_AACPS2: M_ACP_c + M_atp_c + M_ttdcea_c --> M_amp_c + M_ppi_c + M_tdeACP_c
+R_AACPS3: M_ACP_c + M_atp_c + M_hdca_c --> M_amp_c + M_palmACP_c + M_ppi_c
+R_AACPS4: M_ACP_c + M_atp_c + M_hdcea_c --> M_amp_c + M_hdeACP_c + M_ppi_c
+R_AACPS5: M_ACP_c + M_atp_c + M_ocdcea_c --> M_amp_c + M_octeACP_c + M_ppi_c
+R_AACPS6: M_ACP_c + M_atp_c + M_ocdca_c --> M_amp_c + M_ocdcaACP_c + M_ppi_c
+R_AACPS7: M_ACP_c + M_atp_c + M_ddca_c --> M_amp_c + M_ddcaACP_c + M_ppi_c
+R_AACPS8: M_ACP_c + M_atp_c + M_dca_c --> M_amp_c + M_dcaACP_c + M_ppi_c
+R_AACPS9: M_ACP_c + M_atp_c + M_octa_c --> M_amp_c + M_ocACP_c + M_ppi_c
+R_AACTOOR: M_aact_c + M_h2o_c + M_o2_c --> M_h2o2_c + M_mthgxl_c + M_nh4_c
+R_AADDGT: M_dtdp4aaddg_c + M_unagamu_c --> M_dtdp_c + M_h_c + M_unagamuf_c
+R_AAMYL: M_14glucan_c --> M_malthx_c
+R_AAMYLpp: M_14glucan_p --> M_malthx_p
+R_AB6PGH: M_arbt6p_c + M_h2o_c --> M_g6p_c + M_hqn_c
+R_ABTA: M_4abut_c + M_akg_c --> M_glu__L_c + M_sucsal_c
+R_ABUTD: M_4abutn_c + M_h2o_c + M_nad_c --> M_4abut_c + 2.0 M_h_c + M_nadh_c
+R_ABUTt2pp: M_4abut_p + M_h_p --> M_4abut_c + M_h_c
+R_ABUTtex: M_4abut_e <-> M_4abut_p
+R_ACACCT: M_acac_c + M_accoa_c --> M_aacoa_c + M_ac_c
+R_ACACT1r: 2.0 M_accoa_c <-> M_aacoa_c + M_coa_c
+R_ACACT2r: M_accoa_c + M_btcoa_c <-> M_3ohcoa_c + M_coa_c
+R_ACACT3r: M_accoa_c + M_hxcoa_c <-> M_3oocoa_c + M_coa_c
+R_ACACT4r: M_accoa_c + M_occoa_c <-> M_3odcoa_c + M_coa_c
+R_ACACT5r: M_accoa_c + M_dcacoa_c <-> M_3oddcoa_c + M_coa_c
+R_ACACT6r: M_accoa_c + M_ddcacoa_c <-> M_3otdcoa_c + M_coa_c
+R_ACACT7r: M_accoa_c + M_tdcoa_c <-> M_3ohdcoa_c + M_coa_c
+R_ACACT8r: M_3ohodcoa_c + M_coa_c <-> M_accoa_c + M_pmtcoa_c
+R_ACACt2pp: M_acac_p + M_h_p <-> M_acac_c + M_h_c
+R_ACACtex: M_acac_e <-> M_acac_p
+R_ACALD: M_acald_c + M_coa_c + M_nad_c <-> M_accoa_c + M_h_c + M_nadh_c
+R_ACALDtex: M_acald_e <-> M_acald_p
+R_ACALDtpp: M_acald_p <-> M_acald_c
+R_ACANTHAT: M_accoa_c + M_anth_c --> M_acanth_c + M_coa_c
+R_ACBIPGT: M_adocbip_c + M_gtp_c + M_h_c --> M_agdpcbi_c + M_ppi_c
+R_ACCOAC: M_accoa_c + M_atp_c + M_hco3_c --> M_adp_c + M_h_c + M_malcoa_c + M_pi_c
+R_ACCOAL: M_atp_c + M_coa_c + M_ppa_c --> M_adp_c + M_pi_c + M_ppcoa_c
+R_ACGAL1PPpp: M_acgal1p_p + M_h2o_p --> M_acgal_p + M_pi_p
+R_ACGAL1Ptex: M_acgal1p_e <-> M_acgal1p_p
+R_ACGALtex: M_acgal_e <-> M_acgal_p
+R_ACGAM1PPpp: M_acgam1p_p + M_h2o_p --> M_acgam_p + M_pi_p
+R_ACGAM1Ptex: M_acgam1p_e <-> M_acgam1p_p
+R_ACGAMK: M_acgam_c + M_atp_c --> M_acgam6p_c + M_adp_c + M_h_c
+R_ACGAMT: M_uacgam_c + M_udcpp_c --> M_ump_c + M_unaga_c
+R_ACGAptspp: M_acgam_p + M_pep_c --> M_acgam6p_c + M_pyr_c
+R_ACGAtex: M_acgam_e <-> M_acgam_p
+R_ACGK: M_acglu_c + M_atp_c --> M_acg5p_c + M_adp_c
+R_ACGS: M_accoa_c + M_glu__L_c --> M_acglu_c + M_coa_c + M_h_c
+R_ACHBS: M_2obut_c + M_h_c + M_pyr_c --> M_2ahbut_c + M_co2_c
+R_ACKr: M_ac_c + M_atp_c <-> M_actp_c + M_adp_c
+R_ACLS: M_h_c + 2.0 M_pyr_c --> M_alac__S_c + M_co2_c
+R_ACM6PH: M_acmum6p_c + M_h2o_c --> M_acgam6p_c + M_lac__D_c
+R_ACMAMUT: M_uacmamu_c + M_unaga_c --> M_h_c + M_udp_c + M_unagamu_c
+R_ACMANAptspp: M_acmana_p + M_pep_c --> M_acmanap_c + M_pyr_c
+R_ACMANAtex: M_acmana_e <-> M_acmana_p
+R_ACMUMptspp: M_acmum_p + M_pep_c --> M_acmum6p_c + M_pyr_c
+R_ACMUMtex: M_acmum_e --> M_acmum_p
+R_ACNAMt2pp: M_acnam_p + M_h_p --> M_acnam_c + M_h_c
+R_ACNAMtex: M_acnam_e <-> M_acnam_p
+R_ACNML: M_acnam_c --> M_acmana_c + M_pyr_c
+R_ACOAD1f: M_btcoa_c + M_fad_c <-> M_b2coa_c + M_fadh2_c
+R_ACOAD2f: M_fad_c + M_hxcoa_c <-> M_fadh2_c + M_hx2coa_c
+R_ACOAD3f: M_fad_c + M_occoa_c <-> M_fadh2_c + M_oc2coa_c
+R_ACOAD4f: M_dcacoa_c + M_fad_c <-> M_dc2coa_c + M_fadh2_c
+R_ACOAD5f: M_ddcacoa_c + M_fad_c <-> M_dd2coa_c + M_fadh2_c
+R_ACOAD6f: M_fad_c + M_tdcoa_c <-> M_fadh2_c + M_td2coa_c
+R_ACOAD7f: M_fad_c + M_pmtcoa_c <-> M_fadh2_c + M_hdd2coa_c
+R_ACOAD8f: M_fad_c + M_stcoa_c <-> M_fadh2_c + M_od2coa_c
+R_ACOATA: M_ACP_c + M_accoa_c <-> M_acACP_c + M_coa_c
+R_ACODA: M_acorn_c + M_h2o_c --> M_ac_c + M_orn_c
+R_ACOLIPAabctex: M_acolipa_p + M_atp_c + M_h2o_c --> M_acolipa_e + M_adp_c + M_h_c + M_pi_c
+R_ACONIs: M_acon_T_c <-> M_acon_C_c
+R_ACONMT: M_acon_T_c + M_amet_c --> M_aconm_c + M_ahcys_c
+R_ACONTa: M_cit_c <-> M_acon_C_c + M_h2o_c
+R_ACONTb: M_acon_C_c + M_h2o_c <-> M_icit_c
+R_ACOTA: M_acorn_c + M_akg_c <-> M_acg5sa_c + M_glu__L_c
+R_ACPPAT120: M_ddcaACP_c + M_h_c + M_pi_c --> M_ACP_c + M_ddcap_c
+R_ACPPAT140: M_h_c + M_myrsACP_c + M_pi_c --> M_ACP_c + M_ttdcap_c
+R_ACPPAT141: M_h_c + M_pi_c + M_tdeACP_c --> M_ACP_c + M_ttdceap_c
+R_ACPPAT160: M_h_c + M_palmACP_c + M_pi_c --> M_ACP_c + M_hdcap_c
+R_ACPPAT161: M_h_c + M_hdeACP_c + M_pi_c --> M_ACP_c + M_hdceap_c
+R_ACPPAT180: M_h_c + M_ocdcaACP_c + M_pi_c --> M_ACP_c + M_ocdcap_c
+R_ACPPAT181: M_h_c + M_octeACP_c + M_pi_c --> M_ACP_c + M_ocdceap_c
+R_ACPS1: M_apoACP_c + M_coa_c --> M_ACP_c + M_h_c + M_pap_c
+R_ACS: M_ac_c + M_atp_c + M_coa_c --> M_accoa_c + M_amp_c + M_ppi_c
+R_ACSERtex: M_acser_e <-> M_acser_p
+R_ACSERtpp: M_acser_c --> M_acser_p
+R_ACt2rpp: M_ac_p + M_h_p <-> M_ac_c + M_h_c
+R_ACt4pp: M_ac_p + M_na1_p --> M_ac_c + M_na1_c
+R_ACtex: M_ac_e <-> M_ac_p
+R_ADA: M_adn_c + M_h2o_c + M_h_c --> M_ins_c + M_nh4_c
+R_ADCL: M_4adcho_c --> M_4abz_c + M_h_c + M_pyr_c
+R_ADCS: M_chor_c + M_gln__L_c --> M_4adcho_c + M_glu__L_c
+R_ADD: M_ade_c + M_h2o_c + M_h_c --> M_hxan_c + M_nh4_c
+R_ADEt2rpp: M_ade_p + M_h_p <-> M_ade_c + M_h_c
+R_ADEtex: M_ade_e <-> M_ade_p
+R_ADK1: M_amp_c + M_atp_c <-> 2.0 M_adp_c
+R_ADK3: M_amp_c + M_gtp_c <-> M_adp_c + M_gdp_c
+R_ADK4: M_amp_c + M_itp_c <-> M_adp_c + M_idp_c
+R_ADMDC: M_amet_c + M_h_c --> M_ametam_c + M_co2_c
+R_ADNCYC: M_atp_c --> M_camp_c + M_ppi_c
+R_ADNK1: M_adn_c + M_atp_c --> M_adp_c + M_amp_c + M_h_c
+R_ADNUC: M_adn_c + M_h2o_c --> M_ade_c + M_rib__D_c
+R_ADNt2pp_copy1: M_adn_p + M_h_p --> M_adn_c + M_h_c
+R_ADNt2pp_copy2: M_adn_p + M_h_p <-> M_adn_c + M_h_c
+R_ADNtex: M_adn_e <-> M_adn_p
+R_ADOCBIK: M_adocbi_c + M_atp_c --> M_adocbip_c + M_adp_c + M_h_c
+R_ADOCBLS: M_agdpcbi_c + M_rdmbzi_c --> M_adocbl_c + M_gmp_c + M_h_c
+R_ADOCBLabcpp: M_adocbl_p + M_atp_c + M_h2o_c --> M_adocbl_c + M_adp_c + M_h_c + M_pi_c
+R_ADOCBLtonex: M_adocbl_e + M_h_p --> M_adocbl_p + M_h_c
+R_ADPRDP: M_adprib_c + M_h2o_c --> M_amp_c + 2.0 M_h_c + M_r5p_c
+R_ADPT: M_ade_c + M_prpp_c --> M_amp_c + M_ppi_c
+R_ADSK: M_aps_c + M_atp_c --> M_adp_c + M_h_c + M_paps_c
+R_ADSL1r: M_dcamp_c <-> M_amp_c + M_fum_c
+R_ADSL2r: M_25aics_c <-> M_aicar_c + M_fum_c
+R_ADSS: M_asp__L_c + M_gtp_c + M_imp_c --> M_dcamp_c + M_gdp_c + 2.0 M_h_c + M_pi_c
+R_AGDC: M_acgam6p_c + M_h2o_c --> M_ac_c + M_gam6p_c
+R_AGM3PA: M_anhgm3p_c + M_h2o_c --> M_LalaDgluMdap_c + M_anhgm_c
+R_AGM3PApp: M_anhgm3p_p + M_h2o_p --> M_LalaDgluMdap_p + M_anhgm_p
+R_AGM3PH: M_anhgm3p_c + M_h2o_c --> M_acgam_c + M_anhm3p_c
+R_AGM3Pt2pp: M_anhgm3p_p + M_h_p --> M_anhgm3p_c + M_h_c
+R_AGM4PA: M_anhgm4p_c + M_h2o_c --> M_LalaDgluMdapDala_c + M_anhgm_c
+R_AGM4PApp: M_anhgm4p_p + M_h2o_p --> M_LalaDgluMdapDala_p + M_anhgm_p
+R_AGM4PCP: M_anhgm4p_c + M_h2o_c --> M_ala__D_c + M_anhgm3p_c
+R_AGM4PCPpp: M_anhgm4p_p + M_h2o_p --> M_ala__D_p + M_anhgm3p_p
+R_AGM4PH: M_anhgm4p_c + M_h2o_c --> M_acgam_c + M_anhm4p_c
+R_AGM4Pt2pp: M_anhgm4p_p + M_h_p --> M_anhgm4p_c + M_h_c
+R_AGMH: M_anhgm_c + M_h2o_c --> M_acgam_c + M_anhm_c
+R_AGMHE: M_adphep_DD_c --> M_adphep_LD_c
+R_AGMT: M_agm_c + M_h2o_c --> M_ptrc_c + M_urea_c
+R_AGMt2pp: M_anhgm_p + M_h_p --> M_anhgm_c + M_h_c
+R_AGMtex: M_agm_e <-> M_agm_p
+R_AGPAT120: M_1ddecg3p_c + M_ddcaACP_c --> M_ACP_c + M_pa120_c
+R_AGPAT140: M_1tdecg3p_c + M_myrsACP_c --> M_ACP_c + M_pa140_c
+R_AGPAT141: M_1tdec7eg3p_c + M_tdeACP_c --> M_ACP_c + M_pa141_c
+R_AGPAT160: M_1hdecg3p_c + M_palmACP_c --> M_ACP_c + M_pa160_c
+R_AGPAT161: M_1hdec9eg3p_c + M_hdeACP_c --> M_ACP_c + M_pa161_c
+R_AGPAT180: M_1odecg3p_c + M_ocdcaACP_c --> M_ACP_c + M_pa180_c
+R_AGPAT181: M_1odec11eg3p_c + M_octeACP_c --> M_ACP_c + M_pa181_c
+R_AGPR: M_acg5sa_c + M_nadp_c + M_pi_c <-> M_acg5p_c + M_h_c + M_nadph_c
+R_AGt3: M_ag_c + M_h_e --> M_ag_e + M_h_c
+R_AHCYSNS: M_ahcys_c + M_h2o_c --> M_ade_c + M_rhcys_c
+R_AICART: M_10fthf_c + M_aicar_c <-> M_fprica_c + M_thf_c
+R_AIRC2: M_air_c + M_atp_c + M_hco3_c --> M_5caiz_c + M_adp_c + M_h_c + M_pi_c
+R_AIRC3: M_5aizc_c <-> M_5caiz_c
+R_AKGDH: M_akg_c + M_coa_c + M_nad_c --> M_co2_c + M_nadh_c + M_succoa_c
+R_AKGt2rpp: M_akg_p + M_h_p <-> M_akg_c + M_h_c
+R_AKGtex: M_akg_e <-> M_akg_p
+R_ALAALAD: M_alaala_c + M_h2o_c --> 2.0 M_ala__D_c
+R_ALAALAabcpp: M_alaala_p + M_atp_c + M_h2o_c --> M_adp_c + M_alaala_c + M_h_c + M_pi_c
+R_ALAALAr: 2.0 M_ala__D_c + M_atp_c <-> M_adp_c + M_alaala_c + M_h_c + M_pi_c
+R_ALAALAtex: M_alaala_e <-> M_alaala_p
+R_ALAGLUE: M_LalaDglu_c <-> M_LalaLglu_c
+R_ALAR: M_ala__L_c <-> M_ala__D_c
+R_ALATA_D2: M_ala__D_c + M_pydx5p_c --> M_pyam5p_c + M_pyr_c
+R_ALATA_L: M_akg_c + M_ala__L_c <-> M_glu__L_c + M_pyr_c
+R_ALATA_L2: M_ala__L_c + M_pydx5p_c --> M_pyam5p_c + M_pyr_c
+R_ALATRS: M_ala__L_c + M_atp_c + M_trnaala_c --> M_alatrna_c + M_amp_c + M_ppi_c
+R_ALAabcpp: M_ala__L_p + M_atp_c + M_h2o_c --> M_adp_c + M_ala__L_c + M_h_c + M_pi_c
+R_ALAt2pp_copy1: M_ala__L_p + M_h_p --> M_ala__L_c + M_h_c
+R_ALAt2pp_copy2: M_ala__L_p + M_h_p <-> M_ala__L_c + M_h_c
+R_ALAt4pp: M_ala__L_p + M_na1_p --> M_ala__L_c + M_na1_c
+R_ALAtex: M_ala__L_e <-> M_ala__L_p
+R_ALCD19: M_glyald_c + M_h_c + M_nadh_c <-> M_glyc_c + M_nad_c
+R_ALCD2x: M_etoh_c + M_nad_c <-> M_acald_c + M_h_c + M_nadh_c
+R_ALDD19xr: M_h2o_c + M_nad_c + M_pacald_c <-> 2.0 M_h_c + M_nadh_c + M_pac_c
+R_ALDD2x: M_acald_c + M_h2o_c + M_nad_c --> M_ac_c + 2.0 M_h_c + M_nadh_c
+R_ALDD2y: M_acald_c + M_h2o_c + M_nadp_c --> M_ac_c + 2.0 M_h_c + M_nadph_c
+R_ALDD3y: M_h2o_c + M_nadp_c + M_ppal_c --> 2.0 M_h_c + M_nadph_c + M_ppa_c
+R_ALDD4: M_btal_c + M_h2o_c + M_nad_c --> M_but_c + 2.0 M_h_c + M_nadh_c
+R_ALLK: M_all__D_c + M_atp_c --> M_adp_c + M_all6p_c + M_h_c
+R_ALLPI: M_all6p_c <-> M_allul6p_c
+R_ALLTAMH: M_alltt_c + 2.0 M_h2o_c + 2.0 M_h_c --> M_co2_c + 2.0 M_nh4_c + M_urdglyc_c
+R_ALLTN: M_alltn_c + M_h2o_c --> M_alltt_c + M_h_c
+R_ALLTNt2rpp: M_alltn_p + M_h_p <-> M_alltn_c + M_h_c
+R_ALLTNtex: M_alltn_e <-> M_alltn_p
+R_ALLULPE: M_allul6p_c <-> M_f6p_c
+R_ALLabcpp: M_all__D_p + M_atp_c + M_h2o_c --> M_adp_c + M_all__D_c + M_h_c + M_pi_c
+R_ALLtex: M_all__D_e <-> M_all__D_p
+R_ALPATE160pp: M_alpp_p + M_pe160_p --> M_2agpe160_p + M_lpp_p
+R_ALPATG160pp: M_alpp_p + M_pg160_p --> M_2agpg160_p + M_lpp_p
+R_ALR2: M_h_c + M_mthgxl_c + M_nadph_c --> M_acetol_c + M_nadp_c
+R_ALR4x: M_acetol_c + M_h_c + M_nadh_c --> M_12ppd__R_c + M_nad_c
+R_ALTRH: M_altrn_c --> M_2ddglcn_c + M_h2o_c
+R_AM3PA: M_anhm3p_c + M_h2o_c --> M_LalaDgluMdap_c + M_anhm_c
+R_AM4PA: M_anhm4p_c + M_h2o_c --> M_LalaDgluMdapDala_c + M_anhm_c
+R_AM4PCP: M_anhm4p_c + M_h2o_c --> M_ala__D_c + M_anhm3p_c
+R_AMALT1: M_malt_c + M_malttr_c --> M_glc__D_c + M_maltttr_c
+R_AMALT2: M_malt_c + M_maltttr_c --> M_glc__D_c + M_maltpt_c
+R_AMALT3: M_malt_c + M_maltpt_c --> M_glc__D_c + M_malthx_c
+R_AMALT4: M_malt_c + M_malthx_c --> M_glc__D_c + M_malthp_c
+R_AMANAPEr: M_acmanap_c <-> M_acgam6p_c
+R_AMANK: M_acmana_c + M_atp_c --> M_acmanap_c + M_adp_c + M_h_c
+R_AMAOTr: M_8aonn_c + M_amet_c <-> M_amob_c + M_dann_c
+R_AMMQLT8: M_2dmmql8_c + M_amet_c --> M_ahcys_c + M_h_c + M_mql8_c
+R_AMPMS2: M_air_c + M_h2o_c + M_nad_c --> M_4ampm_c + 2.0 M_for_c + 3.0 M_h_c + M_nadh_c
+R_AMPN: M_amp_c + M_h2o_c --> M_ade_c + M_r5p_c
+R_AMPTASECG: M_cgly_c + M_h2o_c --> M_cys__L_c + M_gly_c
+R_AMPTASEPG: M_h2o_c + M_progly_c --> M_gly_c + M_pro__L_c
+R_AMPtex: M_amp_e <-> M_amp_p
+R_ANHGMtex: M_anhgm_e <-> M_anhgm_p
+R_ANHMK: M_anhm_c + M_atp_c + M_h2o_c --> M_acmum6p_c + M_adp_c + M_h_c
+R_ANPRT: M_anth_c + M_prpp_c --> M_ppi_c + M_pran_c
+R_ANS: M_chor_c + M_gln__L_c --> M_anth_c + M_glu__L_c + M_h_c + M_pyr_c
+R_AOBUTDs: M_2aobut_c + M_h_c --> M_aact_c + M_co2_c
+R_AOXSr2: M_ala__L_c + M_pimACP_c --> M_8aonn_c + M_ACP_c + M_co2_c
+R_AP4AH: M_ap4a_c + M_h2o_c --> 2.0 M_adp_c + 2.0 M_h_c
+R_AP4AS: 2.0 M_atp_c + M_h_c --> M_ap4a_c + M_ppi_c
+R_AP5AH: M_ap5a_c + M_h2o_c --> M_adp_c + M_atp_c + 2.0 M_h_c
+R_APCS: M_15dap_c + M_ametam_c --> M_5mta_c + M_h_c + M_na15dap_c
+R_APG3PAT120: M_ddcap_c + M_glyc3p_c --> M_1ddecg3p_c + M_h_c + M_pi_c
+R_APG3PAT140: M_glyc3p_c + M_ttdcap_c --> M_1tdecg3p_c + M_h_c + M_pi_c
+R_APG3PAT141: M_glyc3p_c + M_ttdceap_c --> M_1tdec7eg3p_c + M_h_c + M_pi_c
+R_APG3PAT160: M_glyc3p_c + M_hdcap_c --> M_1hdecg3p_c + M_h_c + M_pi_c
+R_APG3PAT161: M_glyc3p_c + M_hdceap_c --> M_1hdec9eg3p_c + M_h_c + M_pi_c
+R_APG3PAT180: M_glyc3p_c + M_ocdcap_c --> M_1odecg3p_c + M_h_c + M_pi_c
+R_APG3PAT181: M_glyc3p_c + M_ocdceap_c --> M_1odec11eg3p_c + M_h_c + M_pi_c
+R_APH120: M_ddcap_c + M_h2o_c --> M_ddca_c + 2.0 M_h_c + M_pi_c
+R_APH140: M_h2o_c + M_ttdcap_c --> 2.0 M_h_c + M_pi_c + M_ttdca_c
+R_APH141: M_h2o_c + M_ttdceap_c --> 2.0 M_h_c + M_pi_c + M_ttdcea_c
+R_APH160: M_h2o_c + M_hdcap_c --> 2.0 M_h_c + M_hdca_c + M_pi_c
+R_APH161: M_h2o_c + M_hdceap_c --> 2.0 M_h_c + M_hdcea_c + M_pi_c
+R_APH180: M_h2o_c + M_ocdcap_c --> 2.0 M_h_c + M_ocdca_c + M_pi_c
+R_APH181: M_h2o_c + M_ocdceap_c --> 2.0 M_h_c + M_ocdcea_c + M_pi_c
+R_APPLDHr: M_aact_c + M_h_c + M_nadh_c <-> M_appl_c + M_nad_c
+R_APRAUR: M_5apru_c + M_h_c + M_nadph_c --> M_5aprbu_c + M_nadp_c
+R_ARAI: M_arab__L_c <-> M_rbl__L_c
+R_ARBTNR1: 2.0 M_arbtn_fe3_c + M_fadh2_c --> 2.0 M_arbtn_c + M_fad_c + 2.0 M_fe2_c + 2.0 M_h_c
+R_ARBTNR2: 2.0 M_arbtn_fe3_c + M_fmnh2_c --> 2.0 M_arbtn_c + 2.0 M_fe2_c + M_fmn_c + 2.0 M_h_c
+R_ARBTNR3: 2.0 M_arbtn_fe3_c + M_rbflvrd_c --> 2.0 M_arbtn_c + 2.0 M_fe2_c + 2.0 M_h_c + M_ribflv_c
+R_ARBTNabcpp: M_arbtn_fe3_p + M_atp_c + M_h2o_c --> M_adp_c + M_arbtn_fe3_c + M_h_c + M_pi_c
+R_ARBTNexs: M_arbtn_e + M_fe3_e --> M_arbtn_fe3_e
+R_ARBTNtex: M_arbtn_p + M_h_p --> M_arbtn_e + M_h_c
+R_ARBTNtonex: M_arbtn_fe3_e + M_h_p --> M_arbtn_fe3_p + M_h_c
+R_ARBTNtpp: M_arbtn_c + M_h_p --> M_arbtn_p + M_h_c
+R_ARBTptspp: M_arbt_p + M_pep_c --> M_arbt6p_c + M_pyr_c
+R_ARBTtex: M_arbt_e --> M_arbt_p
+R_ARBabcpp: M_arab__L_p + M_atp_c + M_h2o_c --> M_adp_c + M_arab__L_c + M_h_c + M_pi_c
+R_ARBt2rpp: M_arab__L_p + M_h_p <-> M_arab__L_c + M_h_c
+R_ARBt3ipp: M_arab__L_c + M_h_p --> M_arab__L_p + M_h_c
+R_ARBtex: M_arab__L_e <-> M_arab__L_p
+R_ARGAGMt7pp: M_agm_c + M_arg__L_p <-> M_agm_p + M_arg__L_c
+R_ARGDC: M_arg__L_c + M_h_c --> M_agm_c + M_co2_c
+R_ARGDCpp: M_arg__L_p + M_h_p --> M_agm_p + M_co2_p
+R_ARGORNt7pp: M_arg__L_p + M_orn_c <-> M_arg__L_c + M_orn_p
+R_ARGSL: M_argsuc_c <-> M_arg__L_c + M_fum_c
+R_ARGSS: M_asp__L_c + M_atp_c + M_citr__L_c --> M_amp_c + M_argsuc_c + M_h_c + M_ppi_c
+R_ARGTRS: M_arg__L_c + M_atp_c + M_trnaarg_c --> M_amp_c + M_argtrna_c + M_ppi_c
+R_ARGabcpp: M_arg__L_p + M_atp_c + M_h2o_c --> M_adp_c + M_arg__L_c + M_h_c + M_pi_c
+R_ARGt3pp: M_arg__L_c + M_h_p --> M_arg__L_p + M_h_c
+R_ARGtex: M_arg__L_e <-> M_arg__L_p
+R_ASAD: M_aspsa_c + M_nadp_c + M_pi_c <-> M_4pasp_c + M_h_c + M_nadph_c
+R_ASCBPL: M_ascb6p_c + M_h2o_c --> M_3dhgulnp_c + M_h_c
+R_ASCBptspp: M_ascb__L_p + M_pep_c --> M_ascb6p_c + M_pyr_c
+R_ASCBtex: M_ascb__L_e <-> M_ascb__L_p
+R_ASNN: M_asn__L_c + M_h2o_c --> M_asp__L_c + M_nh4_c
+R_ASNNpp: M_asn__L_p + M_h2o_p --> M_asp__L_p + M_nh4_p
+R_ASNS1: M_asp__L_c + M_atp_c + M_gln__L_c + M_h2o_c --> M_amp_c + M_asn__L_c + M_glu__L_c + M_h_c + M_ppi_c
+R_ASNS2: M_asp__L_c + M_atp_c + M_nh4_c --> M_amp_c + M_asn__L_c + M_h_c + M_ppi_c
+R_ASNTRS: M_asn__L_c + M_atp_c + M_trnaasn_c --> M_amp_c + M_asntrna_c + M_ppi_c
+R_ASNabcpp: M_asn__L_p + M_atp_c + M_h2o_c --> M_adp_c + M_asn__L_c + M_h_c + M_pi_c
+R_ASNt2rpp: M_asn__L_p + M_h_p <-> M_asn__L_c + M_h_c
+R_ASNtex: M_asn__L_e <-> M_asn__L_p
+R_ASO3t8pp: M_aso3_c + M_atp_c + M_h2o_c --> M_adp_c + M_aso3_p + M_h_c + M_pi_c
+R_ASO3tex: M_aso3_e <-> M_aso3_p
+R_ASP1DC: M_asp__L_c + M_h_c --> M_ala_B_c + M_co2_c
+R_ASPCT: M_asp__L_c + M_cbp_c --> M_cbasp_c + M_h_c + M_pi_c
+R_ASPK: M_asp__L_c + M_atp_c <-> M_4pasp_c + M_adp_c
+R_ASPO3: M_asp__L_c + M_q8_c --> M_h_c + M_iasp_c + M_q8h2_c
+R_ASPO4: M_asp__L_c + M_mqn8_c --> M_h_c + M_iasp_c + M_mql8_c
+R_ASPO5: M_asp__L_c + M_fum_c --> M_h_c + M_iasp_c + M_succ_c
+R_ASPO6: M_asp__L_c + M_o2_c --> M_h2o2_c + M_h_c + M_iasp_c
+R_ASPT: M_asp__L_c --> M_fum_c + M_nh4_c
+R_ASPTA: M_akg_c + M_asp__L_c <-> M_glu__L_c + M_oaa_c
+R_ASPTRS: M_asp__L_c + M_atp_c + M_trnaasp_c --> M_amp_c + M_asptrna_c + M_ppi_c
+R_ASPabcpp: M_asp__L_p + M_atp_c + M_h2o_c --> M_adp_c + M_asp__L_c + M_h_c + M_pi_c
+R_ASPt2_2pp: M_asp__L_p + 2.0 M_h_p --> M_asp__L_c + 2.0 M_h_c
+R_ASPt2_3pp: M_asp__L_p + 3.0 M_h_p --> M_asp__L_c + 3.0 M_h_c
+R_ASPt2pp_copy1: M_asp__L_p + M_h_p --> M_asp__L_c + M_h_c
+R_ASPt2pp_copy2: M_asp__L_p + M_h_p <-> M_asp__L_c + M_h_c
+R_ASPtex: M_asp__L_e <-> M_asp__L_p
+R_ASR: M_aso4_c + 2.0 M_gthrd_c --> M_aso3_c + M_gthox_c + M_h2o_c
+R_AST: M_arg__L_c + M_succoa_c --> M_coa_c + M_h_c + M_sucarg_c
+R_ATHRDHr: M_athr__L_c + M_nadp_c <-> M_2aobut_c + M_h_c + M_nadph_c
+R_ATPHs: M_atp_c + M_h2o_c + M_h_c --> M_itp_c + M_nh4_c
+R_ATPM: M_atp_c + M_h2o_c --> M_adp_c + M_h_c + M_pi_c
+R_ATPPRT: M_atp_c + M_prpp_c --> M_ppi_c + M_prbatp_c
+R_ATPS4rpp: M_adp_c + 4.0 M_h_p + M_pi_c <-> M_atp_c + M_h2o_c + 3.0 M_h_c
+R_BALAt2pp: M_ala_B_p + M_h_p --> M_ala_B_c + M_h_c
+R_BALAtex: M_ala_B_e <-> M_ala_B_p
+R_BETALDHx: M_betald_c + M_h2o_c + M_nad_c --> M_glyb_c + 2.0 M_h_c + M_nadh_c
+R_BETALDHy: M_betald_c + M_h2o_c + M_nadp_c --> M_glyb_c + 2.0 M_h_c + M_nadph_c
+R_BMOCOS: M_moco_c + M_mptamp_c --> M_amp_c + M_bmoco_c + M_cu2_c
+R_BMOGDS1: M_bmoco_c + M_gtp_c + M_h_c --> M_bmoco1gdp_c + M_ppi_c
+R_BMOGDS2: M_bmoco1gdp_c + M_gtp_c + M_h_c --> M_bmocogdp_c + M_ppi_c
+R_BPNT: M_h2o_c + M_pap_c --> M_amp_c + M_pi_c
+R_BSORx: M_btnso_c + M_h_c + M_nadh_c --> M_btn_c + M_h2o_c + M_nad_c
+R_BSORy: M_btnso_c + M_h_c + M_nadph_c --> M_btn_c + M_h2o_c + M_nadp_c
+R_BTNt2ipp: M_btn_p + M_h_p --> M_btn_c + M_h_c
+R_BTNtex: M_btn_e <-> M_btn_p
+R_BTS5: M_2fe2s_c + M_amet_c + M_dtbt_c --> M_2fe1s_c + M_btn_c + M_dad_5_c + M_h_c + M_met__L_c
+R_BUTCT: M_accoa_c + M_but_c --> M_ac_c + M_btcoa_c
+R_BUTSO3abcpp: M_atp_c + M_butso3_p + M_h2o_c --> M_adp_c + M_butso3_c + M_h_c + M_pi_c
+R_BUTSO3tex: M_butso3_e <-> M_butso3_p
+R_BUTt2rpp: M_but_p + M_h_p <-> M_but_c + M_h_c
+R_BUTtex: M_but_e <-> M_but_p
+R_BWCOGDS1: M_bwco_c + M_gtp_c + M_h_c --> M_bwco1gdp_c + M_ppi_c
+R_BWCOGDS2: M_bwco1gdp_c + M_gtp_c + M_h_c --> M_bwcogdp_c + M_ppi_c
+R_BWCOS: M_mptamp_c + M_wco_c --> M_amp_c + M_bwco_c + M_cu2_c
+R_CA2t3pp: M_ca2_c + M_h_p --> M_ca2_p + M_h_c
+R_CA2tex: M_ca2_e <-> M_ca2_p
+R_CADVtpp: M_15dap_c + M_h_p + M_lys__L_p --> M_15dap_p + M_h_c + M_lys__L_c
+R_CAT: 2.0 M_h2o2_c --> 2.0 M_h2o_c + M_o2_c
+R_CAt6pp: M_ca2_c + M_na1_p <-> M_ca2_p + M_na1_c
+R_CBIAT: M_atp_c + M_cbi_c + M_h_c <-> M_adocbi_c + M_pppi_c
+R_CBItonex: M_cbi_e + M_h_p --> M_cbi_p + M_h_c
+R_CBIuabcpp: M_atp_c + M_cbi_p + M_h2o_c --> M_adp_c + M_cbi_c + M_h_c + M_pi_c
+R_CBL1abcpp: M_atp_c + M_cbl1_p + M_h2o_c --> M_adp_c + M_cbl1_c + M_h_c + M_pi_c
+R_CBL1tonex: M_cbl1_e + M_h_p --> M_cbl1_p + M_h_c
+R_CBLAT: M_atp_c + M_cbl1_c + M_h_c <-> M_adocbl_c + M_pppi_c
+R_CBMD: M_cbm_c + 2.0 M_h_c --> M_co2_c + M_nh4_c
+R_CBMKr: M_atp_c + M_co2_c + M_nh4_c <-> M_adp_c + M_cbp_c + 2.0 M_h_c
+R_CBPS: 2.0 M_atp_c + M_gln__L_c + M_h2o_c + M_hco3_c --> 2.0 M_adp_c + M_cbp_c + M_glu__L_c + 2.0 M_h_c + M_pi_c
+R_CCGS: M_atp_c + M_cdg_c + M_nh4_c --> M_adp_c + M_h2o_c + M_h_c + M_pi_c + M_preq0_c
+R_CD2abcpp: M_atp_c + M_cd2_c + M_h2o_c --> M_adp_c + M_cd2_p + M_h_c + M_pi_c
+R_CD2t3pp: M_cd2_c + M_h_p --> M_cd2_p + M_h_c
+R_CD2tex: M_cd2_e <-> M_cd2_p
+R_CD2tpp: M_cd2_p --> M_cd2_c
+R_CDAPPA120: M_cdpdddecg_c + M_h2o_c --> M_cmp_c + 2.0 M_h_c + M_pa120_c
+R_CDAPPA140: M_cdpdtdecg_c + M_h2o_c --> M_cmp_c + 2.0 M_h_c + M_pa140_c
+R_CDAPPA141: M_cdpdtdec7eg_c + M_h2o_c --> M_cmp_c + 2.0 M_h_c + M_pa141_c
+R_CDAPPA160: M_cdpdhdecg_c + M_h2o_c --> M_cmp_c + 2.0 M_h_c + M_pa160_c
+R_CDAPPA161: M_cdpdhdec9eg_c + M_h2o_c --> M_cmp_c + 2.0 M_h_c + M_pa161_c
+R_CDAPPA180: M_cdpdodecg_c + M_h2o_c --> M_cmp_c + 2.0 M_h_c + M_pa180_c
+R_CDAPPA181: M_cdpdodec11eg_c + M_h2o_c --> M_cmp_c + 2.0 M_h_c + M_pa181_c
+R_CDGR: 3.0 M_h_c + 2.0 M_nadph_c + M_preq0_c --> 2.0 M_nadp_c + M_preq1_c
+R_CDGS: M_cph4_c + M_h_c --> M_cdg_c + M_nh4_c
+R_CDPMEK: M_4c2me_c + M_atp_c --> M_2p4c2me_c + M_adp_c + M_h_c
+R_CFAS160E: 2.0 M_amet_c + M_pe161_c --> 2.0 M_ahcys_c + M_cpe160_c + 2.0 M_h_c
+R_CFAS160G: 2.0 M_amet_c + M_pg161_c --> 2.0 M_ahcys_c + M_cpg160_c + 2.0 M_h_c
+R_CFAS180E: 2.0 M_amet_c + M_pe181_c --> 2.0 M_ahcys_c + M_cpe180_c + 2.0 M_h_c
+R_CFAS180G: 2.0 M_amet_c + M_pg181_c --> 2.0 M_ahcys_c + M_cpg180_c + 2.0 M_h_c
+R_CGLYabcpp: M_atp_c + M_cgly_p + M_h2o_c --> M_adp_c + M_cgly_c + M_h_c + M_pi_c
+R_CGLYtex: M_cgly_e <-> M_cgly_p
+R_CHLabcpp: M_atp_c + M_chol_p + M_h2o_c --> M_adp_c + M_chol_c + M_h_c + M_pi_c
+R_CHLt2pp: M_chol_p + M_h_p --> M_chol_c + M_h_c
+R_CHLtex: M_chol_e <-> M_chol_p
+R_CHOLD: M_chol_c + M_nad_c --> M_betald_c + M_h_c + M_nadh_c
+R_CHORM: M_chor_c --> M_pphn_c
+R_CHORS: M_3psme_c --> M_chor_c + M_pi_c
+R_CHRPL: M_chor_c --> M_4hbz_c + M_pyr_c
+R_CHTBSptspp: M_chtbs_p + M_pep_c --> M_chtbs6p_c + M_pyr_c
+R_CHTBStex: M_chtbs_e <-> M_chtbs_p
+R_CINNDO: M_cinnm_c + M_h_c + M_nadh_c + M_o2_c --> M_cenchddd_c + M_nad_c
+R_CITL: M_cit_c --> M_ac_c + M_oaa_c
+R_CITt3pp: M_cit_c + M_h_p --> M_cit_p + M_h_c
+R_CITt7pp: M_cit_p + M_succ_c --> M_cit_c + M_succ_p
+R_CITtex: M_cit_e <-> M_cit_p
+R_CLIPAabctex: M_atp_c + M_h2o_c + M_lipa_cold_p --> M_adp_c + M_h_c + M_lipa_cold_e + M_pi_c
+R_CLPNH120pp: M_clpn120_p + M_h2o_p --> M_h_p + M_pa120_p + M_pg120_p
+R_CLPNH140pp: M_clpn140_p + M_h2o_p --> M_h_p + M_pa140_p + M_pg140_p
+R_CLPNH141pp: M_clpn141_p + M_h2o_p --> M_h_p + M_pa141_p + M_pg141_p
+R_CLPNH160pp: M_clpn160_p + M_h2o_p --> M_h_p + M_pa160_p + M_pg160_p
+R_CLPNH161pp: M_clpn161_p + M_h2o_p --> M_h_p + M_pa161_p + M_pg161_p
+R_CLPNH180pp: M_clpn180_p + M_h2o_p --> M_h_p + M_pa180_p + M_pg180_p
+R_CLPNH181pp: M_clpn181_p + M_h2o_p --> M_h_p + M_pa181_p + M_pg181_p
+R_CLPNS120pp: 2.0 M_pg120_p <-> M_clpn120_p + M_glyc_p
+R_CLPNS140pp: 2.0 M_pg140_p <-> M_clpn140_p + M_glyc_p
+R_CLPNS141pp: 2.0 M_pg141_p <-> M_clpn141_p + M_glyc_p
+R_CLPNS160pp: 2.0 M_pg160_p <-> M_clpn160_p + M_glyc_p
+R_CLPNS161pp: 2.0 M_pg161_p <-> M_clpn161_p + M_glyc_p
+R_CLPNS180pp: 2.0 M_pg180_p <-> M_clpn180_p + M_glyc_p
+R_CLPNS181pp: 2.0 M_pg181_p <-> M_clpn181_p + M_glyc_p
+R_CLt3_2pp: 2.0 M_cl_p + M_h_c --> 2.0 M_cl_c + M_h_p
+R_CLtex: M_cl_e <-> M_cl_p
+R_CMPN: M_cmp_c + M_h2o_c --> M_csn_c + M_r5p_c
+R_CMPtex: M_cmp_e <-> M_cmp_p
+R_CMtex: M_cm_e <-> M_cm_p
+R_CMtpp: M_cm_p + M_h_p --> M_cm_e + M_h_c
+R_CO2tex: M_co2_e <-> M_co2_p
+R_CO2tpp: M_co2_p <-> M_co2_c
+R_COBALT2abcpp: M_atp_c + M_cobalt2_c + M_h2o_c --> M_adp_c + M_cobalt2_p + M_h_c + M_pi_c
+R_COBALT2t3pp: M_cobalt2_c + M_h_p --> M_cobalt2_p + M_h_c
+R_COBALT2tex: M_cobalt2_e <-> M_cobalt2_p
+R_COBALT2tpp: M_cobalt2_p --> M_cobalt2_c
+R_COLIPAKpp: M_colipa_p + M_udcpdp_p --> M_colipap_p + M_udcpp_p
+R_COLIPAPabctex: M_atp_c + M_colipap_p + M_h2o_c --> M_adp_c + M_colipap_e + M_h_c + M_pi_c
+R_COLIPAabcpp: M_atp_c + M_colipa_c + M_h2o_c --> M_adp_c + M_colipa_p + M_h_c + M_pi_c
+R_COLIPAabctex: M_atp_c + M_colipa_p + M_h2o_c --> M_adp_c + M_colipa_e + M_h_c + M_pi_c
+R_CPGNR1: 2.0 M_cpgn_c + M_fadh2_c --> 2.0 M_cpgn_un_c + M_fad_c + 2.0 M_fe2_c + 2.0 M_h_c
+R_CPGNR2: 2.0 M_cpgn_c + M_fmnh2_c --> 2.0 M_cpgn_un_c + 2.0 M_fe2_c + M_fmn_c + 2.0 M_h_c
+R_CPGNR3: 2.0 M_cpgn_c + M_rbflvrd_c --> 2.0 M_cpgn_un_c + 2.0 M_fe2_c + 2.0 M_h_c + M_ribflv_c
+R_CPGNUtex: M_cpgn_un_p + M_h_p --> M_cpgn_un_e + M_h_c
+R_CPGNUtpp: M_cpgn_un_c + M_h_p --> M_cpgn_un_p + M_h_c
+R_CPGNabcpp: M_atp_c + M_cpgn_p + M_h2o_c --> M_adp_c + M_cpgn_c + M_h_c + M_pi_c
+R_CPGNexs: M_cpgn_un_e + M_fe3_e --> M_cpgn_e
+R_CPGNtonex: M_cpgn_e + M_h_p --> M_cpgn_p + M_h_c
+R_CPH4S: M_ahdt_c + M_h2o_c --> M_acald_c + M_cph4_c + M_h_c + M_pppi_c
+R_CPMPS: M_gtp_c + M_h2o_c --> M_cpmp_c + M_ppi_c
+R_CPPPGO: M_cpppg3_c + 2.0 M_h_c + M_o2_c --> 2.0 M_co2_c + 2.0 M_h2o_c + M_pppg9_c
+R_CPPPGO2: 2.0 M_amet_c + M_cpppg3_c --> 2.0 M_co2_c + 2.0 M_dad_5_c + 2.0 M_met__L_c + M_pppg9_c
+R_CRNBTCT: M_bbtcoa_c + M_crn_c <-> M_crncoa_c + M_gbbtn_c
+R_CRNCAL2: M_atp_c + M_coa_c + M_crn_c --> M_adp_c + M_crncoa_c + M_pi_c
+R_CRNCAR: M_crncoa_c <-> M_crnDcoa_c
+R_CRNCBCT: M_crn_c + M_ctbtcoa_c <-> M_crncoa_c + M_ctbt_c
+R_CRNCDH: M_crncoa_c <-> M_ctbtcoa_c + M_h2o_c
+R_CRNDCAL2: M_atp_c + M_coa_c + M_crn__D_c --> M_adp_c + M_crnDcoa_c + M_pi_c
+R_CRNDabcpp: M_atp_c + M_crn__D_p + M_h2o_c --> M_adp_c + M_crn__D_c + M_h_c + M_pi_c
+R_CRNDt2rpp: M_crn__D_p + M_h_p <-> M_crn__D_c + M_h_c
+R_CRNDtex: M_crn__D_e <-> M_crn__D_p
+R_CRNabcpp: M_atp_c + M_crn_p + M_h2o_c --> M_adp_c + M_crn_c + M_h_c + M_pi_c
+R_CRNt2rpp: M_crn_p + M_h_p <-> M_crn_c + M_h_c
+R_CRNt7pp: M_crn_p + M_gbbtn_c --> M_crn_c + M_gbbtn_p
+R_CRNt8pp: M_crn__D_c + M_crn_p --> M_crn__D_p + M_crn_c
+R_CRNtex: M_crn_e <-> M_crn_p
+R_CS: M_accoa_c + M_h2o_c + M_oaa_c --> M_cit_c + M_coa_c + M_h_c
+R_CSND: M_csn_c + M_h2o_c + M_h_c --> M_nh4_c + M_ura_c
+R_CSNt2pp: M_csn_p + M_h_p --> M_csn_c + M_h_c
+R_CSNtex: M_csn_e <-> M_csn_p
+R_CTBTCAL2: M_atp_c + M_coa_c + M_ctbt_c --> M_adp_c + M_ctbtcoa_c + M_pi_c
+R_CTBTabcpp: M_atp_c + M_ctbt_p + M_h2o_c --> M_adp_c + M_ctbt_c + M_h_c + M_pi_c
+R_CTBTt2rpp: M_ctbt_p + M_h_p <-> M_ctbt_c + M_h_c
+R_CTECOAI6: M_tdecoa_c <-> M_td2coa_c
+R_CTECOAI7: M_hdcoa_c <-> M_hdd2coa_c
+R_CTECOAI8: M_odecoa_c <-> M_od2coa_c
+R_CTPS2: M_atp_c + M_gln__L_c + M_h2o_c + M_utp_c --> M_adp_c + M_ctp_c + M_glu__L_c + 2.0 M_h_c + M_pi_c
+R_CU1Opp: 4.0 M_cu_p + 4.0 M_h_p + M_o2_p --> 4.0 M_cu2_p + 2.0 M_h2o_p
+R_CU1abcpp: M_atp_c + M_cu_c + M_h2o_c --> M_adp_c + M_cu_p + M_h_c + M_pi_c
+R_CU2abcpp: M_atp_c + M_cu2_c + M_h2o_c --> M_adp_c + M_cu2_p + M_h_c + M_pi_c
+R_CU2tex: M_cu2_e <-> M_cu2_p
+R_CU2tpp: M_cu2_p --> M_cu2_c
+R_CUt3: M_cu_c + M_h_e --> M_cu_e + M_h_c
+R_CUtex: M_cu_e <-> M_cu_p
+R_CYANST: M_cyan_c + M_tsul_c --> M_h_c + M_so3_c + M_tcynt_c
+R_CYANSTpp: M_cyan_p + M_tsul_p --> M_h_p + M_so3_p + M_tcynt_p
+R_CYANtex: M_cyan_e <-> M_cyan_p
+R_CYNTAH: M_cynt_c + 3.0 M_h_c + M_hco3_c --> 2.0 M_co2_c + M_nh4_c
+R_CYNTt2pp: M_cynt_p + M_h_p --> M_cynt_c + M_h_c
+R_CYNTtex: M_cynt_e <-> M_cynt_p
+R_CYSDDS: M_cys__D_c + M_h2o_c --> M_h2s_c + M_nh4_c + M_pyr_c
+R_CYSDS: M_cys__L_c + M_h2o_c --> M_h2s_c + M_nh4_c + M_pyr_c
+R_CYSDabcpp: M_atp_c + M_cys__D_p + M_h2o_c --> M_adp_c + M_cys__D_c + M_h_c + M_pi_c
+R_CYSDtex: M_cys__D_e <-> M_cys__D_p
+R_CYSS: M_acser_c + M_h2s_c --> M_ac_c + M_cys__L_c + M_h_c
+R_CYSSADS: M_3sala_c + 2.0 M_h_c --> M_ala__L_c + M_so2_c
+R_CYSTL: M_cyst__L_c + M_h2o_c --> M_hcys__L_c + M_nh4_c + M_pyr_c
+R_CYSTRS: M_atp_c + M_cys__L_c + M_trnacys_c --> M_amp_c + M_cystrna_c + M_ppi_c
+R_CYSabc2pp: M_atp_c + M_cys__L_c + M_h2o_c --> M_adp_c + M_cys__L_p + M_h_c + M_pi_c
+R_CYSabcpp: M_atp_c + M_cys__L_p + M_h2o_c --> M_adp_c + M_cys__L_c + M_h_c + M_pi_c
+R_CYStex: M_cys__L_e <-> M_cys__L_p
+R_CYStpp: M_cys__L_c --> M_cys__L_p
+R_CYTBD2pp: 2.0 M_h_c + M_mql8_c + 0.5 M_o2_c --> M_h2o_c + 2.0 M_h_p + M_mqn8_c
+R_CYTBDpp: 2.0 M_h_c + 0.5 M_o2_c + M_q8h2_c --> M_h2o_c + 2.0 M_h_p + M_q8_c
+R_CYTBO3_4pp: 4.0 M_h_c + 0.5 M_o2_c + M_q8h2_c --> M_h2o_c + 4.0 M_h_p + M_q8_c
+R_CYTD: M_cytd_c + M_h2o_c + M_h_c --> M_nh4_c + M_uri_c
+R_CYTDH: M_cytd_c + M_h2o_c --> M_csn_c + M_rib__D_c
+R_CYTDK2: M_cytd_c + M_gtp_c --> M_cmp_c + M_gdp_c + M_h_c
+R_CYTDt2pp_copy1: M_cytd_p + M_h_p --> M_cytd_c + M_h_c
+R_CYTDt2pp_copy2: M_cytd_p + M_h_p <-> M_cytd_c + M_h_c
+R_CYTDtex: M_cytd_e <-> M_cytd_p
+R_CYTK1: M_atp_c + M_cmp_c <-> M_adp_c + M_cdp_c
+R_CYTK2: M_atp_c + M_dcmp_c <-> M_adp_c + M_dcdp_c
+R_D_LACt2pp: M_h_p + M_lac__D_p <-> M_h_c + M_lac__D_c
+R_D_LACtex: M_lac__D_e <-> M_lac__D_p
+R_DAAD: M_ala__D_c + M_fad_c + M_h2o_c --> M_fadh2_c + M_nh4_c + M_pyr_c
+R_DADA: M_dad_2_c + M_h2o_c + M_h_c --> M_din_c + M_nh4_c
+R_DADK: M_atp_c + M_damp_c <-> M_adp_c + M_dadp_c
+R_DADNt2pp: M_dad_2_p + M_h_p --> M_dad_2_c + M_h_c
+R_DADNtex: M_dad_2_e <-> M_dad_2_p
+R_DAGK120: M_12dgr120_c + M_atp_c --> M_adp_c + M_h_c + M_pa120_c
+R_DAGK140: M_12dgr140_c + M_atp_c --> M_adp_c + M_h_c + M_pa140_c
+R_DAGK141: M_12dgr141_c + M_atp_c --> M_adp_c + M_h_c + M_pa141_c
+R_DAGK160: M_12dgr160_c + M_atp_c --> M_adp_c + M_h_c + M_pa160_c
+R_DAGK161: M_12dgr161_c + M_atp_c --> M_adp_c + M_h_c + M_pa161_c
+R_DAGK180: M_12dgr180_c + M_atp_c --> M_adp_c + M_h_c + M_pa180_c
+R_DAGK181: M_12dgr181_c + M_atp_c --> M_adp_c + M_h_c + M_pa181_c
+R_DALAt2pp: M_ala__D_p + M_h_p --> M_ala__D_c + M_h_c
+R_DALAtex: M_ala__D_e <-> M_ala__D_p
+R_DAMPtex: M_damp_e <-> M_damp_p
+R_DAPAL: M_23dappa_c + M_h2o_c --> 2.0 M_nh4_c + M_pyr_c
+R_DAPDC: M_26dap__M_c + M_h_c --> M_co2_c + M_lys__L_c
+R_DAPE: M_26dap_LL_c <-> M_26dap__M_c
+R_DAPabcpp: M_26dap__M_p + M_atp_c + M_h2o_c --> M_26dap__M_c + M_adp_c + M_h_c + M_pi_c
+R_DAPtex: M_15dap_e <-> M_15dap_p
+R_DASYN120: M_ctp_c + M_h_c + M_pa120_c --> M_cdpdddecg_c + M_ppi_c
+R_DASYN140: M_ctp_c + M_h_c + M_pa140_c --> M_cdpdtdecg_c + M_ppi_c
+R_DASYN141: M_ctp_c + M_h_c + M_pa141_c --> M_cdpdtdec7eg_c + M_ppi_c
+R_DASYN160: M_ctp_c + M_h_c + M_pa160_c --> M_cdpdhdecg_c + M_ppi_c
+R_DASYN161: M_ctp_c + M_h_c + M_pa161_c --> M_cdpdhdec9eg_c + M_ppi_c
+R_DASYN180: M_ctp_c + M_h_c + M_pa180_c --> M_cdpdodecg_c + M_ppi_c
+R_DASYN181: M_ctp_c + M_h_c + M_pa181_c --> M_cdpdodec11eg_c + M_ppi_c
+R_DATPHs: M_datp_c + M_h2o_c + M_h_c --> M_ditp_c + M_nh4_c
+R_DB4PS: M_ru5p__D_c --> M_db4p_c + M_for_c + M_h_c
+R_DBTS: M_atp_c + M_co2_c + M_dann_c --> M_adp_c + M_dtbt_c + 3.0 M_h_c + M_pi_c
+R_DC6PH: M_chtbs6p_c + M_h2o_c --> M_acgam6p_c + M_acgam_c
+R_DCAtex: M_dca_e <-> M_dca_p
+R_DCMPtex: M_dcmp_e <-> M_dcmp_p
+R_DCTPD: M_dctp_c + M_h2o_c + M_h_c --> M_dutp_c + M_nh4_c
+R_DCYTD: M_dcyt_c + M_h2o_c + M_h_c --> M_duri_c + M_nh4_c
+R_DCYTt2pp: M_dcyt_p + M_h_p --> M_dcyt_c + M_h_c
+R_DCYTtex: M_dcyt_e <-> M_dcyt_p
+R_DDCAtexi: M_ddca_e --> M_ddca_p
+R_DDGALK: M_2dh3dgal_c + M_atp_c --> M_2dh3dgal6p_c + M_adp_c + M_h_c
+R_DDGLCNt2rpp: M_2ddglcn_p + M_h_p <-> M_2ddglcn_c + M_h_c
+R_DDGLCNtex: M_2ddglcn_e <-> M_2ddglcn_p
+R_DDGLK: M_2ddglcn_c + M_atp_c --> M_2ddg6p_c + M_adp_c + M_h_c
+R_DDPA: M_e4p_c + M_h2o_c + M_pep_c --> M_2dda7p_c + M_pi_c
+R_DDPGALA: M_2dh3dgal6p_c <-> M_g3p_c + M_pyr_c
+R_DGK1: M_atp_c + M_dgmp_c <-> M_adp_c + M_dgdp_c
+R_DGMPtex: M_dgmp_e <-> M_dgmp_p
+R_DGSNt2pp: M_dgsn_p + M_h_p --> M_dgsn_c + M_h_c
+R_DGSNtex: M_dgsn_e <-> M_dgsn_p
+R_DHACOAH: M_23dhacoa_c + M_h2o_c <-> M_3hadpcoa_c
+R_DHAD1: M_23dhmb_c --> M_3mob_c + M_h2o_c
+R_DHAD2: M_23dhmp_c --> M_3mop_c + M_h2o_c
+R_DHAPT: M_dha_c + M_pep_c --> M_dhap_c + M_pyr_c
+R_DHAtex: M_dha_e <-> M_dha_p
+R_DHAtpp: M_dha_p <-> M_dha_c
+R_DHBD: M_23ddhb_c + M_nad_c <-> M_23dhb_c + M_h_c + M_nadh_c
+R_DHBS: M_23dhb_c + M_atp_c + M_h_c --> M_23dhba_c + M_ppi_c
+R_DHBSH: M_23dhbzs_c + M_h2o_c --> M_23dhb_c + M_ser__L_c
+R_DHCIND: M_cenchddd_c + M_nad_c --> M_dhcinnm_c + M_h_c + M_nadh_c
+R_DHCINDO: M_dhcinnm_c + M_o2_c --> M_h_c + M_hkntd_c
+R_DHDPRy: M_23dhdp_c + M_h_c + M_nadph_c --> M_nadp_c + M_thdp_c
+R_DHDPS: M_aspsa_c + M_pyr_c --> M_23dhdp_c + 2.0 M_h2o_c + M_h_c
+R_DHFR: M_dhf_c + M_h_c + M_nadph_c <-> M_nadp_c + M_thf_c
+R_DHFS: M_atp_c + M_dhpt_c + M_glu__L_c --> M_adp_c + M_dhf_c + M_h_c + M_pi_c
+R_DHMPTR: M_dhmpt_c + M_h_c + M_nadph_c --> M_nadp_c + M_thmnp_c
+R_DHNAOT4: M_dhna_c + M_h_c + M_octdp_c --> M_2dmmql8_c + M_co2_c + M_ppi_c
+R_DHNCOAS: M_h_c + M_sbzcoa_c --> M_14dhncoa_c + M_h2o_c
+R_DHNCOAT: M_14dhncoa_c + M_h2o_c --> M_coa_c + M_dhna_c + M_h_c
+R_DHNPA2r: M_dhnpt_c <-> M_6hmhpt_c + M_gcald_c
+R_DHNPTE: M_dhnpt_c <-> M_dhmpt_c
+R_DHORD2: M_dhor__S_c + M_q8_c --> M_orot_c + M_q8h2_c
+R_DHORD5: M_dhor__S_c + M_mqn8_c --> M_mql8_c + M_orot_c
+R_DHORDfum: M_dhor__S_c + M_fum_c --> M_orot_c + M_succ_c
+R_DHORTS: M_dhor__S_c + M_h2o_c <-> M_cbasp_c + M_h_c
+R_DHPPD: M_cechddd_c + M_nad_c --> M_dhpppn_c + M_h_c + M_nadh_c
+R_DHPPDA2: M_25drapp_c + M_h2o_c + M_h_c --> M_5apru_c + M_nh4_c
+R_DHPS2: M_4abz_c + M_6hmhptpp_c --> M_dhpt_c + M_ppi_c
+R_DHPTDCs2: M_dhptd_c --> M_mdhdhf_c
+R_DHPTDNR: M_dhptdn_c + 3.0 M_h_c + M_nadph_c --> M_nadp_c + M_thptdn_c
+R_DHPTDNRN: M_dhptdn_c + 3.0 M_h_c + M_nadh_c --> M_nad_c + M_thptdn_c
+R_DHPTPE: M_ahdt_c <-> M_dhmptp_c
+R_DHQS: M_2dda7p_c --> M_3dhq_c + M_pi_c
+R_DHQTi: M_3dhq_c --> M_3dhsk_c + M_h2o_c
+R_DIMPtex: M_dimp_e <-> M_dimp_p
+R_DINSt2pp: M_din_p + M_h_p --> M_din_c + M_h_c
+R_DINStex: M_din_e <-> M_din_p
+R_DKGLCNR1: M_25dkglcn_c + M_h_c + M_nadph_c --> M_2dhguln_c + M_nadp_c
+R_DKGLCNR2x: M_25dkglcn_c + M_h_c + M_nadh_c --> M_5dglcn_c + M_nad_c
+R_DKGLCNR2y: M_25dkglcn_c + M_h_c + M_nadph_c --> M_5dglcn_c + M_nadp_c
+R_DMATT: M_dmpp_c + M_ipdp_c --> M_grdp_c + M_ppi_c
+R_DMPPS: M_h2mb4p_c + M_h_c + M_nadh_c --> M_dmpp_c + M_h2o_c + M_nad_c
+R_DMQMT: M_2omhmbl_c + M_amet_c --> M_ahcys_c + M_h_c + M_q8h2_c
+R_DMSOR1: M_dmso_c + M_mql8_c --> M_dms_c + M_h2o_c + M_mqn8_c
+R_DMSOR1pp: M_dmso_p + M_mql8_c --> M_dms_p + M_h2o_p + M_mqn8_c
+R_DMSOR2: M_2dmmql8_c + M_dmso_c --> M_2dmmq8_c + M_dms_c + M_h2o_c
+R_DMSOR2pp: M_2dmmql8_c + M_dmso_p --> M_2dmmq8_c + M_dms_p + M_h2o_p
+R_DMSOtex: M_dmso_e <-> M_dmso_p
+R_DMSOtpp: M_dmso_p <-> M_dmso_c
+R_DMStex: M_dms_e <-> M_dms_p
+R_DNMPPA: M_dhpmp_c + M_h2o_c --> M_dhnpt_c + M_pi_c
+R_DNTPPA: M_ahdt_c + M_h2o_c --> M_dhpmp_c + M_h_c + M_ppi_c
+R_DOGULNR: M_23doguln_c + M_h_c + M_nadh_c --> M_3dhguln_c + M_nad_c
+R_DOPAtex: M_dopa_e <-> M_dopa_p
+R_DOXRBCNtex: M_doxrbcn_e <-> M_doxrbcn_p
+R_DOXRBCNtpp: M_doxrbcn_p + M_h_p --> M_doxrbcn_e + M_h_c
+R_DPCOAK: M_atp_c + M_dpcoa_c --> M_adp_c + M_coa_c + M_h_c
+R_DPR: M_2dhp_c + M_h_c + M_nadph_c --> M_nadp_c + M_pant__R_c
+R_DRPA: M_2dr5p_c --> M_acald_c + M_g3p_c
+R_DSBAO1: M_dsbard_p + M_q8_c --> M_dsbaox_p + M_q8h2_c
+R_DSBAO2: M_dsbard_p + M_mqn8_c --> M_dsbaox_p + M_mql8_c
+R_DSBCGT: M_dsbcox_p + 2.0 M_gthrd_p --> M_dsbcrd_p + M_gthox_p
+R_DSBDR: M_dsbdox_c + M_trdrd_c --> M_dsbdrd_c + M_trdox_c
+R_DSBGGT: M_dsbgox_p + 2.0 M_gthrd_p --> M_dsbgrd_p + M_gthox_p
+R_DSERDHr: M_nadp_c + M_ser__D_c <-> M_2amsa_c + M_h_c + M_nadph_c
+R_DSERt2pp: M_h_p + M_ser__D_p --> M_h_c + M_ser__D_c
+R_DSERtex: M_ser__D_e <-> M_ser__D_p
+R_DTARTD: M_tartr__D_c --> M_h2o_c + M_oaa_c
+R_DTMPK: M_atp_c + M_dtmp_c <-> M_adp_c + M_dtdp_c
+R_DTMPtex: M_dtmp_e <-> M_dtmp_p
+R_DUMPtex: M_dump_e <-> M_dump_p
+R_DURADx: M_56dura_c + M_nad_c <-> M_h_c + M_nadh_c + M_ura_c
+R_DURIK1: M_atp_c + M_duri_c --> M_adp_c + M_dump_c + M_h_c
+R_DURIPP: M_duri_c + M_pi_c <-> M_2dr1p_c + M_ura_c
+R_DURIt2pp: M_duri_p + M_h_p --> M_duri_c + M_h_c
+R_DURItex: M_duri_e <-> M_duri_p
+R_DUTPDP: M_dutp_c + M_h2o_c --> M_dump_c + M_h_c + M_ppi_c
+R_DXPRIi: M_dxyl5p_c + M_h_c + M_nadph_c --> M_2me4p_c + M_nadp_c
+R_DXPS: M_g3p_c + M_h_c + M_pyr_c --> M_co2_c + M_dxyl5p_c
+R_DXYLK: M_atp_c + M_dxyl_c --> M_adp_c + M_dxyl5p_c + M_h_c
+R_E4PD: M_e4p_c + M_h2o_c + M_nad_c <-> M_4per_c + 2.0 M_h_c + M_nadh_c
+R_EAR100x: M_h_c + M_nadh_c + M_tdec2eACP_c --> M_dcaACP_c + M_nad_c
+R_EAR100y: M_h_c + M_nadph_c + M_tdec2eACP_c --> M_dcaACP_c + M_nadp_c
+R_EAR120x: M_h_c + M_nadh_c + M_tddec2eACP_c --> M_ddcaACP_c + M_nad_c
+R_EAR120y: M_h_c + M_nadph_c + M_tddec2eACP_c --> M_ddcaACP_c + M_nadp_c
+R_EAR121x: M_h_c + M_nadh_c + M_t3c5ddeceACP_c --> M_cddec5eACP_c + M_nad_c
+R_EAR121y: M_h_c + M_nadph_c + M_t3c5ddeceACP_c --> M_cddec5eACP_c + M_nadp_c
+R_EAR140x: M_h_c + M_nadh_c + M_tmrs2eACP_c --> M_myrsACP_c + M_nad_c
+R_EAR140y: M_h_c + M_nadph_c + M_tmrs2eACP_c --> M_myrsACP_c + M_nadp_c
+R_EAR141x: M_h_c + M_nadh_c + M_t3c7mrseACP_c --> M_nad_c + M_tdeACP_c
+R_EAR141y: M_h_c + M_nadph_c + M_t3c7mrseACP_c --> M_nadp_c + M_tdeACP_c
+R_EAR160x: M_h_c + M_nadh_c + M_tpalm2eACP_c --> M_nad_c + M_palmACP_c
+R_EAR160y: M_h_c + M_nadph_c + M_tpalm2eACP_c --> M_nadp_c + M_palmACP_c
+R_EAR161x: M_h_c + M_nadh_c + M_t3c9palmeACP_c --> M_hdeACP_c + M_nad_c
+R_EAR161y: M_h_c + M_nadph_c + M_t3c9palmeACP_c --> M_hdeACP_c + M_nadp_c
+R_EAR180x: M_h_c + M_nadh_c + M_toctd2eACP_c --> M_nad_c + M_ocdcaACP_c
+R_EAR180y: M_h_c + M_nadph_c + M_toctd2eACP_c --> M_nadp_c + M_ocdcaACP_c
+R_EAR181x: M_h_c + M_nadh_c + M_t3c11vaceACP_c --> M_nad_c + M_octeACP_c
+R_EAR181y: M_h_c + M_nadph_c + M_t3c11vaceACP_c --> M_nadp_c + M_octeACP_c
+R_EAR40x: M_but2eACP_c + M_h_c + M_nadh_c --> M_butACP_c + M_nad_c
+R_EAR40y: M_but2eACP_c + M_h_c + M_nadph_c --> M_butACP_c + M_nadp_c
+R_EAR60x: M_h_c + M_nadh_c + M_thex2eACP_c --> M_hexACP_c + M_nad_c
+R_EAR60y: M_h_c + M_nadph_c + M_thex2eACP_c --> M_hexACP_c + M_nadp_c
+R_EAR80x: M_h_c + M_nadh_c + M_toct2eACP_c --> M_nad_c + M_ocACP_c
+R_EAR80y: M_h_c + M_nadph_c + M_toct2eACP_c --> M_nadp_c + M_ocACP_c
+R_ECA4COLIPAabctex: M_atp_c + M_eca4colipa_p + M_h2o_c --> M_adp_c + M_eca4colipa_e + M_h_c + M_pi_c
+R_ECA4OALpp: M_colipa_p + M_eca4und_p --> M_eca4colipa_p + M_h_p + M_udcpdp_p
+R_ECAP1pp: 2.0 M_unagamuf_p --> M_eca2und_p + M_h_p + M_udcpdp_p
+R_ECAP2pp: M_eca2und_p + M_unagamuf_p --> M_eca3und_p + M_h_p + M_udcpdp_p
+R_ECAP3pp: M_eca3und_p + M_unagamuf_p --> M_eca4und_p + M_h_p + M_udcpdp_p
+R_ECAtpp: M_unagamuf_c --> M_unagamuf_p
+R_ECOAH1: M_3hbcoa_c <-> M_b2coa_c + M_h2o_c
+R_ECOAH2: M_3hhcoa_c <-> M_h2o_c + M_hx2coa_c
+R_ECOAH3: M_3hocoa_c <-> M_h2o_c + M_oc2coa_c
+R_ECOAH4: M_3hdcoa_c <-> M_dc2coa_c + M_h2o_c
+R_ECOAH5: M_3hddcoa_c <-> M_dd2coa_c + M_h2o_c
+R_ECOAH6: M_3htdcoa_c <-> M_h2o_c + M_td2coa_c
+R_ECOAH7: M_3hhdcoa_c <-> M_h2o_c + M_hdd2coa_c
+R_ECOAH8: M_3hodcoa_c <-> M_h2o_c + M_od2coa_c
+R_EDA: M_2ddg6p_c --> M_g3p_c + M_pyr_c
+R_EDD: M_6pgc_c --> M_2ddg6p_c + M_h2o_c
+R_EDTXS1: M_ddcaACP_c + M_kdo2lipid4_c --> M_ACP_c + M_kdo2lipid4L_c
+R_EDTXS2: M_kdo2lipid4L_c + M_myrsACP_c --> M_ACP_c + M_lipa_c
+R_EDTXS3: M_hdeACP_c + M_kdo2lipid4_c --> M_ACP_c + M_kdo2lipid4p_c
+R_EDTXS4: M_kdo2lipid4p_c + M_myrsACP_c --> M_ACP_c + M_lipa_cold_c
+R_EGMEACPR: M_egmeACP_c + M_h_c + M_nadph_c --> M_gmeACP_c + M_nadp_c
+R_ENLIPAabctex: M_atp_c + M_enlipa_p + M_h2o_c --> M_adp_c + M_enlipa_e + M_h_c + M_pi_c
+R_ENO: M_2pg_c <-> M_h2o_c + M_pep_c
+R_ENTCS: 3.0 M_23dhba_c + 3.0 M_seramp_c --> 6.0 M_amp_c + M_enter_c + 9.0 M_h_c
+R_ENTERES: M_enter_c + 3.0 M_h2o_c --> 3.0 M_23dhbzs_c + 3.0 M_h_c
+R_ENTERES2: M_feenter_c + 3.0 M_h2o_c --> 3.0 M_23dhbzs_c + M_fe3_c + 3.0 M_h_c
+R_EPMEACPR: M_epmeACP_c + M_h_c + M_nadph_c --> M_nadp_c + M_pmeACP_c
+R_ETHAAL: M_etha_c --> M_acald_c + M_nh4_c
+R_ETHAt2pp: M_etha_p + M_h_p --> M_etha_c + M_h_c
+R_ETHAtex: M_etha_e <-> M_etha_p
+R_ETHSO3abcpp: M_atp_c + M_ethso3_p + M_h2o_c --> M_adp_c + M_ethso3_c + M_h_c + M_pi_c
+R_ETHSO3tex: M_ethso3_e <-> M_ethso3_p
+R_ETOHtex: M_etoh_e <-> M_etoh_p
+R_ETOHtrpp: M_etoh_p <-> M_etoh_c
+R_F6PA: M_f6p_c <-> M_dha_c + M_g3p_c
+R_F6PP: M_f6p_c + M_h2o_c --> M_fru_c + M_pi_c
+R_F6Pt6_2pp: M_f6p_p + 2.0 M_pi_c --> M_f6p_c + 2.0 M_pi_p
+R_F6Ptex: M_f6p_e <-> M_f6p_p
+R_FA100ACPHi: M_dcaACP_c + M_h2o_c --> M_ACP_c + M_dca_c + M_h_c
+R_FA120ACPHi: M_ddcaACP_c + M_h2o_c --> M_ACP_c + M_ddca_c + M_h_c
+R_FA140ACPHi: M_h2o_c + M_myrsACP_c --> M_ACP_c + M_h_c + M_ttdca_c
+R_FA141ACPHi: M_h2o_c + M_tdeACP_c --> M_ACP_c + M_h_c + M_ttdcea_c
+R_FA160ACPHi: M_h2o_c + M_palmACP_c --> M_ACP_c + M_h_c + M_hdca_c
+R_FA161ACPHi: M_h2o_c + M_hdeACP_c --> M_ACP_c + M_h_c + M_hdcea_c
+R_FA80ACPHi: M_h2o_c + M_ocACP_c --> M_ACP_c + M_h_c + M_octa_c
+R_FACOAE100: M_dcacoa_c + M_h2o_c --> M_coa_c + M_dca_c + M_h_c
+R_FACOAE120: M_ddcacoa_c + M_h2o_c --> M_coa_c + M_ddca_c + M_h_c
+R_FACOAE140: M_h2o_c + M_tdcoa_c --> M_coa_c + M_h_c + M_ttdca_c
+R_FACOAE141: M_h2o_c + M_tdecoa_c --> M_coa_c + M_h_c + M_ttdcea_c
+R_FACOAE160: M_h2o_c + M_pmtcoa_c --> M_coa_c + M_h_c + M_hdca_c
+R_FACOAE161: M_h2o_c + M_hdcoa_c --> M_coa_c + M_h_c + M_hdcea_c
+R_FACOAE180: M_h2o_c + M_stcoa_c --> M_coa_c + M_h_c + M_ocdca_c
+R_FACOAE181: M_h2o_c + M_odecoa_c --> M_coa_c + M_h_c + M_ocdcea_c
+R_FACOAE60: M_h2o_c + M_hxcoa_c --> M_coa_c + M_h_c + M_hxa_c
+R_FACOAE80: M_h2o_c + M_occoa_c --> M_coa_c + M_h_c + M_octa_c
+R_FACOAL100t2pp: M_atp_c + M_coa_c + M_dca_p + M_h_p --> M_amp_c + M_dcacoa_c + M_h_c + M_ppi_c
+R_FACOAL120t2pp: M_atp_c + M_coa_c + M_ddca_p + M_h_p --> M_amp_c + M_ddcacoa_c + M_h_c + M_ppi_c
+R_FACOAL140t2pp: M_atp_c + M_coa_c + M_h_p + M_ttdca_p --> M_amp_c + M_h_c + M_ppi_c + M_tdcoa_c
+R_FACOAL141t2pp: M_atp_c + M_coa_c + M_h_p + M_ttdcea_p --> M_amp_c + M_h_c + M_ppi_c + M_tdecoa_c
+R_FACOAL160t2pp: M_atp_c + M_coa_c + M_h_p + M_hdca_p --> M_amp_c + M_h_c + M_pmtcoa_c + M_ppi_c
+R_FACOAL161t2pp: M_atp_c + M_coa_c + M_h_p + M_hdcea_p --> M_amp_c + M_h_c + M_hdcoa_c + M_ppi_c
+R_FACOAL180t2pp: M_atp_c + M_coa_c + M_h_p + M_ocdca_p --> M_amp_c + M_h_c + M_ppi_c + M_stcoa_c
+R_FACOAL181t2pp: M_atp_c + M_coa_c + M_h_p + M_ocdcea_p --> M_amp_c + M_h_c + M_odecoa_c + M_ppi_c
+R_FACOAL60t2pp: M_atp_c + M_coa_c + M_h_p + M_hxa_p --> M_amp_c + M_h_c + M_hxcoa_c + M_ppi_c
+R_FACOAL80t2pp: M_atp_c + M_coa_c + M_h_p + M_octa_p --> M_amp_c + M_h_c + M_occoa_c + M_ppi_c
+R_FADRx: M_fad_c + M_h_c + M_nadh_c --> M_fadh2_c + M_nad_c
+R_FADRx2: M_fad_c + M_h_c + M_nadph_c --> M_fadh2_c + M_nadp_c
+R_FALDH2: M_hmgth_c + M_nad_c <-> M_Sfglutth_c + M_h_c + M_nadh_c
+R_FALDtex: M_fald_e <-> M_fald_p
+R_FALDtpp: M_fald_p <-> M_fald_c
+R_FALGTHLs: M_fald_c + M_gthrd_c <-> M_hmgth_c
+R_FBA: M_fdp_c <-> M_dhap_c + M_g3p_c
+R_FBA3: M_s17bp_c <-> M_dhap_c + M_e4p_c
+R_FBP: M_fdp_c + M_h2o_c --> M_f6p_c + M_pi_c
+R_FCI: M_fuc__L_c <-> M_fcl__L_c
+R_FCLK: M_atp_c + M_fcl__L_c --> M_adp_c + M_fc1p_c + M_h_c
+R_FCLPA: M_fc1p_c <-> M_dhap_c + M_lald__L_c
+R_FCLT: M_fe2_c + M_ppp9_c --> 2.0 M_h_c + M_pheme_c
+R_FDH4pp: M_for_p + 2.0 M_h_c + M_q8_c --> M_co2_p + M_h_p + M_q8h2_c
+R_FDH5pp: M_for_p + 2.0 M_h_c + M_mqn8_c --> M_co2_p + M_h_p + M_mql8_c
+R_FDMO: M_fmnh2_c + M_isetac_c + M_o2_c --> M_fmn_c + M_gcald_c + M_h2o_c + M_h_c + M_so3_c
+R_FDMO2: M_fmnh2_c + M_mso3_c + M_o2_c --> M_fald_c + M_fmn_c + M_h2o_c + M_h_c + M_so3_c
+R_FDMO3: M_ethso3_c + M_fmnh2_c + M_o2_c --> M_acald_c + M_fmn_c + M_h2o_c + M_h_c + M_so3_c
+R_FDMO4: M_butso3_c + M_fmnh2_c + M_o2_c --> M_btal_c + M_fmn_c + M_h2o_c + M_h_c + M_so3_c
+R_FDMO6: M_fmnh2_c + M_o2_c + M_sulfac_c --> M_fmn_c + M_glx_c + M_h2o_c + M_h_c + M_so3_c
+R_FE2abcpp: M_atp_c + M_fe2_p + M_h2o_c --> M_adp_c + M_fe2_c + M_h_c + M_pi_c
+R_FE2t2pp: M_fe2_p + M_h_p --> M_fe2_c + M_h_c
+R_FE2t3pp: M_fe2_c + M_h_p --> M_fe2_p + M_h_c
+R_FE2tex: M_fe2_e <-> M_fe2_p
+R_FE2tpp: M_fe2_p --> M_fe2_c
+R_FE3DCITabcpp: M_atp_c + M_fe3dcit_p + M_h2o_c --> M_adp_c + 2.0 M_cit_c + M_fe3_c + M_h_c + M_pi_c
+R_FE3DCITtonex: M_fe3dcit_e + M_h_p --> M_fe3dcit_p + M_h_c
+R_FE3DHBZR: M_fe3dhbzs_c --> M_23dhbzs_c + M_fe3_c
+R_FE3DHBZSabcpp: M_atp_c + M_fe3dhbzs_p + M_h2o_c --> M_adp_c + M_fe3dhbzs_c + M_h_c + M_pi_c
+R_FE3DHBZStonex: M_fe3dhbzs_e + M_h_p --> M_fe3dhbzs_p + M_h_c
+R_FE3HOXR1: M_fadh2_c + 2.0 M_fe3hox_c --> M_fad_c + 2.0 M_fe2_c + 2.0 M_fe3hox_un_c + 2.0 M_h_c
+R_FE3HOXR2: 2.0 M_fe3hox_c + M_fmnh2_c --> 2.0 M_fe2_c + 2.0 M_fe3hox_un_c + M_fmn_c + 2.0 M_h_c
+R_FE3HOXR3: 2.0 M_fe3hox_c + M_rbflvrd_c --> 2.0 M_fe2_c + 2.0 M_fe3hox_un_c + 2.0 M_h_c + M_ribflv_c
+R_FE3HOXUtex: M_fe3hox_un_c + M_h_p --> M_fe3hox_un_p + M_h_c
+R_FE3HOXUtpp: M_fe3hox_un_p + M_h_p --> M_fe3hox_un_e + M_h_c
+R_FE3HOXabcpp: M_atp_c + M_fe3hox_p + M_h2o_c --> M_adp_c + M_fe3hox_c + M_h_c + M_pi_c
+R_FE3HOXexs: M_fe3_e + M_fe3hox_un_e --> M_fe3hox_e
+R_FE3HOXtonex: M_fe3hox_e + M_h_p --> M_fe3hox_p + M_h_c
+R_FE3Ri: M_fadh2_c + 2.0 M_fe3_c --> M_fad_c + 2.0 M_fe2_c + 2.0 M_h_c
+R_FE3abcpp: M_atp_c + M_fe3_p + M_h2o_c --> M_adp_c + M_fe3_c + M_h_c + M_pi_c
+R_FE3tex: M_fe3_e <-> M_fe3_p
+R_FECRMR1: M_fadh2_c + 2.0 M_fecrm_c --> M_fad_c + 2.0 M_fe2_c + 2.0 M_fecrm_un_c + 2.0 M_h_c
+R_FECRMR2: 2.0 M_fecrm_c + M_fmnh2_c --> 2.0 M_fe2_c + 2.0 M_fecrm_un_c + M_fmn_c + 2.0 M_h_c
+R_FECRMR3: 2.0 M_fecrm_c + M_rbflvrd_c --> 2.0 M_fe2_c + 2.0 M_fecrm_un_c + 2.0 M_h_c + M_ribflv_c
+R_FECRMUtex: M_fecrm_un_p + M_h_p --> M_fecrm_un_e + M_h_c
+R_FECRMUtpp: M_fecrm_un_c + M_h_p --> M_fecrm_un_p + M_h_c
+R_FECRMabcpp: M_atp_c + M_fecrm_p + M_h2o_c --> M_adp_c + M_fecrm_c + M_h_c + M_pi_c
+R_FECRMexs: M_fe3_e + M_fecrm_un_e --> M_fecrm_e
+R_FECRMtonex: M_fecrm_e + M_h_p --> M_fecrm_p + M_h_c
+R_FEENTERR1: M_fadh2_c + 2.0 M_feenter_c --> 2.0 M_enter_c + M_fad_c + 2.0 M_fe2_c + 2.0 M_h_c
+R_FEENTERR2: 2.0 M_feenter_c + M_fmnh2_c --> 2.0 M_enter_c + 2.0 M_fe2_c + M_fmn_c + 2.0 M_h_c
+R_FEENTERR3: 2.0 M_feenter_c + M_rbflvrd_c --> 2.0 M_enter_c + 2.0 M_fe2_c + 2.0 M_h_c + M_ribflv_c
+R_FEENTERabcpp: M_atp_c + M_feenter_p + M_h2o_c --> M_adp_c + M_feenter_c + M_h_c + M_pi_c
+R_FEENTERexs: M_enter_e + M_fe3_e --> M_feenter_e
+R_FEENTERtex: M_enter_p + M_h_p --> M_enter_e + M_h_c
+R_FEENTERtonex: M_feenter_e + M_h_p --> M_feenter_p + M_h_c
+R_FEENTERtpp: M_enter_c + M_h_p --> M_enter_p + M_h_c
+R_FEOXAMR1: M_fadh2_c + 2.0 M_feoxam_c --> M_fad_c + 2.0 M_fe2_c + 2.0 M_feoxam_un_c + 2.0 M_h_c
+R_FEOXAMR2: 2.0 M_feoxam_c + M_fmnh2_c --> 2.0 M_fe2_c + 2.0 M_feoxam_un_c + M_fmn_c + 2.0 M_h_c
+R_FEOXAMR3: 2.0 M_feoxam_c + M_rbflvrd_c --> 2.0 M_fe2_c + 2.0 M_feoxam_un_c + 2.0 M_h_c + M_ribflv_c
+R_FEOXAMUtex: M_feoxam_un_p + M_h_p --> M_feoxam_un_e + M_h_c
+R_FEOXAMUtpp: M_feoxam_un_c + M_h_p --> M_feoxam_un_p + M_h_c
+R_FEOXAMabcpp: M_atp_c + M_feoxam_p + M_h2o_c --> M_adp_c + M_feoxam_c + M_h_c + M_pi_c
+R_FEOXAMexs: M_fe3_e + M_feoxam_un_e --> M_feoxam_e
+R_FEOXAMtonex: M_feoxam_e + M_h_p --> M_feoxam_p + M_h_c
+R_FEROpp: 4.0 M_fe2_p + 4.0 M_h_p + M_o2_p --> 4.0 M_fe3_p + 2.0 M_h2o_p
+R_FESD1s: 2.0 M_4fe4s_c + M_h2o2_c + 2.0 M_h_c --> 2.0 M_3fe4s_c + 2.0 M_fe3_c + 2.0 M_h2o_c
+R_FESD2s: 2.0 M_4fe4s_c + 2.0 M_h_c + 2.0 M_no_c --> 2.0 M_3fe4s_c + 2.0 M_fe3_c + M_h2o_c + M_n2o_c
+R_FESR: M_3fe4s_c + M_fe2_c --> M_4fe4s_c
+R_FFSD: M_h2o_c + M_suc6p_c --> M_fru_c + M_g6p_c
+R_FHL: M_for_c + M_h_c --> M_co2_c + M_h2_c
+R_FLDR2: 2.0 M_flxso_c + M_nadph_c --> 2.0 M_flxr_c + M_h_c + M_nadp_c
+R_FLVR: M_h_c + M_nadph_c + M_ribflv_c --> M_nadp_c + M_rbflvrd_c
+R_FLVRx: M_h_c + M_nadh_c + M_ribflv_c --> M_nad_c + M_rbflvrd_c
+R_FMETTRS: M_10fthf_c + M_mettrna_c --> M_fmettrna_c + M_h_c + M_thf_c
+R_FMNAT: M_atp_c + M_fmn_c + M_h_c --> M_fad_c + M_ppi_c
+R_FMNRx: M_fmn_c + M_h_c + M_nadh_c --> M_fmnh2_c + M_nad_c
+R_FMNRx2: M_fmn_c + M_h_c + M_nadph_c --> M_fmnh2_c + M_nadp_c
+R_FOMETRi: M_5fthf_c + M_h_c --> M_h2o_c + M_methf_c
+R_FORCT: M_forcoa_c + M_oxa_c <-> M_for_c + M_oxalcoa_c
+R_FORt2pp: M_for_p + M_h_p --> M_for_c + M_h_c
+R_FORtex: M_for_e <-> M_for_p
+R_FORtppi: M_for_c --> M_for_p
+R_FRD2: M_fum_c + M_mql8_c --> M_mqn8_c + M_succ_c
+R_FRD3: M_2dmmql8_c + M_fum_c --> M_2dmmq8_c + M_succ_c
+R_FRUK: M_atp_c + M_f1p_c --> M_adp_c + M_fdp_c + M_h_c
+R_FRULYSDG: M_frulysp_c + M_h2o_c <-> M_g6p_c + M_lys__L_c
+R_FRULYSE: M_psclys_c <-> M_frulys_c
+R_FRULYSK: M_atp_c + M_frulys_c --> M_adp_c + M_frulysp_c + M_h_c
+R_FRULYSt2pp: M_frulys_p + M_h_p --> M_frulys_c + M_h_c
+R_FRULYStex: M_frulys_e <-> M_frulys_p
+R_FRUURt2rpp: M_fruur_p + M_h_p <-> M_fruur_c + M_h_c
+R_FRUURtex: M_fruur_e <-> M_fruur_p
+R_FRUpts2pp: M_fru_p + M_pep_c --> M_f6p_c + M_pyr_c
+R_FRUptspp: M_fru_p + M_pep_c --> M_f1p_c + M_pyr_c
+R_FRUtex: M_fru_e <-> M_fru_p
+R_FTHFD: M_10fthf_c + M_h2o_c --> M_for_c + M_h_c + M_thf_c
+R_FTHFLi: M_atp_c + M_for_c + M_thf_c --> M_10fthf_c + M_adp_c + M_pi_c
+R_FUCtex: M_fuc__L_e <-> M_fuc__L_p
+R_FUCtpp: M_fuc__L_p + M_h_p <-> M_fuc__L_c + M_h_c
+R_FUM: M_fum_c + M_h2o_c <-> M_mal__L_c
+R_FUMt2_2pp: M_fum_p + 2.0 M_h_p --> M_fum_c + 2.0 M_h_c
+R_FUMt2_3pp: M_fum_p + 3.0 M_h_p --> M_fum_c + 3.0 M_h_c
+R_FUMtex: M_fum_e <-> M_fum_p
+R_FUSAtex: M_fusa_e <-> M_fusa_p
+R_FUSAtpp: M_fusa_p + M_h_p --> M_fusa_e + M_h_c
+R_G1PACT: M_accoa_c + M_gam1p_c --> M_acgam1p_c + M_coa_c + M_h_c
+R_G1PPpp: M_g1p_p + M_h2o_p --> M_glc__D_p + M_pi_p
+R_G1PTT: M_dttp_c + M_g1p_c + M_h_c --> M_dtdpglu_c + M_ppi_c
+R_G1Ptex: M_g1p_e <-> M_g1p_p
+R_G1SAT: M_glu1sa_c <-> M_5aop_c
+R_G2PP: M_glyc2p_c + M_h2o_c --> M_glyc_c + M_pi_c
+R_G2PPpp: M_glyc2p_p + M_h2o_p --> M_glyc_p + M_pi_p
+R_G3PAT120: M_ddcaACP_c + M_glyc3p_c --> M_1ddecg3p_c + M_ACP_c
+R_G3PAT140: M_glyc3p_c + M_myrsACP_c --> M_1tdecg3p_c + M_ACP_c
+R_G3PAT141: M_glyc3p_c + M_tdeACP_c --> M_1tdec7eg3p_c + M_ACP_c
+R_G3PAT160: M_glyc3p_c + M_palmACP_c --> M_1hdecg3p_c + M_ACP_c
+R_G3PAT161: M_glyc3p_c + M_hdeACP_c --> M_1hdec9eg3p_c + M_ACP_c
+R_G3PAT180: M_glyc3p_c + M_ocdcaACP_c --> M_1odecg3p_c + M_ACP_c
+R_G3PAT181: M_glyc3p_c + M_octeACP_c --> M_1odec11eg3p_c + M_ACP_c
+R_G3PCabcpp: M_atp_c + M_g3pc_p + M_h2o_c --> M_adp_c + M_g3pc_c + M_h_c + M_pi_c
+R_G3PCtex: M_g3pc_e <-> M_g3pc_p
+R_G3PD2: M_glyc3p_c + M_nadp_c <-> M_dhap_c + M_h_c + M_nadph_c
+R_G3PD5: M_glyc3p_c + M_q8_c --> M_dhap_c + M_q8h2_c
+R_G3PD6: M_glyc3p_c + M_mqn8_c --> M_dhap_c + M_mql8_c
+R_G3PD7: M_2dmmq8_c + M_glyc3p_c --> M_2dmmql8_c + M_dhap_c
+R_G3PEabcpp: M_atp_c + M_g3pe_p + M_h2o_c --> M_adp_c + M_g3pe_c + M_h_c + M_pi_c
+R_G3PEtex: M_g3pe_e <-> M_g3pe_p
+R_G3PGabcpp: M_atp_c + M_g3pg_p + M_h2o_c --> M_adp_c + M_g3pg_c + M_h_c + M_pi_c
+R_G3PGtex: M_g3pg_e <-> M_g3pg_p
+R_G3PIabcpp: M_atp_c + M_g3pi_p + M_h2o_c --> M_adp_c + M_g3pi_c + M_h_c + M_pi_c
+R_G3PItex: M_g3pi_e <-> M_g3pi_p
+R_G3PSabcpp: M_atp_c + M_g3ps_p + M_h2o_c --> M_adp_c + M_g3ps_c + M_h_c + M_pi_c
+R_G3PStex: M_g3ps_e <-> M_g3ps_p
+R_G3PT: M_glyc3p_c + M_h2o_c --> M_glyc_c + M_pi_c
+R_G5SADs: M_glu5sa_c --> M_1pyr5c_c + M_h2o_c + M_h_c
+R_G5SD: M_glu5p_c + M_h_c + M_nadph_c --> M_glu5sa_c + M_nadp_c + M_pi_c
+R_G6PDA: M_gam6p_c + M_h2o_c --> M_f6p_c + M_nh4_c
+R_G6PDH2r: M_g6p_c + M_nadp_c <-> M_6pgl_c + M_h_c + M_nadph_c
+R_G6PP: M_g6p_c + M_h2o_c --> M_glc__D_c + M_pi_c
+R_G6Pt6_2pp: M_g6p_p + 2.0 M_pi_c --> M_g6p_c + 2.0 M_pi_p
+R_G6Ptex: M_g6p_e <-> M_g6p_p
+R_GAL1PPpp: M_gal1p_p + M_h2o_p --> M_gal_p + M_pi_p
+R_GAL1Ptex: M_gal1p_e <-> M_gal1p_p
+R_GALBDtex: M_gal_bD_e <-> M_gal_bD_p
+R_GALCTD: M_galct__D_c --> M_5dh4dglc_c + M_h2o_c
+R_GALCTLO: M_galctn__L_c + M_nad_c --> M_h_c + M_nadh_c + M_tagur_c
+R_GALCTND: M_galctn__D_c --> M_2dh3dgal_c + M_h2o_c
+R_GALCTNLt2pp: M_galctn__L_p + M_h_p --> M_galctn__L_c + M_h_c
+R_GALCTNLtex: M_galctn__L_e <-> M_galctn__L_p
+R_GALCTNt2pp: M_galctn__D_p + M_h_p --> M_galctn__D_c + M_h_c
+R_GALCTNtex: M_galctn__D_e <-> M_galctn__D_p
+R_GALCTt2rpp: M_galct__D_p + M_h_p <-> M_galct__D_c + M_h_c
+R_GALCTtex: M_galct__D_e <-> M_galct__D_p
+R_GALKr: M_atp_c + M_gal_c <-> M_adp_c + M_gal1p_c + M_h_c
+R_GALM2pp: M_gal_bD_p --> M_gal_p
+R_GALS3: M_h2o_c + M_melib_c --> M_gal_c + M_glc__D_c
+R_GALT1: M_gicolipa_c + M_udpg_c --> M_gagicolipa_c + M_h_c + M_udp_c
+R_GALTptspp: M_galt_p + M_pep_c --> M_galt1p_c + M_pyr_c
+R_GALTtex: M_galt_e <-> M_galt_p
+R_GALURt2rpp: M_galur_p + M_h_p <-> M_galur_c + M_h_c
+R_GALURtex: M_galur_e <-> M_galur_p
+R_GALUi: M_g1p_c + M_h_c + M_utp_c --> M_ppi_c + M_udpg_c
+R_GALabcpp: M_atp_c + M_gal_p + M_h2o_c --> M_adp_c + M_gal_c + M_h_c + M_pi_c
+R_GALt2pp: M_gal_p + M_h_p --> M_gal_c + M_h_c
+R_GALtex: M_gal_e <-> M_gal_p
+R_GAM6Pt6_2pp: M_gam6p_p + 2.0 M_pi_c --> M_gam6p_c + 2.0 M_pi_p
+R_GAMAN6Ptex: M_gam6p_e <-> M_gam6p_p
+R_GAMptspp: M_gam_p + M_pep_c --> M_gam6p_c + M_pyr_c
+R_GAMtex: M_gam_e <-> M_gam_p
+R_GAPD: M_g3p_c + M_nad_c + M_pi_c <-> M_13dpg_c + M_h_c + M_nadh_c
+R_GARFT: M_10fthf_c + M_gar_c <-> M_fgam_c + M_h_c + M_thf_c
+R_GART: M_atp_c + M_for_c + M_gar_c --> M_adp_c + M_fgam_c + M_h_c + M_pi_c
+R_GBBTNtex: M_gbbtn_e <-> M_gbbtn_p
+R_GCALDD: M_gcald_c + M_h2o_c + M_nad_c --> M_glyclt_c + 2.0 M_h_c + M_nadh_c
+R_GDMANE: M_gdpddman_c --> M_gdpofuc_c
+R_GDPDPK: M_atp_c + M_gdp_c --> M_amp_c + M_h_c + M_ppgpp_c
+R_GDPMNH: M_gdpmann_c + M_h2o_c --> M_gdp_c + M_h_c + M_man_c
+R_GDPMNP: M_gdpmann_c + M_h2o_c --> M_gmp_c + 2.0 M_h_c + M_man1p_c
+R_GDPTPDP: M_gdptp_c + M_h2o_c --> M_gtp_c + M_ppi_c
+R_GDPtex: M_gdp_e <-> M_gdp_p
+R_GF6PTA: M_f6p_c + M_gln__L_c --> M_gam6p_c + M_glu__L_c
+R_GGGABADr: M_ggbutal_c + M_h2o_c + M_nadp_c <-> M_gg4abut_c + 2.0 M_h_c + M_nadph_c
+R_GGGABAH: M_gg4abut_c + M_h2o_c --> M_4abut_c + M_glu__L_c
+R_GGPTRCO: M_ggptrc_c + M_h2o_c + M_o2_c --> M_ggbutal_c + M_h2o2_c + M_nh4_c
+R_GGPTRCS: M_atp_c + M_glu__L_c + M_ptrc_c --> M_adp_c + M_ggptrc_c + M_h_c + M_pi_c
+R_GHBDHx: M_h_c + M_nadh_c + M_sucsal_c <-> M_ghb_c + M_nad_c
+R_GHMT2r: M_ser__L_c + M_thf_c <-> M_gly_c + M_h2o_c + M_mlthf_c
+R_GK1: M_atp_c + M_gmp_c <-> M_adp_c + M_gdp_c
+R_GLBRAN2: M_glycogen_c --> M_bglycogen_c
+R_GLCATr: M_accoa_c + M_glc__D_c <-> M_acglc__D_c + M_coa_c
+R_GLCDpp: M_glc__D_p + M_h2o_p + M_q8_c --> M_glcn_p + M_h_p + M_q8h2_c
+R_GLCNt2rpp: M_glcn_p + M_h_p <-> M_glcn_c + M_h_c
+R_GLCNtex: M_glcn_e <-> M_glcn_p
+R_GLCP: M_glycogen_c + M_pi_c --> M_g1p_c
+R_GLCP2: M_bglycogen_c + M_pi_c --> M_g1p_c
+R_GLCRAL: M_5dh4dglc_c --> M_2h3oppan_c + M_pyr_c
+R_GLCRD: M_glcr_c --> M_5dh4dglc_c + M_h2o_c
+R_GLCRt2rpp: M_glcr_p + M_h_p <-> M_glcr_c + M_h_c
+R_GLCRtex: M_glcr_e <-> M_glcr_p
+R_GLCS1: M_adpglc_c --> M_adp_c + M_glycogen_c + M_h_c
+R_GLCTR1: M_icolipa_c + M_udpg_c --> M_gicolipa_c + M_h_c + M_udp_c
+R_GLCTR2: M_gagicolipa_c + M_udpg_c --> M_ggagicolipa_c + M_h_c + M_udp_c
+R_GLCTR3: M_ggagicolipa_c + M_udpg_c --> M_gggagicolipa_c + M_h_c + M_udp_c
+R_GLCUR1Ptex: M_glcur1p_e <-> M_glcur1p_p
+R_GLCURt2rpp: M_glcur_p + M_h_p <-> M_glcur_c + M_h_c
+R_GLCURtex: M_glcur_e <-> M_glcur_p
+R_GLCabcpp: M_atp_c + M_glc__D_p + M_h2o_c --> M_adp_c + M_glc__D_c + M_h_c + M_pi_c
+R_GLCptspp: M_glc__D_p + M_pep_c --> M_g6p_c + M_pyr_c
+R_GLCt2pp: M_glc__D_p + M_h_p --> M_glc__D_c + M_h_c
+R_GLCtex_copy1: M_glc__D_e <-> M_glc__D_p
+R_GLCtex_copy2: M_glc__D_e --> M_glc__D_p
+R_GLDBRAN2: M_bglycogen_c --> M_glycogen_c
+R_GLGC: M_atp_c + M_g1p_c + M_h_c --> M_adpglc_c + M_ppi_c
+R_GLNS: M_atp_c + M_glu__L_c + M_nh4_c --> M_adp_c + M_gln__L_c + M_h_c + M_pi_c
+R_GLNTRS: M_atp_c + M_gln__L_c + M_trnagln_c --> M_amp_c + M_glntrna_c + M_ppi_c
+R_GLNabcpp: M_atp_c + M_gln__L_p + M_h2o_c --> M_adp_c + M_gln__L_c + M_h_c + M_pi_c
+R_GLNtex: M_gln__L_e <-> M_gln__L_p
+R_GLTPD: M_galt1p_c + M_nad_c <-> M_h_c + M_nadh_c + M_tag6p__D_c
+R_GLU5K: M_atp_c + M_glu__L_c --> M_adp_c + M_glu5p_c
+R_GLUABUTt7pp: M_4abut_c + M_glu__L_p <-> M_4abut_p + M_glu__L_c
+R_GLUCYS: M_atp_c + M_cys__L_c + M_glu__L_c --> M_adp_c + M_glucys_c + M_h_c + M_pi_c
+R_GLUDC: M_glu__L_c + M_h_c --> M_4abut_c + M_co2_c
+R_GLUDy: M_glu__L_c + M_h2o_c + M_nadp_c <-> M_akg_c + M_h_c + M_nadph_c + M_nh4_c
+R_GLUN: M_gln__L_c + M_h2o_c --> M_glu__L_c + M_nh4_c
+R_GLUNpp: M_gln__L_p + M_h2o_p --> M_glu__L_p + M_nh4_p
+R_GLUPRT: M_gln__L_c + M_h2o_c + M_prpp_c --> M_glu__L_c + M_ppi_c + M_pram_c
+R_GLUR: M_glu__D_c <-> M_glu__L_c
+R_GLUSy: M_akg_c + M_gln__L_c + M_h_c + M_nadph_c --> 2.0 M_glu__L_c + M_nadp_c
+R_GLUTRR: M_glutrna_c + M_h_c + M_nadph_c --> M_glu1sa_c + M_nadp_c + M_trnaglu_c
+R_GLUTRS: M_atp_c + M_glu__L_c + M_trnaglu_c --> M_amp_c + M_glutrna_c + M_ppi_c
+R_GLUabcpp: M_atp_c + M_glu__L_p + M_h2o_c --> M_adp_c + M_glu__L_c + M_h_c + M_pi_c
+R_GLUt2rpp: M_glu__L_p + M_h_p <-> M_glu__L_c + M_h_c
+R_GLUt4pp: M_glu__L_p + M_na1_p --> M_glu__L_c + M_na1_c
+R_GLUtex: M_glu__L_e <-> M_glu__L_p
+R_GLXCL: 2.0 M_glx_c + M_h_c --> M_2h3oppan_c + M_co2_c
+R_GLYALDtex: M_glyald_e <-> M_glyald_p
+R_GLYALDtpp: M_glyald_p <-> M_glyald_c
+R_GLYAT: M_accoa_c + M_gly_c <-> M_2aobut_c + M_coa_c
+R_GLYBabcpp: M_atp_c + M_glyb_p + M_h2o_c --> M_adp_c + M_glyb_c + M_h_c + M_pi_c
+R_GLYBt2pp: M_glyb_p + M_h_p --> M_glyb_c + M_h_c
+R_GLYBtex: M_glyb_e <-> M_glyb_p
+R_GLYC2Pabcpp: M_atp_c + M_glyc2p_p + M_h2o_c --> M_adp_c + M_glyc2p_c + M_h_c + M_pi_c
+R_GLYC2Ptex: M_glyc2p_e <-> M_glyc2p_p
+R_GLYC3Pabcpp: M_atp_c + M_glyc3p_p + M_h2o_c --> M_adp_c + M_glyc3p_c + M_h_c + M_pi_c
+R_GLYC3Pt6pp: M_glyc3p_p + M_pi_c --> M_glyc3p_c + M_pi_p
+R_GLYC3Ptex: M_glyc3p_e <-> M_glyc3p_p
+R_GLYCAt2rpp: M_glyc__R_p + M_h_p <-> M_glyc__R_c + M_h_c
+R_GLYCAtex: M_glyc__R_e <-> M_glyc__R_p
+R_GLYCDx: M_glyc_c + M_nad_c --> M_dha_c + M_h_c + M_nadh_c
+R_GLYCK: M_atp_c + M_glyc__R_c --> M_3pg_c + M_adp_c + M_h_c
+R_GLYCK2: M_atp_c + M_glyc__R_c --> M_2pg_c + M_adp_c + M_h_c
+R_GLYCL: M_gly_c + M_nad_c + M_thf_c --> M_co2_c + M_mlthf_c + M_nadh_c + M_nh4_c
+R_GLYCLTDx: M_glx_c + M_h_c + M_nadh_c --> M_glyclt_c + M_nad_c
+R_GLYCLTDy: M_glx_c + M_h_c + M_nadph_c --> M_glyclt_c + M_nadp_c
+R_GLYCLTt2rpp: M_glyclt_p + M_h_p <-> M_glyclt_c + M_h_c
+R_GLYCLTt4pp: M_glyclt_p + M_na1_p --> M_glyclt_c + M_na1_c
+R_GLYCLTtex: M_glyclt_e <-> M_glyclt_p
+R_GLYCTO2: M_glyclt_c + M_q8_c --> M_glx_c + M_q8h2_c
+R_GLYCTO3: M_glyclt_c + M_mqn8_c --> M_glx_c + M_mql8_c
+R_GLYCTO4: M_2dmmq8_c + M_glyclt_c --> M_2dmmql8_c + M_glx_c
+R_GLYCtex: M_glyc_e <-> M_glyc_p
+R_GLYCtpp: M_glyc_c <-> M_glyc_p
+R_GLYK: M_atp_c + M_glyc_c --> M_adp_c + M_glyc3p_c + M_h_c
+R_GLYOX: M_h2o_c + M_lgt__S_c --> M_gthrd_c + M_h_c + M_lac__D_c
+R_GLYOX3: M_h2o_c + M_mthgxl_c --> M_h_c + M_lac__D_c
+R_GLYTRS: M_atp_c + M_gly_c + M_trnagly_c --> M_amp_c + M_glytrna_c + M_ppi_c
+R_GLYt2pp_copy1: M_gly_p + M_h_p --> M_gly_c + M_h_c
+R_GLYt2pp_copy2: M_gly_p + M_h_p <-> M_gly_c + M_h_c
+R_GLYt4pp: M_gly_p + M_na1_p --> M_gly_c + M_na1_c
+R_GLYtex: M_gly_e <-> M_gly_p
+R_GMAND: M_gdpmann_c --> M_gdpddman_c + M_h2o_c
+R_GMHEPAT: M_atp_c + M_gmhep1p_c + M_h_c --> M_adphep_DD_c + M_ppi_c
+R_GMHEPK: M_atp_c + M_gmhep7p_c --> M_adp_c + M_gmhep17bp_c + M_h_c
+R_GMHEPPA: M_gmhep17bp_c + M_h2o_c --> M_gmhep1p_c + M_pi_c
+R_GMPR: M_gmp_c + 2.0 M_h_c + M_nadph_c --> M_imp_c + M_nadp_c + M_nh4_c
+R_GMPS2: M_atp_c + M_gln__L_c + M_h2o_c + M_xmp_c --> M_amp_c + M_glu__L_c + M_gmp_c + 2.0 M_h_c + M_ppi_c
+R_GMPtex: M_gmp_e <-> M_gmp_p
+R_GND: M_6pgc_c + M_nadp_c --> M_co2_c + M_nadph_c + M_ru5p__D_c
+R_GNK: M_atp_c + M_glcn_c --> M_6pgc_c + M_adp_c + M_h_c
+R_GOFUCR: M_gdpofuc_c + M_h_c + M_nadph_c --> M_gdpfuc_c + M_nadp_c
+R_GP4GH: M_gp4g_c + M_h2o_c --> 2.0 M_gdp_c + 2.0 M_h_c
+R_GPDDA1: M_g3pc_c + M_h2o_c --> M_chol_c + M_glyc3p_c + M_h_c
+R_GPDDA1pp: M_g3pc_p + M_h2o_p --> M_chol_p + M_glyc3p_p + M_h_p
+R_GPDDA2: M_g3pe_c + M_h2o_c --> M_etha_c + M_glyc3p_c + M_h_c
+R_GPDDA2pp: M_g3pe_p + M_h2o_p --> M_etha_p + M_glyc3p_p + M_h_p
+R_GPDDA3: M_g3ps_c + M_h2o_c --> M_glyc3p_c + M_h_c + M_ser__L_c
+R_GPDDA3pp: M_g3ps_p + M_h2o_p --> M_glyc3p_p + M_h_p + M_ser__L_p
+R_GPDDA4: M_g3pg_c + M_h2o_c --> M_glyc3p_c + M_glyc_c + M_h_c
+R_GPDDA4pp: M_g3pg_p + M_h2o_p --> M_glyc3p_p + M_glyc_p + M_h_p
+R_GPDDA5: M_g3pi_c + M_h2o_c --> M_glyc3p_c + M_h_c + M_inost_c
+R_GPDDA5pp: M_g3pi_p + M_h2o_p --> M_glyc3p_p + M_h_p + M_inost_p
+R_GRTT: M_grdp_c + M_ipdp_c --> M_frdp_c + M_ppi_c
+R_GRXR: M_grxox_c + 2.0 M_gthrd_c --> M_grxrd_c + M_gthox_c
+R_GSNK: M_atp_c + M_gsn_c --> M_adp_c + M_gmp_c + M_h_c
+R_GSNt2pp: M_gsn_p + M_h_p --> M_gsn_c + M_h_c
+R_GSNtex: M_gsn_e <-> M_gsn_p
+R_GSPMDA: M_gtspmd_c + M_h2o_c --> M_gthrd_c + M_spmd_c
+R_GSPMDS: M_atp_c + M_gthrd_c + M_spmd_c --> M_adp_c + M_gtspmd_c + M_h_c + M_pi_c
+R_GTHOXtex: M_gthox_e <-> M_gthox_p
+R_GTHOr: M_gthox_c + M_h_c + M_nadph_c <-> 2.0 M_gthrd_c + M_nadp_c
+R_GTHPi: 2.0 M_gthrd_c + M_h2o2_c --> M_gthox_c + 2.0 M_h2o_c
+R_GTHRDHpp: M_gthrd_p + M_h2o_p --> M_cgly_p + M_glu__L_p
+R_GTHRDabc2pp: M_atp_c + M_gthrd_c + M_h2o_c --> M_adp_c + M_gthrd_p + M_h_c + M_pi_c
+R_GTHRDabcpp: M_atp_c + M_gthrd_p + M_h2o_c --> M_adp_c + M_gthrd_c + M_h_c + M_pi_c
+R_GTHRDtex: M_gthrd_e <-> M_gthrd_p
+R_GTHS: M_atp_c + M_glucys_c + M_gly_c --> M_adp_c + M_gthrd_c + M_h_c + M_pi_c
+R_GTPCI: M_gtp_c + M_h2o_c --> M_ahdt_c + M_for_c + M_h_c
+R_GTPCII2: M_gtp_c + 3.0 M_h2o_c --> M_25drapp_c + M_for_c + 2.0 M_h_c + M_ppi_c
+R_GTPDPDP: M_gdptp_c + M_h2o_c --> M_h_c + M_pi_c + M_ppgpp_c
+R_GTPDPK: M_atp_c + M_gtp_c --> M_amp_c + M_gdptp_c + M_h_c
+R_GTPHs: M_gtp_c + M_h2o_c + M_h_c --> M_nh4_c + M_xtp_c
+R_GTPtex: M_gtp_e <-> M_gtp_p
+R_GUACYC: M_gtp_c --> M_35cgmp_c + M_ppi_c
+R_GUAD: M_gua_c + M_h2o_c + M_h_c --> M_nh4_c + M_xan_c
+R_GUAPRT: M_gua_c + M_prpp_c --> M_gmp_c + M_ppi_c
+R_GUAt2pp: M_gua_p + M_h_p --> M_gua_c + M_h_c
+R_GUAtex: M_gua_e <-> M_gua_p
+R_GUAtpp: M_gua_p <-> M_gua_c
+R_GUI1: M_glcur_c <-> M_fruur_c
+R_GUI2: M_galur_c <-> M_tagur_c
+R_GUR1PPpp: M_glcur1p_p + M_h2o_p --> M_glcur_p + M_pi_p
+R_H2O2tex: M_h2o2_e <-> M_h2o2_p
+R_H2Otex: M_h2o_e <-> M_h2o_p
+R_H2Otpp: M_h2o_p <-> M_h2o_c
+R_H2SO: M_h2s_c + 2.0 M_o2_c --> 2.0 M_h_c + M_so4_c
+R_H2St1pp: M_h2s_c --> M_h2s_p
+R_H2Stex: M_h2s_e <-> M_h2s_p
+R_H2tex: M_h2_e <-> M_h2_p
+R_H2tpp: M_h2_p <-> M_h2_c
+R_HACD1: M_aacoa_c + M_h_c + M_nadh_c <-> M_3hbcoa_c + M_nad_c
+R_HACD2: M_3ohcoa_c + M_h_c + M_nadh_c <-> M_3hhcoa_c + M_nad_c
+R_HACD3: M_3oocoa_c + M_h_c + M_nadh_c <-> M_3hocoa_c + M_nad_c
+R_HACD4: M_3odcoa_c + M_h_c + M_nadh_c <-> M_3hdcoa_c + M_nad_c
+R_HACD5: M_3oddcoa_c + M_h_c + M_nadh_c <-> M_3hddcoa_c + M_nad_c
+R_HACD6: M_3otdcoa_c + M_h_c + M_nadh_c <-> M_3htdcoa_c + M_nad_c
+R_HACD7: M_3ohdcoa_c + M_h_c + M_nadh_c <-> M_3hhdcoa_c + M_nad_c
+R_HACD8: M_3ohodcoa_c + M_h_c + M_nadh_c <-> M_3hodcoa_c + M_nad_c
+R_HADPCOADH3: M_3hadpcoa_c + M_nad_c <-> M_h_c + M_nadh_c + M_oxadpcoa_c
+R_HBZOPT: M_4hbz_c + M_octdp_c --> M_3ophb_c + M_ppi_c
+R_HCINNMt2rpp: M_3hcinnm_p + M_h_p <-> M_3hcinnm_c + M_h_c
+R_HCINNMtex: M_3hcinnm_e <-> M_3hcinnm_p
+R_HCO3E: M_co2_c + M_h2o_c <-> M_h_c + M_hco3_c
+R_HCYSMT: M_amet_c + M_hcys__L_c --> M_ahcys_c + M_h_c + M_met__L_c
+R_HCYSMT2: M_hcys__L_c + M_mmet_c --> M_h_c + 2.0 M_met__L_c
+R_HDCAtexi: M_hdca_e --> M_hdca_p
+R_HDCEAtexi: M_hdcea_e --> M_hdcea_p
+R_HEMEOS: M_frdp_c + M_h2o_c + M_pheme_c --> M_hemeO_c + M_ppi_c
+R_HEPK1: M_atp_c + M_hhlipa_c --> M_adp_c + M_h_c + M_phhlipa_c
+R_HEPK2: M_atp_c + M_hphhlipa_c --> M_adp_c + M_h_c + M_phphhlipa_c
+R_HEPT1: M_adphep_LD_c + M_lipa_c --> M_adp_c + M_h_c + M_hlipa_c
+R_HEPT2: M_adphep_LD_c + M_hlipa_c --> M_adp_c + M_h_c + M_hhlipa_c
+R_HEPT3: M_adphep_LD_c + M_phhlipa_c --> M_adp_c + M_h_c + M_hphhlipa_c
+R_HEPT4: M_adphep_LD_c + M_gggagicolipa_c --> M_adp_c + M_colipa_c + M_h_c
+R_HETZK: M_4mhetz_c + M_atp_c --> M_4mpetz_c + M_adp_c + M_h_c
+R_HEX1: M_atp_c + M_glc__D_c --> M_adp_c + M_g6p_c + M_h_c
+R_HEX4: M_atp_c + M_man_c --> M_adp_c + M_h_c + M_man6p_c
+R_HEX7: M_atp_c + M_fru_c --> M_adp_c + M_f6p_c + M_h_c
+R_HEXt2rpp: M_h_p + M_hxa_p <-> M_h_c + M_hxa_c
+R_HG2abcpp: M_atp_c + M_h2o_c + M_hg2_c --> M_adp_c + M_h_c + M_hg2_p + M_pi_c
+R_HG2t3pp: M_h_p + M_hg2_c --> M_h_c + M_hg2_p
+R_HG2tex: M_hg2_e <-> M_hg2_p
+R_HISTD: M_h2o_c + M_histd_c + 2.0 M_nad_c --> 3.0 M_h_c + M_his__L_c + 2.0 M_nadh_c
+R_HISTP: M_h2o_c + M_hisp_c --> M_histd_c + M_pi_c
+R_HISTRS: M_atp_c + M_his__L_c + M_trnahis_c --> M_amp_c + M_histrna_c + M_ppi_c
+R_HISabcpp: M_atp_c + M_h2o_c + M_his__L_p --> M_adp_c + M_h_c + M_his__L_c + M_pi_c
+R_HISt2rpp: M_h_p + M_his__L_p <-> M_h_c + M_his__L_c
+R_HIStex: M_his__L_e <-> M_his__L_p
+R_HKNDDH: M_h2o_c + M_hkndd_c --> M_h_c + M_op4en_c + M_succ_c
+R_HKNTDH: M_h2o_c + M_hkntd_c --> M_fum_c + M_h_c + M_op4en_c
+R_HMBS: M_h2o_c + 4.0 M_ppbng_c --> M_hmbil_c + 4.0 M_nh4_c
+R_HMPK1: M_4ahmmp_c + M_atp_c --> M_4ampm_c + M_adp_c + M_h_c
+R_HOMt2pp: M_h_p + M_hom__L_c --> M_h_c + M_hom__L_p
+R_HOMtex: M_hom__L_e <-> M_hom__L_p
+R_HOPNTAL: M_4h2opntn_c --> M_acald_c + M_pyr_c
+R_HPPK2: M_6hmhpt_c + M_atp_c --> M_6hmhptpp_c + M_amp_c + M_h_c
+R_HPPPNDO: M_dhpppn_c + M_o2_c --> M_h_c + M_hkndd_c
+R_HPPPNt2rpp: M_3hpppn_p + M_h_p <-> M_3hpppn_c + M_h_c
+R_HPPPNtex: M_3hpppn_e <-> M_3hpppn_p
+R_HPYRI: M_hpyr_c <-> M_2h3oppan_c
+R_HPYRRx: M_h_c + M_hpyr_c + M_nadh_c --> M_glyc__R_c + M_nad_c
+R_HPYRRy: M_h_c + M_hpyr_c + M_nadph_c --> M_glyc__R_c + M_nadp_c
+R_HSDy: M_hom__L_c + M_nadp_c <-> M_aspsa_c + M_h_c + M_nadph_c
+R_HSK: M_atp_c + M_hom__L_c --> M_adp_c + M_h_c + M_phom_c
+R_HSST: M_hom__L_c + M_succoa_c --> M_coa_c + M_suchms_c
+R_HSTPT: M_glu__L_c + M_imacp_c --> M_akg_c + M_hisp_c
+R_HXAND: M_h2o_c + M_hxan_c + M_nad_c --> M_h_c + M_nadh_c + M_xan_c
+R_HXAtex: M_hxa_e <-> M_hxa_p
+R_HXCT: M_accoa_c + M_hxa_c --> M_ac_c + M_hxcoa_c
+R_HXPRT: M_hxan_c + M_prpp_c --> M_imp_c + M_ppi_c
+R_HYD1pp: M_h2_c + 2.0 M_h_c + M_q8_c --> 2.0 M_h_p + M_q8h2_c
+R_HYD2pp: M_h2_c + 2.0 M_h_c + M_mqn8_c --> 2.0 M_h_p + M_mql8_c
+R_HYD3pp: M_2dmmq8_c + M_h2_c + 2.0 M_h_c --> M_2dmmql8_c + 2.0 M_h_p
+R_HYPOE: M_h2o_c + M_pyam5p_c --> M_pi_c + M_pydam_c
+R_HYXNtex: M_hxan_e <-> M_hxan_p
+R_HYXNtpp: M_hxan_p <-> M_hxan_c
+R_Htex: M_h_e <-> M_h_p
+R_I2FE2SR: M_2fe1s_c + M_iscssh_c + M_iscu_c --> 4.0 M_h_c + M_iscs_c + M_iscu_2fe2s_c
+R_I2FE2SS: M_fadh2_c + 2.0 M_fe2_c + 2.0 M_iscssh_c + M_iscu_c --> M_fad_c + 6.0 M_h_c + 2.0 M_iscs_c + M_iscu_2fe2s_c
+R_I2FE2SS2: M_fadh2_c + 2.0 M_fe2_c + 2.0 M_iscssh_c + M_iscu_2fe2s_c --> M_fad_c + 6.0 M_h_c + 2.0 M_iscs_c + M_iscu_2fe2s2_c
+R_I2FE2ST: 4.0 M_h_c + M_iscu_2fe2s_c --> M_2fe2s_c + M_iscu_c
+R_I4FE4SR: M_fadh2_c + 2.0 M_h_c + M_iscu_2fe2s2_c --> M_fad_c + M_iscu_4fe4s_c
+R_I4FE4ST: 4.0 M_h_c + M_iscu_4fe4s_c --> M_4fe4s_c + M_iscu_c
+R_ICDHyr: M_icit_c + M_nadp_c <-> M_akg_c + M_co2_c + M_nadph_c
+R_ICHORS_copy1: M_chor_c <-> M_ichor_c
+R_ICHORS_copy2: M_chor_c --> M_ichor_c
+R_ICHORT: M_h2o_c + M_ichor_c --> M_23ddhb_c + M_pyr_c
+R_ICL: M_icit_c --> M_glx_c + M_succ_c
+R_ICYSDS: M_cys__L_c + M_iscs_c --> M_ala__L_c + M_iscssh_c
+R_IDOND: M_5dglcn_c + M_h_c + M_nadh_c <-> M_idon__L_c + M_nad_c
+R_IDOND2: M_5dglcn_c + M_h_c + M_nadph_c --> M_idon__L_c + M_nadp_c
+R_IDONt2rpp: M_h_p + M_idon__L_p <-> M_h_c + M_idon__L_c
+R_IDONtex: M_idon__L_e <-> M_idon__L_p
+R_IG3PS: M_gln__L_c + M_prlp_c --> M_aicar_c + M_eig3p_c + M_glu__L_c + M_h_c
+R_IGPDH: M_eig3p_c --> M_h2o_c + M_imacp_c
+R_IGPS: M_2cpr5p_c + M_h_c --> M_3ig3p_c + M_co2_c + M_h2o_c
+R_ILETA: M_akg_c + M_ile__L_c <-> M_3mop_c + M_glu__L_c
+R_ILETRS: M_atp_c + M_ile__L_c + M_trnaile_c --> M_amp_c + M_iletrna_c + M_ppi_c
+R_ILEabcpp: M_atp_c + M_h2o_c + M_ile__L_p --> M_adp_c + M_h_c + M_ile__L_c + M_pi_c
+R_ILEt2rpp: M_h_p + M_ile__L_p <-> M_h_c + M_ile__L_c
+R_ILEtex: M_ile__L_e <-> M_ile__L_p
+R_IMPC: M_h2o_c + M_imp_c <-> M_fprica_c
+R_IMPD: M_h2o_c + M_imp_c + M_nad_c --> M_h_c + M_nadh_c + M_xmp_c
+R_IMPtex: M_imp_e <-> M_imp_p
+R_INDOLEt2pp: M_h_c + M_indole_c --> M_h_p + M_indole_p
+R_INDOLEt2rpp: M_h_p + M_indole_p <-> M_h_c + M_indole_c
+R_INDOLEtex: M_indole_e <-> M_indole_p
+R_INOSTt4pp: M_inost_p + M_na1_p --> M_inost_c + M_na1_c
+R_INSH: M_h2o_c + M_ins_c --> M_hxan_c + M_rib__D_c
+R_INSK: M_atp_c + M_ins_c --> M_adp_c + M_h_c + M_imp_c
+R_INSTtex: M_inost_e <-> M_inost_p
+R_INSt2pp_copy1: M_h_p + M_ins_p --> M_h_c + M_ins_c
+R_INSt2pp_copy2: M_h_p + M_ins_p <-> M_h_c + M_ins_c
+R_INStex: M_ins_e <-> M_ins_p
+R_IPDDI: M_ipdp_c <-> M_dmpp_c
+R_IPDPS: M_h2mb4p_c + M_h_c + M_nadh_c --> M_h2o_c + M_ipdp_c + M_nad_c
+R_IPMD: M_3c2hmp_c + M_nad_c --> M_3c4mop_c + M_h_c + M_nadh_c
+R_IPPMIa: M_3c2hmp_c <-> M_2ippm_c + M_h2o_c
+R_IPPMIb: M_2ippm_c + M_h2o_c <-> M_3c3hmp_c
+R_IPPS: M_3mob_c + M_accoa_c + M_h2o_c --> M_3c3hmp_c + M_coa_c + M_h_c
+R_ISETACabcpp: M_atp_c + M_h2o_c + M_isetac_p --> M_adp_c + M_h_c + M_isetac_c + M_pi_c
+R_ISETACtex: M_isetac_e <-> M_isetac_p
+R_K2L4Aabcpp: M_atp_c + M_h2o_c + M_kdo2lipid4_c --> M_adp_c + M_h_c + M_kdo2lipid4_p + M_pi_c
+R_K2L4Aabctex: M_atp_c + M_h2o_c + M_kdo2lipid4_p --> M_adp_c + M_h_c + M_kdo2lipid4_e + M_pi_c
+R_KARA1: M_23dhmb_c + M_nadp_c <-> M_alac__S_c + M_h_c + M_nadph_c
+R_KARA2: M_2ahbut_c + M_h_c + M_nadph_c <-> M_23dhmp_c + M_nadp_c
+R_KAS14: M_acACP_c + M_h_c + M_malACP_c --> M_ACP_c + M_actACP_c + M_co2_c
+R_KAS15: M_accoa_c + M_h_c + M_malACP_c --> M_actACP_c + M_co2_c + M_coa_c
+R_KDOCT2: M_ctp_c + M_kdo_c --> M_ckdo_c + M_ppi_c
+R_KDOPP: M_h2o_c + M_kdo8p_c --> M_kdo_c + M_pi_c
+R_KDOPS: M_ara5p_c + M_h2o_c + M_pep_c --> M_kdo8p_c + M_pi_c
+R_KG6PDC: M_3dhgulnp_c + M_h_c --> M_co2_c + M_xu5p__L_c
+R_Kabcpp: M_atp_c + M_h2o_c + M_k_p --> M_adp_c + M_h_c + M_k_c + M_pi_c
+R_Kt2pp: M_h_p + M_k_p --> M_h_c + M_k_c
+R_Kt3pp: M_h_p + M_k_c --> M_h_c + M_k_p
+R_Ktex: M_k_e <-> M_k_p
+R_L_LACD2: M_lac__L_c + M_q8_c --> M_pyr_c + M_q8h2_c
+R_L_LACD3: M_lac__L_c + M_mqn8_c --> M_mql8_c + M_pyr_c
+R_L_LACt2rpp: M_h_p + M_lac__L_p <-> M_h_c + M_lac__L_c
+R_L_LACtex: M_lac__L_e <-> M_lac__L_p
+R_LA4NTpp: M_colipa_p + M_uLa4n_p --> M_acolipa_p + M_udcpp_p
+R_LACZ: M_h2o_c + M_lcts_c --> M_gal_c + M_glc__D_c
+R_LACZpp: M_h2o_p + M_lcts_p --> M_gal_p + M_glc__D_p
+R_LADGMDH: M_LalaDgluMdap_c + M_h2o_c --> M_26dap__M_c + M_LalaDglu_c
+R_LALADGLUtex: M_LalaDglu_e <-> M_LalaDglu_p
+R_LALADGLUtpp: M_LalaDglu_p + M_h_p --> M_LalaDglu_c + M_h_c
+R_LALALGLUtex: M_LalaLglu_e <-> M_LalaLglu_p
+R_LALALGLUtpp: M_LalaLglu_p + M_h_p --> M_LalaLglu_c + M_h_c
+R_LALDO2x: M_h_c + M_mthgxl_c + M_nadh_c --> M_lald__D_c + M_nad_c
+R_LALDO3: M_h_c + M_mthgxl_c + M_nadph_c --> M_lald__L_c + M_nadp_c
+R_LALGP: M_LalaLglu_c + M_h2o_c --> M_ala__L_c + M_glu__L_c
+R_LCADi: M_h2o_c + M_lald__L_c + M_nad_c --> 2.0 M_h_c + M_lac__L_c + M_nadh_c
+R_LCARR: M_h_c + M_lald__D_c + M_nadh_c <-> M_12ppd__R_c + M_nad_c
+R_LCARS: M_h_c + M_lald__L_c + M_nadh_c <-> M_12ppd__S_c + M_nad_c
+R_LCTSt3ipp: M_h_p + M_lcts_c --> M_h_c + M_lcts_p
+R_LCTStex: M_lcts_e <-> M_lcts_p
+R_LCTStpp: M_h_p + M_lcts_p <-> M_h_c + M_lcts_c
+R_LDH_D: M_lac__D_c + M_nad_c <-> M_h_c + M_nadh_c + M_pyr_c
+R_LDH_D2: M_lac__D_c + M_q8_c --> M_pyr_c + M_q8h2_c
+R_LEUTAi: M_4mop_c + M_glu__L_c --> M_akg_c + M_leu__L_c
+R_LEUTRS: M_atp_c + M_leu__L_c + M_trnaleu_c --> M_amp_c + M_leutrna_c + M_ppi_c
+R_LEUabcpp: M_atp_c + M_h2o_c + M_leu__L_p --> M_adp_c + M_h_c + M_leu__L_c + M_pi_c
+R_LEUt2rpp: M_h_p + M_leu__L_p <-> M_h_c + M_leu__L_c
+R_LEUtex: M_leu__L_e <-> M_leu__L_p
+R_LGTHL: M_gthrd_c + M_mthgxl_c --> M_lgt__S_c
+R_LIPACabcpp: M_atp_c + M_h2o_c + M_lipa_cold_c --> M_adp_c + M_h_c + M_lipa_cold_p + M_pi_c
+R_LIPAHT2ex: M_colipa_e + M_h_e + M_hdca_e --> M_h2o_e + M_hacolipa_e
+R_LIPAHTex: M_h_e + M_hdca_e + M_lipa_e --> M_h2o_e + M_halipa_e
+R_LIPAMPL: M_lipoamp_c --> M_amp_c + M_lipopb_c
+R_LIPATPT: M_atp_c + M_lipoate_c --> M_lipoamp_c + M_ppi_c
+R_LIPAabcpp: M_atp_c + M_h2o_c + M_lipa_c --> M_adp_c + M_h_c + M_lipa_p + M_pi_c
+R_LIPAabctex: M_atp_c + M_h2o_c + M_lipa_p --> M_adp_c + M_h_c + M_lipa_e + M_pi_c
+R_LIPOCT: M_h_c + M_ocACP_c --> M_ACP_c + M_octapb_c
+R_LIPOS: M_4fe4s_c + 2.0 M_amet_c + M_h_c + M_nad_c + M_octapb_c --> M_2fe2s_c + 2.0 M_dad_5_c + 2.0 M_fe2_c + M_lipopb_c + 2.0 M_met__L_c + M_nadh_c
+R_LIPOt2pp: M_h_p + M_lipoate_p --> M_h_c + M_lipoate_c
+R_LIPOtex: M_lipoate_e <-> M_lipoate_p
+R_LPADSS: M_lipidX_c + M_u23ga_c --> M_h_c + M_lipidAds_c + M_udp_c
+R_LPLIPAL1A120pp: M_1ddecg3p_p + M_h2o_p --> M_ddca_p + M_glyc3p_p + M_h_p
+R_LPLIPAL1A140pp: M_1tdecg3p_p + M_h2o_p --> M_glyc3p_p + M_h_p + M_ttdca_p
+R_LPLIPAL1A141pp: M_1tdec7eg3p_p + M_h2o_p --> M_glyc3p_p + M_h_p + M_ttdcea_p
+R_LPLIPAL1A160pp: M_1hdecg3p_p + M_h2o_p --> M_glyc3p_p + M_h_p + M_hdca_p
+R_LPLIPAL1A161pp: M_1hdec9eg3p_p + M_h2o_p --> M_glyc3p_p + M_h_p + M_hdcea_p
+R_LPLIPAL1A180pp: M_1odecg3p_p + M_h2o_p --> M_glyc3p_p + M_h_p + M_ocdca_p
+R_LPLIPAL1A181pp: M_1odec11eg3p_p + M_h2o_p --> M_glyc3p_p + M_h_p + M_ocdcea_p
+R_LPLIPAL1E120pp: M_1agpe120_p + M_h2o_p --> M_ddca_p + M_g3pe_p + M_h_p
+R_LPLIPAL1E140pp: M_1agpe140_p + M_h2o_p --> M_g3pe_p + M_h_p + M_ttdca_p
+R_LPLIPAL1E141pp: M_1agpe141_p + M_h2o_p --> M_g3pe_p + M_h_p + M_ttdcea_p
+R_LPLIPAL1E160pp: M_1agpe160_p + M_h2o_p --> M_g3pe_p + M_h_p + M_hdca_p
+R_LPLIPAL1E161pp: M_1agpe161_p + M_h2o_p --> M_g3pe_p + M_h_p + M_hdcea_p
+R_LPLIPAL1E180pp: M_1agpe180_p + M_h2o_p --> M_g3pe_p + M_h_p + M_ocdca_p
+R_LPLIPAL1E181pp: M_1agpe181_p + M_h2o_p --> M_g3pe_p + M_h_p + M_ocdcea_p
+R_LPLIPAL1G120pp: M_1agpg120_p + M_h2o_p --> M_ddca_p + M_g3pg_p + M_h_p
+R_LPLIPAL1G140pp: M_1agpg140_p + M_h2o_p --> M_g3pg_p + M_h_p + M_ttdca_p
+R_LPLIPAL1G141pp: M_1agpg141_p + M_h2o_p --> M_g3pg_p + M_h_p + M_ttdcea_p
+R_LPLIPAL1G160pp: M_1agpg160_p + M_h2o_p --> M_g3pg_p + M_h_p + M_hdca_p
+R_LPLIPAL1G161pp: M_1agpg161_p + M_h2o_p --> M_g3pg_p + M_h_p + M_hdcea_p
+R_LPLIPAL1G180pp: M_1agpg180_p + M_h2o_p --> M_g3pg_p + M_h_p + M_ocdca_p
+R_LPLIPAL1G181pp: M_1agpg181_p + M_h2o_p --> M_g3pg_p + M_h_p + M_ocdcea_p
+R_LPLIPAL2A120: M_2ddecg3p_c + M_h2o_c --> M_ddca_c + M_glyc3p_c + 2.0 M_h_c
+R_LPLIPAL2A140: M_2tdecg3p_c + M_h2o_c --> M_glyc3p_c + 2.0 M_h_c + M_ttdca_c
+R_LPLIPAL2A141: M_2tdec7eg3p_c + M_h2o_c --> M_glyc3p_c + 2.0 M_h_c + M_ttdcea_c
+R_LPLIPAL2A160: M_2hdecg3p_c + M_h2o_c --> M_glyc3p_c + 2.0 M_h_c + M_hdca_c
+R_LPLIPAL2A161: M_2hdec9eg3p_c + M_h2o_c --> M_glyc3p_c + 2.0 M_h_c + M_hdcea_c
+R_LPLIPAL2A180: M_2odecg3p_c + M_h2o_c --> M_glyc3p_c + 2.0 M_h_c + M_ocdca_c
+R_LPLIPAL2A181: M_2odec11eg3p_c + M_h2o_c --> M_glyc3p_c + 2.0 M_h_c + M_ocdcea_c
+R_LPLIPAL2ATE120: M_2agpe120_c + M_pg120_c --> M_apg120_c + M_g3pe_c
+R_LPLIPAL2ATE140: M_2agpe140_c + M_pg140_c --> M_apg140_c + M_g3pe_c
+R_LPLIPAL2ATE141: M_2agpe141_c + M_pg141_c --> M_apg141_c + M_g3pe_c
+R_LPLIPAL2ATE160: M_2agpe160_c + M_pg160_c --> M_apg160_c + M_g3pe_c
+R_LPLIPAL2ATE161: M_2agpe161_c + M_pg161_c --> M_apg161_c + M_g3pe_c
+R_LPLIPAL2ATE180: M_2agpe180_c + M_pg180_c --> M_apg180_c + M_g3pe_c
+R_LPLIPAL2ATE181: M_2agpe181_c + M_pg181_c --> M_apg181_c + M_g3pe_c
+R_LPLIPAL2ATG120: M_2agpg120_c + M_pg120_c --> M_apg120_c + M_g3pg_c
+R_LPLIPAL2ATG140: M_2agpg140_c + M_pg140_c --> M_apg140_c + M_g3pg_c
+R_LPLIPAL2ATG141: M_2agpg141_c + M_pg141_c --> M_apg141_c + M_g3pg_c
+R_LPLIPAL2ATG160: M_2agpg160_c + M_pg160_c --> M_apg160_c + M_g3pg_c
+R_LPLIPAL2ATG161: M_2agpg161_c + M_pg161_c --> M_apg161_c + M_g3pg_c
+R_LPLIPAL2ATG180: M_2agpg180_c + M_pg180_c --> M_apg180_c + M_g3pg_c
+R_LPLIPAL2ATG181: M_2agpg181_c + M_pg181_c --> M_apg181_c + M_g3pg_c
+R_LPLIPAL2E120: M_2agpe120_c + M_h2o_c --> M_ddca_c + M_g3pe_c + M_h_c
+R_LPLIPAL2E140: M_2agpe140_c + M_h2o_c --> M_g3pe_c + M_h_c + M_ttdca_c
+R_LPLIPAL2E141: M_2agpe141_c + M_h2o_c --> M_g3pe_c + M_h_c + M_ttdcea_c
+R_LPLIPAL2E160: M_2agpe160_c + M_h2o_c --> M_g3pe_c + M_h_c + M_hdca_c
+R_LPLIPAL2E161: M_2agpe161_c + M_h2o_c --> M_g3pe_c + M_h_c + M_hdcea_c
+R_LPLIPAL2E180: M_2agpe180_c + M_h2o_c --> M_g3pe_c + M_h_c + M_ocdca_c
+R_LPLIPAL2E181: M_2agpe181_c + M_h2o_c --> M_g3pe_c + M_h_c + M_ocdcea_c
+R_LPLIPAL2G120: M_2agpg120_c + M_h2o_c --> M_ddca_c + M_g3pg_c + M_h_c
+R_LPLIPAL2G140: M_2agpg140_c + M_h2o_c --> M_g3pg_c + M_h_c + M_ttdca_c
+R_LPLIPAL2G141: M_2agpg141_c + M_h2o_c --> M_g3pg_c + M_h_c + M_ttdcea_c
+R_LPLIPAL2G160: M_2agpg160_c + M_h2o_c --> M_g3pg_c + M_h_c + M_hdca_c
+R_LPLIPAL2G161: M_2agpg161_c + M_h2o_c --> M_g3pg_c + M_h_c + M_hdcea_c
+R_LPLIPAL2G180: M_2agpg180_c + M_h2o_c --> M_g3pg_c + M_h_c + M_ocdca_c
+R_LPLIPAL2G181: M_2agpg181_c + M_h2o_c --> M_g3pg_c + M_h_c + M_ocdcea_c
+R_LSERDHr: M_nadp_c + M_ser__L_c <-> M_2amsa_c + M_h_c + M_nadph_c
+R_LYSDC: M_h_c + M_lys__L_c --> M_15dap_c + M_co2_c
+R_LYSTRS: M_atp_c + M_lys__L_c + M_trnalys_c --> M_amp_c + M_lystrna_c + M_ppi_c
+R_LYSabcpp: M_atp_c + M_h2o_c + M_lys__L_p --> M_adp_c + M_h_c + M_lys__L_c + M_pi_c
+R_LYSt2pp: M_h_p + M_lys__L_p --> M_h_c + M_lys__L_c
+R_LYSt3pp: M_h_p + M_lys__L_c --> M_h_c + M_lys__L_p
+R_LYStex: M_lys__L_e <-> M_lys__L_p
+R_LYXI: M_lyx__L_c --> M_xylu__L_c
+R_LYXt2pp: M_h_p + M_lyx__L_p --> M_h_c + M_lyx__L_c
+R_LYXtex: M_lyx__L_e <-> M_lyx__L_p
+R_M1PD: M_mnl1p_c + M_nad_c <-> M_f6p_c + M_h_c + M_nadh_c
+R_MACPD: M_h_c + M_malACP_c --> M_acACP_c + M_co2_c
+R_MALCOAMT: M_amet_c + M_malcoa_c --> M_ahcys_c + M_malcoame_c
+R_MALDDH: M_mal__D_c + M_nad_c --> M_co2_c + M_nadh_c + M_pyr_c
+R_MALDt2_2pp: 2.0 M_h_p + M_mal__D_p --> 2.0 M_h_c + M_mal__D_c
+R_MALDtex: M_mal__D_e <-> M_mal__D_p
+R_MALS: M_accoa_c + M_glx_c + M_h2o_c --> M_coa_c + M_h_c + M_mal__L_c
+R_MALTATr: M_accoa_c + M_malt_c <-> M_acmalt_c + M_coa_c
+R_MALTHXabcpp: M_atp_c + M_h2o_c + M_malthx_p --> M_adp_c + M_h_c + M_malthx_c + M_pi_c
+R_MALTHXtexi: M_malthx_e --> M_malthx_p
+R_MALTPTabcpp: M_atp_c + M_h2o_c + M_maltpt_p --> M_adp_c + M_h_c + M_maltpt_c + M_pi_c
+R_MALTPTtexi: M_maltpt_e --> M_maltpt_p
+R_MALTTRabcpp: M_atp_c + M_h2o_c + M_malttr_p --> M_adp_c + M_h_c + M_malttr_c + M_pi_c
+R_MALTTRtexi: M_malttr_e --> M_malttr_p
+R_MALTTTRabcpp: M_atp_c + M_h2o_c + M_maltttr_p --> M_adp_c + M_h_c + M_maltttr_c + M_pi_c
+R_MALTTTRtexi: M_maltttr_e --> M_maltttr_p
+R_MALTabcpp: M_atp_c + M_h2o_c + M_malt_p --> M_adp_c + M_h_c + M_malt_c + M_pi_c
+R_MALTptspp: M_malt_p + M_pep_c --> M_malt6p_c + M_pyr_c
+R_MALTtexi: M_malt_e --> M_malt_p
+R_MALt2_2pp: 2.0 M_h_p + M_mal__L_p --> 2.0 M_h_c + M_mal__L_c
+R_MALt2_3pp: 3.0 M_h_p + M_mal__L_p --> 3.0 M_h_c + M_mal__L_c
+R_MALt3pp: M_h_p + M_mal__L_c --> M_h_c + M_mal__L_p
+R_MALtex: M_mal__L_e <-> M_mal__L_p
+R_MAN1PT2: M_gdp_c + M_h_c + M_man1p_c --> M_gdpmann_c + M_pi_c
+R_MAN6PI: M_man6p_c <-> M_f6p_c
+R_MAN6Pt6_2pp: M_man6p_p + 2.0 M_pi_c --> M_man6p_c + 2.0 M_pi_p
+R_MAN6Ptex: M_man6p_e <-> M_man6p_p
+R_MANAO: M_mana_c + M_nad_c <-> M_fruur_c + M_h_c + M_nadh_c
+R_MANGLYCptspp: M_manglyc_p + M_pep_c --> M_man6pglyc_c + M_pyr_c
+R_MANGLYCtex: M_manglyc_e <-> M_manglyc_p
+R_MANPGH: M_h2o_c + M_man6pglyc_c --> M_glyc__R_c + M_man6p_c
+R_MANptspp: M_man_p + M_pep_c --> M_man6p_c + M_pyr_c
+R_MANtex: M_man_e <-> M_man_p
+R_MCITD: M_2mcit_c --> M_2mcacn_c + M_h2o_c
+R_MCITL2: M_micit_c <-> M_pyr_c + M_succ_c
+R_MCITS: M_h2o_c + M_oaa_c + M_ppcoa_c --> M_2mcit_c + M_coa_c + M_h_c
+R_MCOATA: M_ACP_c + M_malcoa_c <-> M_coa_c + M_malACP_c
+R_MCPST: M_cyan_c + M_mercppyr_c --> M_h_c + M_pyr_c + M_tcynt_c
+R_MCTP1App: M_murein5p5p_p --> M_ala__D_p + M_murein5px4p_p
+R_MCTP1Bpp: M_murein5p5p_p --> M_alaala_p + M_murein5px3p_p
+R_MCTP2App: M_murein5p5p5p_p --> 2.0 M_ala__D_p + M_murein5px4px4p_p
+R_MDDCP1pp: M_h2o_p + M_murein5px4p_p --> M_ala__D_p + M_murein4px4p_p
+R_MDDCP2pp: M_h2o_p + M_murein5px4px4p_p --> M_ala__D_p + M_murein4px4px4p_p
+R_MDDCP3pp: M_h2o_p + M_murein5p5p_p --> M_ala__D_p + M_murein5p4p_p
+R_MDDCP4pp: M_h2o_p + M_murein5p4p_p --> M_ala__D_p + M_murein4p4p_p
+R_MDDCP5pp: M_h2o_p + M_murein5p3p_p --> M_ala__D_p + M_murein4p3p_p
+R_MDDEP1pp: M_h2o_p + M_murein4px4p_p --> M_murein4p4p_p
+R_MDDEP2pp: M_h2o_p + M_murein3px4p_p --> M_murein4p3p_p
+R_MDDEP3pp: M_h2o_p + M_murein5px4p_p --> M_murein5p4p_p
+R_MDDEP4pp: M_h2o_p + M_murein4px4px4p_p --> M_murein4px4p4p_p
+R_MDH: M_mal__L_c + M_nad_c <-> M_h_c + M_nadh_c + M_oaa_c
+R_MDH2: M_mal__L_c + M_q8_c --> M_oaa_c + M_q8h2_c
+R_MDH3: M_mal__L_c + M_mqn8_c --> M_mql8_c + M_oaa_c
+R_ME1: M_mal__L_c + M_nad_c --> M_co2_c + M_nadh_c + M_pyr_c
+R_ME2: M_mal__L_c + M_nadp_c --> M_co2_c + M_nadph_c + M_pyr_c
+R_MECDPDH5: M_2mecdp_c + 2.0 M_flxr_c + M_h_c --> 2.0 M_flxso_c + M_h2mb4p_c + M_h2o_c
+R_MECDPS: M_2p4c2me_c --> M_2mecdp_c + M_cmp_c
+R_MELIBt2pp: M_h_p + M_melib_p --> M_h_c + M_melib_c
+R_MELIBt3ipp: M_h_p + M_melib_c --> M_h_c + M_melib_p
+R_MELIBtex: M_melib_e <-> M_melib_p
+R_MEOHtex: M_meoh_e <-> M_meoh_p
+R_MEOHtrpp: M_meoh_p <-> M_meoh_c
+R_MEPCT: M_2me4p_c + M_ctp_c + M_h_c --> M_4c2me_c + M_ppi_c
+R_METAT: M_atp_c + M_h2o_c + M_met__L_c --> M_amet_c + M_pi_c + M_ppi_c
+R_METDabcpp: M_atp_c + M_h2o_c + M_met__D_p --> M_adp_c + M_h_c + M_met__D_c + M_pi_c
+R_METDtex: M_met__D_e <-> M_met__D_p
+R_METOX1s: M_h2o2_c + M_met__L_c --> M_h2o_c + M_metsox_S__L_c
+R_METOX2s: M_h2o2_c + M_met__L_c --> M_h2o_c + M_metsox_R__L_c
+R_METS: M_5mthf_c + M_hcys__L_c --> M_h_c + M_met__L_c + M_thf_c
+R_METSOX1abcpp: M_atp_c + M_h2o_c + M_metsox_S__L_p --> M_adp_c + M_h_c + M_metsox_S__L_c + M_pi_c
+R_METSOX1tex: M_metsox_S__L_e <-> M_metsox_S__L_p
+R_METSOX2abcpp: M_atp_c + M_h2o_c + M_metsox_R__L_p --> M_adp_c + M_h_c + M_metsox_R__L_c + M_pi_c
+R_METSOX2tex: M_metsox_R__L_e <-> M_metsox_R__L_p
+R_METSOXR1: M_metsox_S__L_c + M_trdrd_c --> M_h2o_c + M_met__L_c + M_trdox_c
+R_METSOXR2: M_metsox_R__L_c + M_trdrd_c --> M_h2o_c + M_met__L_c + M_trdox_c
+R_METTRS: M_atp_c + M_met__L_c + M_trnamet_c --> M_amp_c + M_mettrna_c + M_ppi_c
+R_METabcpp: M_atp_c + M_h2o_c + M_met__L_p --> M_adp_c + M_h_c + M_met__L_c + M_pi_c
+R_METtex: M_met__L_e <-> M_met__L_p
+R_MG2t3_2pp: 2.0 M_h_c + M_mg2_p <-> 2.0 M_h_p + M_mg2_c
+R_MG2tex: M_mg2_e <-> M_mg2_p
+R_MG2tpp: M_mg2_p --> M_mg2_c
+R_MG2uabcpp: M_atp_c + M_h2o_c + M_mg2_p --> M_adp_c + M_h_c + M_mg2_c + M_pi_c
+R_MGSA: M_dhap_c --> M_mthgxl_c + M_pi_c
+R_MI1PP: M_h2o_c + M_mi1p__D_c --> M_inost_c + M_pi_c
+R_MICITDr: M_2mcacn_c + M_h2o_c <-> M_micit_c
+R_MINCYCtex: M_mincyc_e <-> M_mincyc_p
+R_MINCYCtpp: M_h_p + M_mincyc_p --> M_h_c + M_mincyc_e
+R_MINOHPtexi: M_minohp_e --> M_minohp_p
+R_MLDCP1App: M_h2o_p + M_murein5px4p_p --> M_alaala_p + M_murein3px4p_p
+R_MLDCP1Bpp: M_h2o_p + M_murein4p4p_p --> M_ala__D_p + M_murein4p3p_p
+R_MLDCP2App: M_h2o_p + M_murein5p5p_p --> M_alaala_p + M_murein5p3p_p
+R_MLDCP2Bpp: M_h2o_p + M_murein4p3p_p --> M_ala__D_p + M_murein3p3p_p
+R_MLDCP3App: M_h2o_p + M_murein5px3p_p --> M_alaala_p + M_murein3px3p_p
+R_MLDEP1pp: M_h2o_p + M_murein3px3p_p --> M_murein3p3p_p
+R_MLDEP2pp: M_h2o_p + M_murein5px3p_p --> M_murein5p3p_p
+R_MLTG1: M_h2o_c + M_malttr_c --> M_glc__D_c + M_malt_c
+R_MLTG2: M_h2o_c + M_maltttr_c --> M_glc__D_c + M_malttr_c
+R_MLTG3: M_h2o_c + M_maltpt_c --> M_glc__D_c + M_maltttr_c
+R_MLTG4: M_h2o_c + M_malthx_c --> M_glc__D_c + M_maltpt_c
+R_MLTG5: M_h2o_c + M_malthp_c --> M_glc__D_c + M_malthx_c
+R_MLTGY1pp: M_murein4p4p_p --> 2.0 M_anhgm4p_p
+R_MLTGY2pp: M_murein4p3p_p --> M_anhgm3p_p + M_anhgm4p_p
+R_MLTGY3pp: M_murein3p3p_p --> 2.0 M_anhgm3p_p
+R_MLTGY4pp: M_murein4px4p4p_p --> M_anhgm4p_p + M_murein4px4p_p
+R_MLTP1: M_maltpt_c + M_pi_c <-> M_g1p_c + M_maltttr_c
+R_MLTP2: M_malthx_c + M_pi_c <-> M_g1p_c + M_maltpt_c
+R_MLTP3: M_malthp_c + M_pi_c <-> M_g1p_c + M_malthx_c
+R_MMCD: M_h_c + M_mmcoa__S_c --> M_co2_c + M_ppcoa_c
+R_MMETt2pp: M_h_p + M_mmet_p --> M_h_c + M_mmet_c
+R_MMETtex: M_mmet_e <-> M_mmet_p
+R_MMM: M_succoa_c --> M_mmcoa__S_c
+R_MN2t3pp: M_h_p + M_mn2_c --> M_h_c + M_mn2_p
+R_MN2tpp: M_mn2_p --> M_mn2_c
+R_MN6PP: M_h2o_c + M_man6p_c --> M_man_c + M_pi_c
+R_MNLptspp: M_mnl_p + M_pep_c --> M_mnl1p_c + M_pyr_c
+R_MNLtex: M_mnl_e <-> M_mnl_p
+R_MNNH: M_mana_c --> M_2ddglcn_c + M_h2o_c
+R_MNt2pp: M_h_p + M_mn2_p --> M_h_c + M_mn2_c
+R_MNtex: M_mn2_e <-> M_mn2_p
+R_MOADSUx: M_iscssh_c + M_moadamp_c + M_nadh_c --> M_amp_c + M_iscs_c + M_moadcosh_c + M_nad_c
+R_MOAT: M_ckdo_c + M_lipidA_c --> M_cmp_c + M_h_c + M_kdolipid4_c
+R_MOAT2: M_ckdo_c + M_kdolipid4_c --> M_cmp_c + M_h_c + M_kdo2lipid4_c
+R_MOAT3C: M_ckdo_c + M_phphhlipa_c --> M_cmp_c + M_h_c + M_kphphhlipa_c
+R_MOBDabcpp: M_atp_c + M_h2o_c + M_mobd_p --> M_adp_c + M_h_c + M_mobd_c + M_pi_c
+R_MOBDtex: M_mobd_e <-> M_mobd_p
+R_MOCDS: M_ctp_c + M_h_c + M_moco_c --> M_mococdp_c + M_ppi_c
+R_MOCOS: 2.0 M_h_c + M_mobd_c + M_mptamp_c --> M_amp_c + M_cu2_c + M_h2o_c + M_moco_c
+R_MOGDS: M_gtp_c + M_h_c + M_moco_c --> M_mocogdp_c + M_ppi_c
+R_MOHMT: M_3mob_c + M_h2o_c + M_mlthf_c --> M_2dhp_c + M_thf_c
+R_MOX: M_mal__L_c + M_o2_c <-> M_h2o2_c + M_oaa_c
+R_MPTAT: M_atp_c + M_h_c + M_mpt_c --> M_mptamp_c + M_ppi_c
+R_MPTG: 2.0 M_uaagmda_c --> 2.0 M_h_c + M_murein5p5p_p + 2.0 M_udcpdp_c
+R_MPTG2: M_murein5p5p_p + M_uaagmda_c --> M_h_c + M_murein5p5p5p_p + M_udcpdp_c
+R_MPTS: M_cpmp_c + M_cu2_c + 2.0 M_moadcosh_c --> 5.0 M_h_c + 2.0 M_moadcoo_c + M_mpt_c
+R_MPTSS: M_atp_c + M_h_c + M_moadcoo_c --> M_moadamp_c + M_ppi_c
+R_MSAR: M_h_c + M_msa_c + M_nadph_c --> M_3hpp_c + M_nadp_c
+R_MSO3abcpp: M_atp_c + M_h2o_c + M_mso3_p --> M_adp_c + M_h_c + M_mso3_c + M_pi_c
+R_MSO3tex: M_mso3_e <-> M_mso3_p
+R_MTAN: M_5mta_c + M_h2o_c --> M_5mtr_c + M_ade_c
+R_MTHFC: M_h2o_c + M_methf_c <-> M_10fthf_c + M_h_c
+R_MTHFD: M_mlthf_c + M_nadp_c <-> M_methf_c + M_nadph_c
+R_MTHFR2: 2.0 M_h_c + M_mlthf_c + M_nadh_c --> M_5mthf_c + M_nad_c
+R_MTHTHFSs: M_h2o_c + M_mdhdhf_c --> M_mththf_c
+R_MTRPOX: M_Nmtrp_c + M_h2o_c + M_o2_c --> M_fald_c + M_h2o2_c + M_trp__L_c
+R_N2Otex: M_n2o_e <-> M_n2o_p
+R_N2Otpp: M_n2o_p <-> M_n2o_c
+R_NACODA: M_acg5sa_c + M_h2o_c --> M_ac_c + M_glu5sa_c
+R_NACtex: M_nac_e <-> M_nac_p
+R_NACtpp: M_nac_p --> M_nac_c
+R_NADDP: M_h2o_c + M_nad_c --> M_amp_c + 2.0 M_h_c + M_nmn_c
+R_NADH10: M_h_c + M_mqn8_c + M_nadh_c --> M_mql8_c + M_nad_c
+R_NADH16pp: 4.0 M_h_c + M_nadh_c + M_q8_c --> 3.0 M_h_p + M_nad_c + M_q8h2_c
+R_NADH17pp: 4.0 M_h_c + M_mqn8_c + M_nadh_c --> 3.0 M_h_p + M_mql8_c + M_nad_c
+R_NADH18pp: M_2dmmq8_c + 4.0 M_h_c + M_nadh_c --> M_2dmmql8_c + 3.0 M_h_p + M_nad_c
+R_NADH5: M_h_c + M_nadh_c + M_q8_c --> M_nad_c + M_q8h2_c
+R_NADH9: M_2dmmq8_c + M_h_c + M_nadh_c --> M_2dmmql8_c + M_nad_c
+R_NADK: M_atp_c + M_nad_c --> M_adp_c + M_h_c + M_nadp_c
+R_NADN: M_h2o_c + M_nad_c --> M_adprib_c + M_h_c + M_ncam_c
+R_NADPHQR2: M_h_c + M_nadph_c + M_q8_c --> M_nadp_c + M_q8h2_c
+R_NADPHQR3: M_h_c + M_mqn8_c + M_nadph_c --> M_mql8_c + M_nadp_c
+R_NADPHQR4: M_2dmmq8_c + M_h_c + M_nadph_c --> M_2dmmql8_c + M_nadp_c
+R_NADPPPS: M_h2o_c + M_nadp_c --> M_nad_c + M_pi_c
+R_NADS1: M_atp_c + M_dnad_c + M_nh4_c --> M_amp_c + M_h_c + M_nad_c + M_ppi_c
+R_NADTRHD: M_nad_c + M_nadph_c --> M_nadh_c + M_nadp_c
+R_NAMNPP: M_atp_c + M_h2o_c + M_nac_c + M_prpp_c --> M_adp_c + M_nicrnt_c + M_pi_c + M_ppi_c
+R_NAt3_1p5pp: 3.0 M_h_p + 2.0 M_na1_c --> 3.0 M_h_c + 2.0 M_na1_p
+R_NAt3_2pp: 2.0 M_h_p + M_na1_c --> 2.0 M_h_c + M_na1_p
+R_NAt3pp: M_h_p + M_na1_c --> M_h_c + M_na1_p
+R_NAtex: M_na1_e <-> M_na1_p
+R_NDPK1: M_atp_c + M_gdp_c <-> M_adp_c + M_gtp_c
+R_NDPK2: M_atp_c + M_udp_c <-> M_adp_c + M_utp_c
+R_NDPK3: M_atp_c + M_cdp_c <-> M_adp_c + M_ctp_c
+R_NDPK4: M_atp_c + M_dtdp_c <-> M_adp_c + M_dttp_c
+R_NDPK5: M_atp_c + M_dgdp_c <-> M_adp_c + M_dgtp_c
+R_NDPK6: M_atp_c + M_dudp_c <-> M_adp_c + M_dutp_c
+R_NDPK7: M_atp_c + M_dcdp_c <-> M_adp_c + M_dctp_c
+R_NDPK8: M_atp_c + M_dadp_c <-> M_adp_c + M_datp_c
+R_NH4tex: M_nh4_e <-> M_nh4_p
+R_NH4tpp: M_nh4_p <-> M_nh4_c
+R_NHFRBO: M_h_c + M_nadh_c + 2.0 M_no_c --> M_h2o_c + M_n2o_c + M_nad_c
+R_NI2abcpp: M_atp_c + M_h2o_c + M_ni2_c --> M_adp_c + M_h_c + M_ni2_p + M_pi_c
+R_NI2t3pp: M_h_p + M_ni2_c --> M_h_c + M_ni2_p
+R_NI2tex: M_ni2_e <-> M_ni2_p
+R_NI2tpp: M_ni2_p --> M_ni2_c
+R_NI2uabcpp: M_atp_c + M_h2o_c + M_ni2_p --> M_adp_c + M_h_c + M_ni2_c + M_pi_c
+R_NMNAT: M_atp_c + M_h_c + M_nmn_c --> M_nad_c + M_ppi_c
+R_NMNDA: M_h2o_c + M_nmn_c --> M_nh4_c + M_nicrnt_c
+R_NMNN: M_h2o_c + M_nmn_c --> M_h_c + M_ncam_c + M_r5p_c
+R_NMNPtpp: M_nmn_p --> M_nmn_c
+R_NMNt7pp: M_h2o_c + M_nmn_p --> M_h_c + M_ncam_c + M_r5p_c
+R_NMNtex: M_nmn_e <-> M_nmn_p
+R_NNAM: M_h2o_c + M_ncam_c --> M_nac_c + M_nh4_c
+R_NNATr: M_atp_c + M_h_c + M_nicrnt_c <-> M_dnad_c + M_ppi_c
+R_NNDMBRT: M_dmbzid_c + M_nicrnt_c --> M_5prdmbz_c + M_h_c + M_nac_c
+R_NNDPR: 2.0 M_h_c + M_prpp_c + M_quln_c --> M_co2_c + M_nicrnt_c + M_ppi_c
+R_NO2t2rpp: M_h_p + M_no2_p <-> M_h_c + M_no2_c
+R_NO2tex: M_no2_e <-> M_no2_p
+R_NO3R1bpp: M_no3_p + M_q8h2_c --> M_h2o_p + M_no2_p + M_q8_c
+R_NO3R1pp: 2.0 M_h_c + M_no3_c + M_q8h2_c --> M_h2o_c + 2.0 M_h_p + M_no2_c + M_q8_c
+R_NO3R2bpp: M_mql8_c + M_no3_p --> M_h2o_p + M_mqn8_c + M_no2_p
+R_NO3R2pp: 2.0 M_h_c + M_mql8_c + M_no3_c --> M_h2o_c + 2.0 M_h_p + M_mqn8_c + M_no2_c
+R_NO3t7pp: M_no2_c + M_no3_p --> M_no2_p + M_no3_c
+R_NO3tex: M_no3_e <-> M_no3_p
+R_NODOx: M_nadh_c + 2.0 M_no_c + 2.0 M_o2_c --> M_h_c + M_nad_c + 2.0 M_no3_c
+R_NODOy: M_nadph_c + 2.0 M_no_c + 2.0 M_o2_c --> M_h_c + M_nadp_c + 2.0 M_no3_c
+R_NOVBCNtex: M_novbcn_e <-> M_novbcn_p
+R_NOVBCNtpp: M_h_p + M_novbcn_p --> M_h_c + M_novbcn_e
+R_NOtex: M_no_e <-> M_no_p
+R_NOtpp: M_no_p <-> M_no_c
+R_NTD1: M_dump_c + M_h2o_c --> M_duri_c + M_pi_c
+R_NTD10: M_h2o_c + M_xmp_c --> M_pi_c + M_xtsn_c
+R_NTD10pp: M_h2o_p + M_xmp_p --> M_pi_p + M_xtsn_p
+R_NTD11: M_h2o_c + M_imp_c --> M_ins_c + M_pi_c
+R_NTD11pp: M_h2o_p + M_imp_p --> M_ins_p + M_pi_p
+R_NTD12: M_dimp_c + M_h2o_c --> M_din_c + M_pi_c
+R_NTD12pp: M_dimp_p + M_h2o_p --> M_din_p + M_pi_p
+R_NTD1pp: M_dump_p + M_h2o_p --> M_duri_p + M_pi_p
+R_NTD2: M_h2o_c + M_ump_c --> M_pi_c + M_uri_c
+R_NTD2pp: M_h2o_p + M_ump_p --> M_pi_p + M_uri_p
+R_NTD3: M_dcmp_c + M_h2o_c --> M_dcyt_c + M_pi_c
+R_NTD3pp: M_dcmp_p + M_h2o_p --> M_dcyt_p + M_pi_p
+R_NTD4: M_cmp_c + M_h2o_c --> M_cytd_c + M_pi_c
+R_NTD4pp: M_cmp_p + M_h2o_p --> M_cytd_p + M_pi_p
+R_NTD5: M_dtmp_c + M_h2o_c --> M_pi_c + M_thymd_c
+R_NTD5pp: M_dtmp_p + M_h2o_p --> M_pi_p + M_thymd_p
+R_NTD6: M_damp_c + M_h2o_c --> M_dad_2_c + M_pi_c
+R_NTD6pp: M_damp_p + M_h2o_p --> M_dad_2_p + M_pi_p
+R_NTD7: M_amp_c + M_h2o_c --> M_adn_c + M_pi_c
+R_NTD7pp: M_amp_p + M_h2o_p --> M_adn_p + M_pi_p
+R_NTD8: M_dgmp_c + M_h2o_c --> M_dgsn_c + M_pi_c
+R_NTD8pp: M_dgmp_p + M_h2o_p --> M_dgsn_p + M_pi_p
+R_NTD9: M_gmp_c + M_h2o_c --> M_gsn_c + M_pi_c
+R_NTD9pp: M_gmp_p + M_h2o_p --> M_gsn_p + M_pi_p
+R_NTP1: M_atp_c + M_h2o_c --> M_adp_c + M_h_c + M_pi_c
+R_NTP10: M_h2o_c + M_itp_c --> M_h_c + M_idp_c + M_pi_c
+R_NTP11: M_ditp_c + M_h2o_c --> M_didp_c + M_h_c + M_pi_c
+R_NTP12: M_h2o_c + M_xtp_c --> M_h_c + M_pi_c + M_xdp_c
+R_NTP3: M_gtp_c + M_h2o_c --> M_gdp_c + M_h_c + M_pi_c
+R_NTP3pp: M_gtp_p + M_h2o_p --> M_gdp_p + M_h_p + M_pi_p
+R_NTP5: M_ctp_c + M_h2o_c --> M_cdp_c + M_h_c + M_pi_c
+R_NTPP1: M_dgtp_c + M_h2o_c --> M_dgmp_c + M_h_c + M_ppi_c
+R_NTPP10: M_ditp_c + M_h2o_c --> M_dimp_c + M_h_c + M_ppi_c
+R_NTPP11: M_h2o_c + M_xtp_c --> M_h_c + M_ppi_c + M_xmp_c
+R_NTPP2: M_gtp_c + M_h2o_c --> M_gmp_c + M_h_c + M_ppi_c
+R_NTPP3: M_dctp_c + M_h2o_c --> M_dcmp_c + M_h_c + M_ppi_c
+R_NTPP4: M_ctp_c + M_h2o_c --> M_cmp_c + M_h_c + M_ppi_c
+R_NTPP5: M_datp_c + M_h2o_c --> M_damp_c + M_h_c + M_ppi_c
+R_NTPP6: M_atp_c + M_h2o_c --> M_amp_c + M_h_c + M_ppi_c
+R_NTPP7: M_dttp_c + M_h2o_c --> M_dtmp_c + M_h_c + M_ppi_c
+R_NTPP8: M_h2o_c + M_utp_c --> M_h_c + M_ppi_c + M_ump_c
+R_NTPP9: M_h2o_c + M_itp_c --> M_h_c + M_imp_c + M_ppi_c
+R_NTPTP1: M_dgtp_c + M_h2o_c --> M_dgsn_c + M_pppi_c
+R_NTPTP2: M_gtp_c + M_h2o_c --> M_gsn_c + M_pppi_c
+R_NTRIR2x: 5.0 M_h_c + 3.0 M_nadh_c + M_no2_c --> 2.0 M_h2o_c + 3.0 M_nad_c + M_nh4_c
+R_NTRIR3pp: 2.0 M_h_p + M_no2_p + 3.0 M_q8h2_c --> 2.0 M_h2o_p + M_nh4_p + 3.0 M_q8_c
+R_NTRIR4pp: 2.0 M_h_p + 3.0 M_mql8_c + M_no2_p --> 2.0 M_h2o_p + 3.0 M_mqn8_c + M_nh4_p
+R_O16A4COLIPAabctex: M_atp_c + M_h2o_c + M_o16a4colipa_p --> M_adp_c + M_h_c + M_o16a4colipa_e + M_pi_c
+R_O16A4Lpp: M_colipa_p + M_o16a4und_p --> M_h_p + M_o16a4colipa_p + M_udcpdp_p
+R_O16AP1pp: 2.0 M_o16aund_p --> M_h_p + M_o16a2und_p + M_udcpdp_p
+R_O16AP2pp: M_o16a2und_p + M_o16aund_p --> M_h_p + M_o16a3und_p + M_udcpdp_p
+R_O16AP3pp: M_o16a3und_p + M_o16aund_p --> M_h_p + M_o16a4und_p + M_udcpdp_p
+R_O16AT: M_accoa_c + M_ragund_c --> M_aragund_c + M_coa_c
+R_O16AUNDtpp: M_o16aund_c --> M_o16aund_p
+R_O16GALFT: M_garagund_c + M_udpgalfur_c --> M_gfgaragund_c + M_h_c + M_udp_c
+R_O16GLCT1: M_aragund_c + M_udpg_c --> M_garagund_c + M_h_c + M_udp_c
+R_O16GLCT2: M_gfgaragund_c + M_udpg_c --> M_h_c + M_o16aund_c + M_udp_c
+R_O2Stex: M_o2s_e <-> M_o2s_p
+R_O2tex: M_o2_e <-> M_o2_p
+R_O2tpp: M_o2_p <-> M_o2_c
+R_OAADC: M_h_c + M_oaa_c --> M_co2_c + M_pyr_c
+R_OBTFL: M_2obut_c + M_coa_c --> M_for_c + M_ppcoa_c
+R_OCBT: M_cbp_c + M_orn_c <-> M_citr__L_c + M_h_c + M_pi_c
+R_OCDCAtexi: M_ocdca_e --> M_ocdca_p
+R_OCDCEAtexi: M_ocdcea_e --> M_ocdcea_p
+R_OCTAtex: M_octa_e <-> M_octa_p
+R_OCTDPS: M_frdp_c + 5.0 M_ipdp_c --> M_octdp_c + 5.0 M_ppi_c
+R_OCTNLL: M_atp_c + M_h_c + M_octa_c --> M_amp_c + M_octapb_c + M_ppi_c
+R_OGMEACPD: M_hgmeACP_c --> M_egmeACP_c + M_h2o_c
+R_OGMEACPR: M_h_c + M_nadph_c + M_ogmeACP_c --> M_hgmeACP_c + M_nadp_c
+R_OGMEACPS: M_h_c + M_malACP_c + M_malcoame_c --> M_co2_c + M_coa_c + M_ogmeACP_c
+R_OHPBAT: M_glu__L_c + M_ohpb_c <-> M_akg_c + M_phthr_c
+R_OHPHM: M_2ohph_c + M_amet_c --> M_2omph_c + M_ahcys_c + M_h_c
+R_OMBZLM: M_2ombzl_c + M_amet_c --> M_2ommbl_c + M_ahcys_c + M_h_c
+R_OMCDC: M_3c4mop_c + M_h_c --> M_4mop_c + M_co2_c
+R_OMMBLHX: M_2ommbl_c + 0.5 M_o2_c --> M_2omhmbl_c
+R_OMMBLHX3: M_2ommbl_c + 2.0 M_atp_c + 3.0 M_h2o_c + M_nad_c --> M_2omhmbl_c + 2.0 M_adp_c + 3.0 M_h_c + M_nadh_c + 2.0 M_pi_c
+R_OMPDC: M_h_c + M_orot5p_c --> M_co2_c + M_ump_c
+R_OMPHHX: M_2omph_c + 0.5 M_o2_c --> M_2ombzl_c
+R_OMPHHX3: M_2omph_c + 2.0 M_atp_c + 3.0 M_h2o_c + M_nad_c --> M_2ombzl_c + 2.0 M_adp_c + 3.0 M_h_c + M_nadh_c + 2.0 M_pi_c
+R_OP4ENH: M_h2o_c + M_op4en_c --> M_4h2opntn_c
+R_OPHBDC: M_3ophb_c + M_h_c --> M_2oph_c + M_co2_c
+R_OPHHX: M_2oph_c + 0.5 M_o2_c --> M_2ohph_c
+R_OPHHX3: M_2oph_c + 2.0 M_atp_c + 3.0 M_h2o_c + M_nad_c --> M_2ohph_c + 2.0 M_adp_c + 3.0 M_h_c + M_nadh_c + 2.0 M_pi_c
+R_OPMEACPD: M_hpmeACP_c --> M_epmeACP_c + M_h2o_c
+R_OPMEACPR: M_h_c + M_nadph_c + M_opmeACP_c --> M_hpmeACP_c + M_nadp_c
+R_OPMEACPS: M_gmeACP_c + M_h_c + M_malACP_c --> M_ACP_c + M_co2_c + M_opmeACP_c
+R_ORNDC: M_h_c + M_orn_c --> M_co2_c + M_ptrc_c
+R_ORNabcpp: M_atp_c + M_h2o_c + M_orn_p --> M_adp_c + M_h_c + M_orn_c + M_pi_c
+R_ORNtex: M_orn_e <-> M_orn_p
+R_OROTt2_2pp: 2.0 M_h_p + M_orot_p --> 2.0 M_h_c + M_orot_c
+R_OROTtex: M_orot_e <-> M_orot_p
+R_ORPT: M_orot5p_c + M_ppi_c <-> M_orot_c + M_prpp_c
+R_OXAMTC: M_oxur_c + M_pi_c --> M_cbp_c + M_oxam_c
+R_OXCDC: M_h_c + M_oxalcoa_c --> M_co2_c + M_forcoa_c
+R_OXCOAHDH: M_2oxpaccoa_c + 2.0 M_h2o_c + M_nadp_c --> M_3oxdhscoa_c + 2.0 M_h_c + M_nadph_c
+R_OXDHCOAT: M_3oxdhscoa_c + M_coa_c --> M_23dhacoa_c + M_accoa_c
+R_P5CD: M_1pyr5c_c + 2.0 M_h2o_c + M_nad_c --> M_glu__L_c + M_h_c + M_nadh_c
+R_P5CR: M_1pyr5c_c + 2.0 M_h_c + M_nadph_c --> M_nadp_c + M_pro__L_c
+R_PA120abcpp: M_atp_c + M_h2o_c + M_pa120_c --> M_adp_c + M_h_c + M_pa120_p + M_pi_c
+R_PA140abcpp: M_atp_c + M_h2o_c + M_pa140_c --> M_adp_c + M_h_c + M_pa140_p + M_pi_c
+R_PA141abcpp: M_atp_c + M_h2o_c + M_pa141_c --> M_adp_c + M_h_c + M_pa141_p + M_pi_c
+R_PA160abcpp: M_atp_c + M_h2o_c + M_pa160_c --> M_adp_c + M_h_c + M_pa160_p + M_pi_c
+R_PA161abcpp: M_atp_c + M_h2o_c + M_pa161_c --> M_adp_c + M_h_c + M_pa161_p + M_pi_c
+R_PA180abcpp: M_atp_c + M_h2o_c + M_pa180_c --> M_adp_c + M_h_c + M_pa180_p + M_pi_c
+R_PA181abcpp: M_atp_c + M_h2o_c + M_pa181_c --> M_adp_c + M_h_c + M_pa181_p + M_pi_c
+R_PACALDt2rpp: M_h_p + M_pacald_p <-> M_h_c + M_pacald_c
+R_PACALDtex: M_pacald_e <-> M_pacald_p
+R_PACCOAE: M_h_c + M_nadph_c + M_o2_c + M_phaccoa_c --> M_h2o_c + M_nadp_c + M_rephaccoa_c
+R_PACCOAL: M_atp_c + M_coa_c + M_pac_c --> M_amp_c + M_phaccoa_c + M_ppi_c
+R_PANTS: M_ala_B_c + M_atp_c + M_pant__R_c --> M_amp_c + M_h_c + M_pnto__R_c + M_ppi_c
+R_PAPA120: M_h2o_c + M_pa120_c --> M_12dgr120_c + M_pi_c
+R_PAPA120pp: M_h2o_p + M_pa120_p --> M_12dgr120_p + M_pi_p
+R_PAPA140: M_h2o_c + M_pa140_c --> M_12dgr140_c + M_pi_c
+R_PAPA140pp: M_h2o_p + M_pa140_p --> M_12dgr140_p + M_pi_p
+R_PAPA141: M_h2o_c + M_pa141_c --> M_12dgr141_c + M_pi_c
+R_PAPA141pp: M_h2o_p + M_pa141_p --> M_12dgr141_p + M_pi_p
+R_PAPA160: M_h2o_c + M_pa160_c --> M_12dgr160_c + M_pi_c
+R_PAPA160pp: M_h2o_p + M_pa160_p --> M_12dgr160_p + M_pi_p
+R_PAPA161: M_h2o_c + M_pa161_c --> M_12dgr161_c + M_pi_c
+R_PAPA161pp: M_h2o_p + M_pa161_p --> M_12dgr161_p + M_pi_p
+R_PAPA180: M_h2o_c + M_pa180_c --> M_12dgr180_c + M_pi_c
+R_PAPA180pp: M_h2o_p + M_pa180_p --> M_12dgr180_p + M_pi_p
+R_PAPA181: M_h2o_c + M_pa181_c --> M_12dgr181_c + M_pi_c
+R_PAPA181pp: M_h2o_p + M_pa181_p --> M_12dgr181_p + M_pi_p
+R_PAPPT3: M_udcpp_c + M_ugmda_c --> M_uagmda_c + M_ump_c
+R_PAPSR: M_paps_c + M_trdrd_c --> 2.0 M_h_c + M_pap_c + M_so3_c + M_trdox_c
+R_PAPSR2: M_grxrd_c + M_paps_c --> M_grxox_c + 2.0 M_h_c + M_pap_c + M_so3_c
+R_PDE1: M_camp_c + M_h2o_c --> M_amp_c + M_h_c
+R_PDE4: M_35cgmp_c + M_h2o_c --> M_gmp_c + M_h_c
+R_PDH: M_coa_c + M_nad_c + M_pyr_c --> M_accoa_c + M_co2_c + M_nadh_c
+R_PDX5PO2: M_nad_c + M_pdx5p_c --> M_h_c + M_nadh_c + M_pydx5p_c
+R_PDX5POi: M_o2_c + M_pdx5p_c --> M_h2o2_c + M_pydx5p_c
+R_PDX5PS: M_dxyl5p_c + M_nad_c + M_phthr_c --> M_co2_c + 2.0 M_h2o_c + M_h_c + M_nadh_c + M_pdx5p_c + M_pi_c
+R_PDXPP: M_h2o_c + M_pdx5p_c --> M_pi_c + M_pydxn_c
+R_PE120abcpp: M_atp_c + M_h2o_c + M_pe120_c --> M_adp_c + M_h_c + M_pe120_p + M_pi_c
+R_PE140abcpp: M_atp_c + M_h2o_c + M_pe140_c --> M_adp_c + M_h_c + M_pe140_p + M_pi_c
+R_PE141abcpp: M_atp_c + M_h2o_c + M_pe141_c --> M_adp_c + M_h_c + M_pe141_p + M_pi_c
+R_PE160abcpp: M_atp_c + M_h2o_c + M_pe160_c --> M_adp_c + M_h_c + M_pe160_p + M_pi_c
+R_PE161abcpp: M_atp_c + M_h2o_c + M_pe161_c --> M_adp_c + M_h_c + M_pe161_p + M_pi_c
+R_PE180abcpp: M_atp_c + M_h2o_c + M_pe180_c --> M_adp_c + M_h_c + M_pe180_p + M_pi_c
+R_PE181abcpp: M_atp_c + M_h2o_c + M_pe181_c --> M_adp_c + M_h_c + M_pe181_p + M_pi_c
+R_PEAMNOpp: M_h2o_p + M_o2_p + M_peamn_p --> M_h2o2_p + M_nh4_p + M_pacald_p
+R_PEAMNtex: M_peamn_e <-> M_peamn_p
+R_PERD: M_4per_c + M_nad_c <-> M_h_c + M_nadh_c + M_ohpb_c
+R_PETNT161pp: M_lipa_p + M_pe161_p --> M_12dgr161_p + M_enlipa_p
+R_PETNT181pp: M_lipa_p + M_pe181_p --> M_12dgr181_p + M_enlipa_p
+R_PFK: M_atp_c + M_f6p_c --> M_adp_c + M_fdp_c + M_h_c
+R_PFK_2: M_atp_c + M_tag6p__D_c --> M_adp_c + M_h_c + M_tagdp__D_c
+R_PFK_3: M_atp_c + M_s7p_c --> M_adp_c + M_h_c + M_s17bp_c
+R_PFL: M_coa_c + M_pyr_c --> M_accoa_c + M_for_c
+R_PG120abcpp: M_atp_c + M_h2o_c + M_pg120_c --> M_adp_c + M_h_c + M_pg120_p + M_pi_c
+R_PG140abcpp: M_atp_c + M_h2o_c + M_pg140_c --> M_adp_c + M_h_c + M_pg140_p + M_pi_c
+R_PG141abcpp: M_atp_c + M_h2o_c + M_pg141_c --> M_adp_c + M_h_c + M_pg141_p + M_pi_c
+R_PG160abcpp: M_atp_c + M_h2o_c + M_pg160_c --> M_adp_c + M_h_c + M_pg160_p + M_pi_c
+R_PG161abcpp: M_atp_c + M_h2o_c + M_pg161_c --> M_adp_c + M_h_c + M_pg161_p + M_pi_c
+R_PG180abcpp: M_atp_c + M_h2o_c + M_pg180_c --> M_adp_c + M_h_c + M_pg180_p + M_pi_c
+R_PG181abcpp: M_atp_c + M_h2o_c + M_pg181_c --> M_adp_c + M_h_c + M_pg181_p + M_pi_c
+R_PGAMT: M_gam1p_c <-> M_gam6p_c
+R_PGCD: M_3pg_c + M_nad_c --> M_3php_c + M_h_c + M_nadh_c
+R_PGI: M_g6p_c <-> M_f6p_c
+R_PGK: M_3pg_c + M_atp_c <-> M_13dpg_c + M_adp_c
+R_PGL: M_6pgl_c + M_h2o_c --> M_6pgc_c + M_h_c
+R_PGLYCP: M_2pglyc_c + M_h2o_c --> M_glyclt_c + M_pi_c
+R_PGM: M_2pg_c <-> M_3pg_c
+R_PGMT: M_g1p_c <-> M_g6p_c
+R_PGP120abcpp: M_atp_c + M_h2o_c + M_pgp120_c --> M_adp_c + M_h_c + M_pgp120_p + M_pi_c
+R_PGP140abcpp: M_atp_c + M_h2o_c + M_pgp140_c --> M_adp_c + M_h_c + M_pgp140_p + M_pi_c
+R_PGP141abcpp: M_atp_c + M_h2o_c + M_pgp141_c --> M_adp_c + M_h_c + M_pgp141_p + M_pi_c
+R_PGP160abcpp: M_atp_c + M_h2o_c + M_pgp160_c --> M_adp_c + M_h_c + M_pgp160_p + M_pi_c
+R_PGP161abcpp: M_atp_c + M_h2o_c + M_pgp161_c --> M_adp_c + M_h_c + M_pgp161_p + M_pi_c
+R_PGP180abcpp: M_atp_c + M_h2o_c + M_pgp180_c --> M_adp_c + M_h_c + M_pgp180_p + M_pi_c
+R_PGP181abcpp: M_atp_c + M_h2o_c + M_pgp181_c --> M_adp_c + M_h_c + M_pgp181_p + M_pi_c
+R_PGPP120: M_h2o_c + M_pgp120_c --> M_pg120_c + M_pi_c
+R_PGPP120pp: M_h2o_p + M_pgp120_p --> M_pg120_p + M_pi_p
+R_PGPP140: M_h2o_c + M_pgp140_c --> M_pg140_c + M_pi_c
+R_PGPP140pp: M_h2o_p + M_pgp140_p --> M_pg140_p + M_pi_p
+R_PGPP141: M_h2o_c + M_pgp141_c --> M_pg141_c + M_pi_c
+R_PGPP141pp: M_h2o_p + M_pgp141_p --> M_pg141_p + M_pi_p
+R_PGPP160: M_h2o_c + M_pgp160_c --> M_pg160_c + M_pi_c
+R_PGPP160pp: M_h2o_p + M_pgp160_p --> M_pg160_p + M_pi_p
+R_PGPP161: M_h2o_c + M_pgp161_c --> M_pg161_c + M_pi_c
+R_PGPP161pp: M_h2o_p + M_pgp161_p --> M_pg161_p + M_pi_p
+R_PGPP180: M_h2o_c + M_pgp180_c --> M_pg180_c + M_pi_c
+R_PGPP180pp: M_h2o_p + M_pgp180_p --> M_pg180_p + M_pi_p
+R_PGPP181: M_h2o_c + M_pgp181_c --> M_pg181_c + M_pi_c
+R_PGPP181pp: M_h2o_p + M_pgp181_p --> M_pg181_p + M_pi_p
+R_PGSA120: M_cdpdddecg_c + M_glyc3p_c --> M_cmp_c + M_h_c + M_pgp120_c
+R_PGSA140: M_cdpdtdecg_c + M_glyc3p_c --> M_cmp_c + M_h_c + M_pgp140_c
+R_PGSA141: M_cdpdtdec7eg_c + M_glyc3p_c --> M_cmp_c + M_h_c + M_pgp141_c
+R_PGSA160: M_cdpdhdecg_c + M_glyc3p_c --> M_cmp_c + M_h_c + M_pgp160_c
+R_PGSA161: M_cdpdhdec9eg_c + M_glyc3p_c --> M_cmp_c + M_h_c + M_pgp161_c
+R_PGSA180: M_cdpdodecg_c + M_glyc3p_c --> M_cmp_c + M_h_c + M_pgp180_c
+R_PGSA181: M_cdpdodec11eg_c + M_glyc3p_c --> M_cmp_c + M_h_c + M_pgp181_c
+R_PHEMEabcpp: M_atp_c + M_h2o_c + M_pheme_c --> M_adp_c + M_h_c + M_pheme_p + M_pi_c
+R_PHEMEtiex: M_pheme_p --> M_pheme_e
+R_PHETA1: M_akg_c + M_phe__L_c <-> M_glu__L_c + M_phpyr_c
+R_PHETRS: M_atp_c + M_phe__L_c + M_trnaphe_c --> M_amp_c + M_phetrna_c + M_ppi_c
+R_PHEt2rpp: M_h_p + M_phe__L_p <-> M_h_c + M_phe__L_c
+R_PHEtex: M_phe__L_e <-> M_phe__L_p
+R_PHYTSpp: 6.0 M_h2o_p + M_minohp_p --> M_inost_p + 6.0 M_pi_p
+R_PIt2rpp: M_h_p + M_pi_p <-> M_h_c + M_pi_c
+R_PItex: M_pi_e <-> M_pi_p
+R_PIuabcpp: M_atp_c + M_h2o_c + M_pi_p --> M_adp_c + M_h_c + 2.0 M_pi_c
+R_PLIPA1A120pp: M_h2o_p + M_pa120_p --> M_2ddecg3p_p + M_ddca_p
+R_PLIPA1A140pp: M_h2o_p + M_pa140_p --> M_2tdecg3p_p + M_ttdca_p
+R_PLIPA1A141pp: M_h2o_p + M_pa141_p --> M_2tdec7eg3p_p + M_ttdcea_p
+R_PLIPA1A160pp: M_h2o_p + M_pa160_p --> M_2hdecg3p_p + M_hdca_p
+R_PLIPA1A161pp: M_h2o_p + M_pa161_p --> M_2hdec9eg3p_p + M_hdcea_p
+R_PLIPA1A180pp: M_h2o_p + M_pa180_p --> M_2odecg3p_p + M_ocdca_p
+R_PLIPA1A181pp: M_h2o_p + M_pa181_p --> M_2odec11eg3p_p + M_ocdcea_p
+R_PLIPA1E120pp: M_h2o_p + M_pe120_p --> M_2agpe120_p + M_ddca_p + M_h_p
+R_PLIPA1E140pp: M_h2o_p + M_pe140_p --> M_2agpe140_p + M_h_p + M_ttdca_p
+R_PLIPA1E141pp: M_h2o_p + M_pe141_p --> M_2agpe141_p + M_h_p + M_ttdcea_p
+R_PLIPA1E160pp: M_h2o_p + M_pe160_p --> M_2agpe160_p + M_h_p + M_hdca_p
+R_PLIPA1E161pp: M_h2o_p + M_pe161_p --> M_2agpe161_p + M_h_p + M_hdcea_p
+R_PLIPA1E180pp: M_h2o_p + M_pe180_p --> M_2agpe180_p + M_h_p + M_ocdca_p
+R_PLIPA1E181pp: M_h2o_p + M_pe181_p --> M_2agpe181_p + M_h_p + M_ocdcea_p
+R_PLIPA1G120pp: M_h2o_p + M_pg120_p --> M_2agpg120_p + M_ddca_p + M_h_p
+R_PLIPA1G140pp: M_h2o_p + M_pg140_p --> M_2agpg140_p + M_h_p + M_ttdca_p
+R_PLIPA1G141pp: M_h2o_p + M_pg141_p --> M_2agpg141_p + M_h_p + M_ttdcea_p
+R_PLIPA1G160pp: M_h2o_p + M_pg160_p --> M_2agpg160_p + M_h_p + M_hdca_p
+R_PLIPA1G161pp: M_h2o_p + M_pg161_p --> M_2agpg161_p + M_h_p + M_hdcea_p
+R_PLIPA1G180pp: M_h2o_p + M_pg180_p --> M_2agpg180_p + M_h_p + M_ocdca_p
+R_PLIPA1G181pp: M_h2o_p + M_pg181_p --> M_2agpg181_p + M_h_p + M_ocdcea_p
+R_PLIPA2A120pp: M_h2o_p + M_pa120_p --> M_1ddecg3p_p + M_ddca_p + M_h_p
+R_PLIPA2A140pp: M_h2o_p + M_pa140_p --> M_1tdecg3p_p + M_h_p + M_ttdca_p
+R_PLIPA2A141pp: M_h2o_p + M_pa141_p --> M_1tdec7eg3p_p + M_h_p + M_ttdcea_p
+R_PLIPA2A160pp: M_h2o_p + M_pa160_p --> M_1hdecg3p_p + M_h_p + M_hdca_p
+R_PLIPA2A161pp: M_h2o_p + M_pa161_p --> M_1hdec9eg3p_p + M_h_p + M_hdcea_p
+R_PLIPA2A180pp: M_h2o_p + M_pa180_p --> M_1odecg3p_p + M_h_p + M_ocdca_p
+R_PLIPA2A181pp: M_h2o_p + M_pa181_p --> M_1odec11eg3p_p + M_h_p + M_ocdcea_p
+R_PLIPA2E120pp: M_h2o_p + M_pe120_p --> M_1agpe120_p + M_ddca_p + M_h_p
+R_PLIPA2E140pp: M_h2o_p + M_pe140_p --> M_1agpe140_p + M_h_p + M_ttdca_p
+R_PLIPA2E141pp: M_h2o_p + M_pe141_p --> M_1agpe141_p + M_h_p + M_ttdcea_p
+R_PLIPA2E160pp: M_h2o_p + M_pe160_p --> M_1agpe160_p + M_h_p + M_hdca_p
+R_PLIPA2E161pp: M_h2o_p + M_pe161_p --> M_1agpe161_p + M_h_p + M_hdcea_p
+R_PLIPA2E180pp: M_h2o_p + M_pe180_p --> M_1agpe180_p + M_h_p + M_ocdca_p
+R_PLIPA2E181pp: M_h2o_p + M_pe181_p --> M_1agpe181_p + M_h_p + M_ocdcea_p
+R_PLIPA2G120pp: M_h2o_p + M_pg120_p --> M_1agpg120_p + M_ddca_p + M_h_p
+R_PLIPA2G140pp: M_h2o_p + M_pg140_p --> M_1agpg140_p + M_h_p + M_ttdca_p
+R_PLIPA2G141pp: M_h2o_p + M_pg141_p --> M_1agpg141_p + M_h_p + M_ttdcea_p
+R_PLIPA2G160pp: M_h2o_p + M_pg160_p --> M_1agpg160_p + M_h_p + M_hdca_p
+R_PLIPA2G161pp: M_h2o_p + M_pg161_p --> M_1agpg161_p + M_h_p + M_hdcea_p
+R_PLIPA2G180pp: M_h2o_p + M_pg180_p --> M_1agpg180_p + M_h_p + M_ocdca_p
+R_PLIPA2G181pp: M_h2o_p + M_pg181_p --> M_1agpg181_p + M_h_p + M_ocdcea_p
+R_PMANM: M_man1p_c <-> M_man6p_c
+R_PMDPHT: M_5aprbu_c + M_h2o_c --> M_4r5au_c + M_pi_c
+R_PMEACPE: M_h2o_c + M_pmeACP_c --> M_meoh_c + M_pimACP_c
+R_PMPK: M_4ampm_c + M_atp_c --> M_2mahmp_c + M_adp_c
+R_PNTK: M_atp_c + M_pnto__R_c --> M_4ppan_c + M_adp_c + M_h_c
+R_PNTOt4pp: M_na1_p + M_pnto__R_p --> M_na1_c + M_pnto__R_c
+R_PNTOtex: M_pnto__R_e <-> M_pnto__R_p
+R_POAACR: M_nadh_c + M_poaac_c --> M_3amac_c + M_h2o_c + M_nad_c
+R_POR5: M_coa_c + 2.0 M_flxso_c + M_pyr_c <-> M_accoa_c + M_co2_c + 2.0 M_flxr_c + M_h_c
+R_POX: M_h2o_c + M_pyr_c + M_q8_c --> M_ac_c + M_co2_c + M_q8h2_c
+R_PPA: M_h2o_c + M_ppi_c --> M_h_c + 2.0 M_pi_c
+R_PPA2: M_h2o_c + M_pppi_c --> M_h_c + M_pi_c + M_ppi_c
+R_PPAKr: M_adp_c + M_ppap_c <-> M_atp_c + M_ppa_c
+R_PPALtex: M_ppal_e <-> M_ppal_p
+R_PPALtpp: M_ppal_c <-> M_ppal_p
+R_PPAt4pp: M_na1_p + M_ppa_p --> M_na1_c + M_ppa_c
+R_PPAtex: M_ppa_e <-> M_ppa_p
+R_PPBNGS: 2.0 M_5aop_c --> 2.0 M_h2o_c + M_h_c + M_ppbng_c
+R_PPC: M_co2_c + M_h2o_c + M_pep_c --> M_h_c + M_oaa_c + M_pi_c
+R_PPCDC: M_4ppcys_c + M_h_c --> M_co2_c + M_pan4p_c
+R_PPCK: M_atp_c + M_oaa_c --> M_adp_c + M_co2_c + M_pep_c
+R_PPCSCT: M_ppcoa_c + M_succ_c --> M_ppa_c + M_succoa_c
+R_PPGPPDP: M_h2o_c + M_ppgpp_c --> M_gdp_c + M_ppi_c
+R_PPK2r: M_atp_c + M_ppi_c <-> M_adp_c + M_pppi_c
+R_PPKr: M_atp_c + M_pi_c <-> M_adp_c + M_ppi_c
+R_PPM: M_r1p_c <-> M_r5p_c
+R_PPM2: M_2dr1p_c <-> M_2dr5p_c
+R_PPNCL2: M_4ppan_c + M_ctp_c + M_cys__L_c --> M_4ppcys_c + M_cmp_c + M_h_c + M_ppi_c
+R_PPND: M_nad_c + M_pphn_c --> M_34hpp_c + M_co2_c + M_nadh_c
+R_PPNDH: M_h_c + M_pphn_c --> M_co2_c + M_h2o_c + M_phpyr_c
+R_PPPGO: 1.5 M_o2_c + M_pppg9_c --> 3.0 M_h2o_c + M_ppp9_c
+R_PPPGO3: 3.0 M_fum_c + M_pppg9_c --> M_ppp9_c + 3.0 M_succ_c
+R_PPPNDO: M_h_c + M_nadh_c + M_o2_c + M_pppn_c --> M_cechddd_c + M_nad_c
+R_PPPNt2rpp: M_h_p + M_pppn_p <-> M_h_c + M_pppn_c
+R_PPPNtex: M_pppn_e <-> M_pppn_p
+R_PPS: M_atp_c + M_h2o_c + M_pyr_c --> M_amp_c + 2.0 M_h_c + M_pep_c + M_pi_c
+R_PPTHpp: M_h2o_p + M_ppt_p --> M_h2_p + M_pi_p
+R_PPTtex: M_ppt_e <-> M_ppt_p
+R_PRAGSr: M_atp_c + M_gly_c + M_pram_c <-> M_adp_c + M_gar_c + M_h_c + M_pi_c
+R_PRAIS: M_atp_c + M_fpram_c --> M_adp_c + M_air_c + 2.0 M_h_c + M_pi_c
+R_PRAIi: M_pran_c --> M_2cpr5p_c
+R_PRAMPC: M_h2o_c + M_prbamp_c --> M_prfp_c
+R_PRASCSi: M_5aizc_c + M_asp__L_c + M_atp_c --> M_25aics_c + M_adp_c + M_h_c + M_pi_c
+R_PRATPP: M_h2o_c + M_prbatp_c --> M_h_c + M_ppi_c + M_prbamp_c
+R_PRFGS: M_atp_c + M_fgam_c + M_gln__L_c + M_h2o_c --> M_adp_c + M_fpram_c + M_glu__L_c + M_h_c + M_pi_c
+R_PRMICI: M_prfp_c <-> M_prlp_c
+R_PROD2: M_fad_c + M_pro__L_c --> M_1pyr5c_c + M_fadh2_c + M_h_c
+R_PROGLYabcpp: M_atp_c + M_h2o_c + M_progly_p --> M_adp_c + M_h_c + M_pi_c + M_progly_c
+R_PROGLYtex: M_progly_e <-> M_progly_p
+R_PROTRS: M_atp_c + M_pro__L_c + M_trnapro_c --> M_amp_c + M_ppi_c + M_protrna_c
+R_PROabcpp: M_atp_c + M_h2o_c + M_pro__L_p --> M_adp_c + M_h_c + M_pi_c + M_pro__L_c
+R_PROt2rpp: M_h_p + M_pro__L_p <-> M_h_c + M_pro__L_c
+R_PROt4pp: M_na1_p + M_pro__L_p --> M_na1_c + M_pro__L_c
+R_PROtex: M_pro__L_e <-> M_pro__L_p
+R_PRPPS: M_atp_c + M_r5p_c <-> M_amp_c + M_h_c + M_prpp_c
+R_PSCLYSt2pp: M_h_p + M_psclys_p --> M_h_c + M_psclys_c
+R_PSCLYStex: M_psclys_e <-> M_psclys_p
+R_PSCVT: M_pep_c + M_skm5p_c <-> M_3psme_c + M_pi_c
+R_PSD120: M_h_c + M_ps120_c --> M_co2_c + M_pe120_c
+R_PSD140: M_h_c + M_ps140_c --> M_co2_c + M_pe140_c
+R_PSD141: M_h_c + M_ps141_c --> M_co2_c + M_pe141_c
+R_PSD160: M_h_c + M_ps160_c --> M_co2_c + M_pe160_c
+R_PSD161: M_h_c + M_ps161_c --> M_co2_c + M_pe161_c
+R_PSD180: M_h_c + M_ps180_c --> M_co2_c + M_pe180_c
+R_PSD181: M_h_c + M_ps181_c --> M_co2_c + M_pe181_c
+R_PSERT: M_3php_c + M_glu__L_c --> M_akg_c + M_pser__L_c
+R_PSERtex: M_pser__L_e <-> M_pser__L_p
+R_PSP_L: M_h2o_c + M_pser__L_c --> M_pi_c + M_ser__L_c
+R_PSP_Lpp: M_h2o_p + M_pser__L_p --> M_pi_p + M_ser__L_p
+R_PSSA120: M_cdpdddecg_c + M_ser__L_c --> M_cmp_c + M_h_c + M_ps120_c
+R_PSSA140: M_cdpdtdecg_c + M_ser__L_c --> M_cmp_c + M_h_c + M_ps140_c
+R_PSSA141: M_cdpdtdec7eg_c + M_ser__L_c --> M_cmp_c + M_h_c + M_ps141_c
+R_PSSA160: M_cdpdhdecg_c + M_ser__L_c --> M_cmp_c + M_h_c + M_ps160_c
+R_PSSA161: M_cdpdhdec9eg_c + M_ser__L_c --> M_cmp_c + M_h_c + M_ps161_c
+R_PSSA180: M_cdpdodecg_c + M_ser__L_c --> M_cmp_c + M_h_c + M_ps180_c
+R_PSSA181: M_cdpdodec11eg_c + M_ser__L_c --> M_cmp_c + M_h_c + M_ps181_c
+R_PTA2: M_pi_c + M_ppcoa_c --> M_coa_c + M_ppap_c
+R_PTAr: M_accoa_c + M_pi_c <-> M_actp_c + M_coa_c
+R_PTHRpp: M_h2o_p + M_thrp_p --> M_pi_p + M_thr__L_p
+R_PTPATi: M_atp_c + M_h_c + M_pan4p_c --> M_dpcoa_c + M_ppi_c
+R_PTRCORNt7pp: M_orn_c + M_ptrc_p <-> M_orn_p + M_ptrc_c
+R_PTRCTA: M_akg_c + M_ptrc_c --> M_4abutn_c + M_glu__L_c
+R_PTRCabcpp: M_atp_c + M_h2o_c + M_ptrc_p --> M_adp_c + M_h_c + M_pi_c + M_ptrc_c
+R_PTRCt2pp: M_h_p + M_ptrc_p --> M_h_c + M_ptrc_c
+R_PTRCtex: M_ptrc_e <-> M_ptrc_p
+R_PUNP1: M_adn_c + M_pi_c <-> M_ade_c + M_r1p_c
+R_PUNP2: M_dad_2_c + M_pi_c <-> M_2dr1p_c + M_ade_c
+R_PUNP3: M_gsn_c + M_pi_c <-> M_gua_c + M_r1p_c
+R_PUNP4: M_dgsn_c + M_pi_c <-> M_2dr1p_c + M_gua_c
+R_PUNP5: M_ins_c + M_pi_c <-> M_hxan_c + M_r1p_c
+R_PUNP6: M_din_c + M_pi_c <-> M_2dr1p_c + M_hxan_c
+R_PUNP7: M_pi_c + M_xtsn_c <-> M_r1p_c + M_xan_c
+R_PYAM5PO: M_h2o_c + M_o2_c + M_pyam5p_c --> M_h2o2_c + M_nh4_c + M_pydx5p_c
+R_PYDAMK: M_atp_c + M_pydam_c --> M_adp_c + M_h_c + M_pyam5p_c
+R_PYDAMtex: M_pydam_e <-> M_pydam_p
+R_PYDAMtpp: M_pydam_p --> M_pydam_c
+R_PYDXK: M_atp_c + M_pydx_c --> M_adp_c + M_h_c + M_pydx5p_c
+R_PYDXNK: M_atp_c + M_pydxn_c --> M_adp_c + M_h_c + M_pdx5p_c
+R_PYDXNtex: M_pydxn_e <-> M_pydxn_p
+R_PYDXNtpp: M_pydxn_p --> M_pydxn_c
+R_PYDXPP: M_h2o_c + M_pydx5p_c --> M_pi_c + M_pydx_c
+R_PYDXtex: M_pydx_e <-> M_pydx_p
+R_PYDXtpp: M_pydx_p --> M_pydx_c
+R_PYK: M_adp_c + M_h_c + M_pep_c --> M_atp_c + M_pyr_c
+R_PYNP2r: M_pi_c + M_uri_c <-> M_r1p_c + M_ura_c
+R_PYROX: M_h_c + M_nadh_c + M_o2_c + M_ura_c --> M_nad_c + M_uracp_c
+R_PYRt2rpp: M_h_p + M_pyr_p <-> M_h_c + M_pyr_c
+R_PYRtex: M_pyr_e <-> M_pyr_p
+R_QMO2: 2.0 M_o2_c + M_q8h2_c --> 2.0 M_h_c + 2.0 M_o2s_c + M_q8_c
+R_QMO3: M_mql8_c + 2.0 M_o2_c --> 2.0 M_h_c + M_mqn8_c + 2.0 M_o2s_c
+R_QUIN2tex: M_quin_e <-> M_quin_p
+R_QUIN2tpp: M_quin_p <-> M_quin_c
+R_QUINDH: M_nad_c + M_quin_c <-> M_3dhq_c + 2.0 M_h_c + M_nadh_c
+R_QULNS: M_dhap_c + M_iasp_c --> 2.0 M_h2o_c + M_pi_c + M_quln_c
+R_R15BPK: M_atp_c + M_r15bp_c --> M_adp_c + M_prpp_c
+R_R1PK: M_atp_c + M_r1p_c --> M_adp_c + M_h_c + M_r15bp_c
+R_R5PP: M_h2o_c + M_r5p_c --> M_pi_c + M_rib__D_c
+R_R5PPpp: M_h2o_p + M_r5p_p --> M_pi_p + M_rib__D_p
+R_R5Ptex: M_r5p_e <-> M_r5p_p
+R_RBFK: M_atp_c + M_ribflv_c --> M_adp_c + M_fmn_c + M_h_c
+R_RBFSa: M_4r5au_c + M_db4p_c --> M_dmlz_c + 2.0 M_h2o_c + M_pi_c
+R_RBFSb: 2.0 M_dmlz_c --> M_4r5au_c + M_ribflv_c
+R_RBK: M_atp_c + M_rib__D_c --> M_adp_c + M_h_c + M_r5p_c
+R_RBK_L1: M_atp_c + M_rbl__L_c --> M_adp_c + M_h_c + M_ru5p__L_c
+R_RBP4E: M_ru5p__L_c <-> M_xu5p__D_c
+R_REPHACCOAI: M_rephaccoa_c <-> M_2oxpaccoa_c
+R_RFAMPtex: M_rfamp_e <-> M_rfamp_p
+R_RFAMPtpp: M_h_p + M_rfamp_p --> M_h_c + M_rfamp_e
+R_RHAT1: M_dtdprmn_c + M_kphphhlipa_c --> M_dtdp_c + M_h_c + M_icolipa_c
+R_RHCCE: M_rhcys_c --> M_dhptd_c + M_hcys__L_c
+R_RIBabcpp: M_atp_c + M_h2o_c + M_rib__D_p --> M_adp_c + M_h_c + M_pi_c + M_rib__D_c
+R_RIBtex: M_rib__D_e <-> M_rib__D_p
+R_RMI: M_rmn_c <-> M_rml_c
+R_RMK: M_atp_c + M_rml_c --> M_adp_c + M_h_c + M_rml1p_c
+R_RMNtex: M_rmn_e <-> M_rmn_p
+R_RMNtpp: M_h_p + M_rmn_p --> M_h_c + M_rmn_c
+R_RMPA: M_rml1p_c <-> M_dhap_c + M_lald__L_c
+R_RNDR1: M_adp_c + M_trdrd_c --> M_dadp_c + M_h2o_c + M_trdox_c
+R_RNDR1b: M_adp_c + M_grxrd_c --> M_dadp_c + M_grxox_c + M_h2o_c
+R_RNDR2: M_gdp_c + M_trdrd_c --> M_dgdp_c + M_h2o_c + M_trdox_c
+R_RNDR2b: M_gdp_c + M_grxrd_c --> M_dgdp_c + M_grxox_c + M_h2o_c
+R_RNDR3: M_cdp_c + M_trdrd_c --> M_dcdp_c + M_h2o_c + M_trdox_c
+R_RNDR3b: M_cdp_c + M_grxrd_c --> M_dcdp_c + M_grxox_c + M_h2o_c
+R_RNDR4: M_trdrd_c + M_udp_c --> M_dudp_c + M_h2o_c + M_trdox_c
+R_RNDR4b: M_grxrd_c + M_udp_c --> M_dudp_c + M_grxox_c + M_h2o_c
+R_RNTR1c2: M_atp_c + 2.0 M_flxr_c + 2.0 M_h_c --> M_datp_c + 2.0 M_flxso_c + M_h2o_c
+R_RNTR2c2: 2.0 M_flxr_c + M_gtp_c + 2.0 M_h_c --> M_dgtp_c + 2.0 M_flxso_c + M_h2o_c
+R_RNTR3c2: M_ctp_c + 2.0 M_flxr_c + 2.0 M_h_c --> M_dctp_c + 2.0 M_flxso_c + M_h2o_c
+R_RNTR4c2: 2.0 M_flxr_c + 2.0 M_h_c + M_utp_c --> M_dutp_c + 2.0 M_flxso_c + M_h2o_c
+R_RPE: M_ru5p__D_c <-> M_xu5p__D_c
+R_RPI: M_r5p_c <-> M_ru5p__D_c
+R_RZ5PP: M_5prdmbz_c + M_h2o_c --> M_pi_c + M_rdmbzi_c
+R_S2FE2SR: M_2fe1s_c + M_atp_c + M_h2o_c + M_sufbcd_c + M_sufsesh_c --> M_adp_c + 5.0 M_h_c + M_pi_c + M_sufbcd_2fe2s_c + M_sufse_c
+R_S2FE2SS: M_atp_c + M_fadh2_c + 2.0 M_fe2_c + M_h2o_c + M_sufbcd_c + 2.0 M_sufsesh_c --> M_adp_c + M_fad_c + 7.0 M_h_c + M_pi_c + M_sufbcd_2fe2s_c + 2.0 M_sufse_c
+R_S2FE2SS2: M_atp_c + M_fadh2_c + 2.0 M_fe2_c + M_h2o_c + M_sufbcd_2fe2s_c + 2.0 M_sufsesh_c --> M_adp_c + M_fad_c + 7.0 M_h_c + M_pi_c + M_sufbcd_2fe2s2_c + 2.0 M_sufse_c
+R_S2FE2ST: 4.0 M_h_c + M_sufbcd_2fe2s_c --> M_2fe2s_c + M_sufbcd_c
+R_S4FE4SR: M_fadh2_c + 2.0 M_h_c + M_sufbcd_2fe2s2_c --> M_fad_c + M_sufbcd_4fe4s_c
+R_S4FE4ST: 4.0 M_h_c + M_sufbcd_4fe4s_c --> M_4fe4s_c + M_sufbcd_c
+R_S7PI: M_s7p_c --> M_gmhep7p_c
+R_SADH: 2.0 M_h2o_c + 2.0 M_h_c + M_sucarg_c --> M_co2_c + 2.0 M_nh4_c + M_sucorn_c
+R_SADT2: M_atp_c + M_gtp_c + M_h2o_c + M_so4_c --> M_aps_c + M_gdp_c + M_pi_c + M_ppi_c
+R_SARCOX: M_h2o_c + M_o2_c + M_sarcs_c --> M_fald_c + M_gly_c + M_h2o2_c
+R_SBTPD: M_nad_c + M_sbt6p_c <-> M_f6p_c + M_h_c + M_nadh_c
+R_SBTptspp: M_pep_c + M_sbt__D_p --> M_pyr_c + M_sbt6p_c
+R_SBTtex: M_sbt__D_e <-> M_sbt__D_p
+R_SCYSDS: M_cys__L_c + M_sufse_c --> M_ala__L_c + M_sufsesh_c
+R_SDPDS: M_h2o_c + M_sl26da_c --> M_26dap_LL_c + M_succ_c
+R_SDPTA: M_akg_c + M_sl26da_c <-> M_glu__L_c + M_sl2a6o_c
+R_SELCYSS: M_selnp_c + M_sertrna_sec_c --> M_h_c + M_pi_c + M_sectrna_c
+R_SELGTHR: 4.0 M_gthrd_c + 2.0 M_h_c + M_slnt_c --> M_dgslnt_c + M_gthox_c + 3.0 M_h2o_c
+R_SELGTHR2: M_dgslnt_c + M_h_c + M_nadph_c --> M_gslnt_c + M_gthrd_c + M_nadp_c
+R_SELGTHR3: M_gslnt_c + M_nadph_c --> M_gthrd_c + M_nadp_c + M_seln_c
+R_SELNPS: M_atp_c + M_h2o_c + M_seln_c --> M_amp_c + M_pi_c + M_selnp_c
+R_SELR: M_mql8_c + M_sel_c --> M_h2o_c + M_mqn8_c + M_slnt_c
+R_SELtex: M_sel_e <-> M_sel_p
+R_SELtpp: 2.0 M_h_p + M_sel_p --> 2.0 M_h_c + M_sel_c
+R_SEPHCHCS: M_akg_c + M_h_c + M_ichor_c --> M_2sephchc_c + M_co2_c
+R_SERASr: M_atp_c + M_h_c + M_ser__L_c <-> M_ppi_c + M_seramp_c
+R_SERAT: M_accoa_c + M_ser__L_c <-> M_acser_c + M_coa_c
+R_SERD_D: M_ser__D_c --> M_nh4_c + M_pyr_c
+R_SERD_L: M_ser__L_c --> M_nh4_c + M_pyr_c
+R_SERTRS: M_atp_c + M_ser__L_c + M_trnaser_c --> M_amp_c + M_ppi_c + M_sertrna_c
+R_SERTRS2: M_atp_c + M_ser__L_c + M_trnasecys_c --> M_amp_c + M_ppi_c + M_sertrna_sec_c
+R_SERt2rpp: M_h_p + M_ser__L_p <-> M_h_c + M_ser__L_c
+R_SERt4pp: M_na1_p + M_ser__L_p --> M_na1_c + M_ser__L_c
+R_SERtex: M_ser__L_e <-> M_ser__L_p
+R_SFGTHi: M_Sfglutth_c + M_h2o_c --> M_for_c + M_gthrd_c + M_h_c
+R_SGDS: M_h2o_c + M_sucglu_c --> M_glu__L_c + M_succ_c
+R_SGSAD: M_h2o_c + M_nad_c + M_sucgsa_c --> 2.0 M_h_c + M_nadh_c + M_sucglu_c
+R_SHCHCS3: M_2sephchc_c --> M_2shchc_c + M_pyr_c
+R_SHCHD2: M_dscl_c + M_nad_c --> M_h_c + M_nadh_c + M_scl_c
+R_SHCHF: M_fe2_c + M_scl_c --> 3.0 M_h_c + M_sheme_c
+R_SHK3Dr: M_3dhsk_c + M_h_c + M_nadph_c <-> M_nadp_c + M_skm_c
+R_SHKK: M_atp_c + M_skm_c --> M_adp_c + M_h_c + M_skm5p_c
+R_SHSL1: M_cys__L_c + M_suchms_c --> M_cyst__L_c + M_h_c + M_succ_c
+R_SKMt2pp: M_h_p + M_skm_p --> M_h_c + M_skm_c
+R_SKMtex: M_skm_e <-> M_skm_p
+R_SLNTtex: M_slnt_e <-> M_slnt_p
+R_SLNTtpp: M_h_p + M_slnt_p --> M_h_c + M_slnt_c
+R_SO2tex: M_so2_e <-> M_so2_p
+R_SO2tpp: M_so2_p <-> M_so2_c
+R_SO3tex: M_so3_e <-> M_so3_p
+R_SO4t2pp: M_h_p + M_so4_p --> M_h_c + M_so4_c
+R_SO4tex: M_so4_e <-> M_so4_p
+R_SOTA: M_akg_c + M_sucorn_c --> M_glu__L_c + M_sucgsa_c
+R_SPMDAT1: M_accoa_c + M_spmd_c --> M_N1aspmd_c + M_coa_c + M_h_c
+R_SPMDAT2: M_accoa_c + M_spmd_c --> M_coa_c + M_h_c + M_n8aspmd_c
+R_SPMDabcpp: M_atp_c + M_h2o_c + M_spmd_p --> M_adp_c + M_h_c + M_pi_c + M_spmd_c
+R_SPMDt3pp: M_h_p + M_spmd_c --> M_h_c + M_spmd_p
+R_SPMDtex: M_spmd_e <-> M_spmd_p
+R_SPMS: M_ametam_c + M_ptrc_c --> M_5mta_c + M_h_c + M_spmd_c
+R_SPODM: 2.0 M_h_c + 2.0 M_o2s_c --> M_h2o2_c + M_o2_c
+R_SPODMpp: 2.0 M_h_p + 2.0 M_o2s_p --> M_h2o2_p + M_o2_p
+R_SSALx: M_h2o_c + M_nad_c + M_sucsal_c --> 2.0 M_h_c + M_nadh_c + M_succ_c
+R_SSALy: M_h2o_c + M_nadp_c + M_sucsal_c --> 2.0 M_h_c + M_nadph_c + M_succ_c
+R_SUCASPtpp: M_asp__L_p + M_succ_c --> M_asp__L_c + M_succ_p
+R_SUCBZL: M_atp_c + M_coa_c + M_sucbz_c --> M_amp_c + M_ppi_c + M_sbzcoa_c
+R_SUCBZS: M_2shchc_c --> M_h2o_c + M_sucbz_c
+R_SUCCt2_2pp: 2.0 M_h_p + M_succ_p --> 2.0 M_h_c + M_succ_c
+R_SUCCt2_3pp: 3.0 M_h_p + M_succ_p --> 3.0 M_h_c + M_succ_c
+R_SUCCt3pp: M_h_p + M_succ_c --> M_h_c + M_succ_p
+R_SUCCtex: M_succ_e <-> M_succ_p
+R_SUCDi: M_q8_c + M_succ_c --> M_fum_c + M_q8h2_c
+R_SUCFUMtpp: M_fum_p + M_succ_c --> M_fum_c + M_succ_p
+R_SUCMALtpp: M_mal__L_p + M_succ_c --> M_mal__L_c + M_succ_p
+R_SUCOAS: M_atp_c + M_coa_c + M_succ_c <-> M_adp_c + M_pi_c + M_succoa_c
+R_SUCRtex: M_sucr_e <-> M_sucr_p
+R_SUCTARTtpp: M_succ_c + M_tartr__D_p --> M_succ_p + M_tartr__D_c
+R_SUCptspp: M_pep_c + M_sucr_p --> M_pyr_c + M_suc6p_c
+R_SULFACabcpp: M_atp_c + M_h2o_c + M_sulfac_p --> M_adp_c + M_h_c + M_pi_c + M_sulfac_c
+R_SULFACtex: M_sulfac_e <-> M_sulfac_p
+R_SULRi: 5.0 M_h_c + 3.0 M_nadph_c + M_so3_c --> 3.0 M_h2o_c + M_h2s_c + 3.0 M_nadp_c
+R_SULabcpp: M_atp_c + M_h2o_c + M_so4_p --> M_adp_c + M_h_c + M_pi_c + M_so4_c
+R_T2DECAI: M_tdec2eACP_c <-> M_cdec3eACP_c
+R_TAGURr: M_altrn_c + M_nad_c <-> M_h_c + M_nadh_c + M_tagur_c
+R_TALA: M_g3p_c + M_s7p_c <-> M_e4p_c + M_f6p_c
+R_TARTD: M_tartr__L_c --> M_h2o_c + M_oaa_c
+R_TARTRDtex: M_tartr__D_e <-> M_tartr__D_p
+R_TARTRt7pp: M_succ_c + M_tartr__L_p <-> M_succ_p + M_tartr__L_c
+R_TARTRtex: M_tartr__L_e <-> M_tartr__L_p
+R_TARTt2_3pp: 3.0 M_h_p + M_tartr__D_p --> 3.0 M_h_c + M_tartr__D_c
+R_TAUDO: M_akg_c + M_o2_c + M_taur_c --> M_aacald_c + M_co2_c + M_h_c + M_so3_c + M_succ_c
+R_TAURabcpp: M_atp_c + M_h2o_c + M_taur_p --> M_adp_c + M_h_c + M_pi_c + M_taur_c
+R_TAURtex: M_taur_e <-> M_taur_p
+R_TCYNTtex: M_tcynt_e <-> M_tcynt_p
+R_TDP: M_h2o_c + M_thmpp_c --> M_h_c + M_pi_c + M_thmmp_c
+R_TDPADGAT: M_accoa_c + M_dtdp4addg_c --> M_coa_c + M_dtdp4aaddg_c + M_h_c
+R_TDPAGTA: M_dtdp4d6dg_c + M_glu__L_c --> M_akg_c + M_dtdp4addg_c
+R_TDPDRE: M_dtdp4d6dg_c --> M_dtdp4d6dm_c
+R_TDPDRR: M_dtdp4d6dm_c + M_h_c + M_nadph_c --> M_dtdprmn_c + M_nadp_c
+R_TDPGDH: M_dtdpglu_c --> M_dtdp4d6dg_c + M_h2o_c
+R_TDSK: M_atp_c + M_lipidAds_c --> M_adp_c + M_h_c + M_lipidA_c
+R_TDSR1: M_dsbcox_p + M_dsbdrd_c --> M_dsbcrd_p + M_dsbdox_c
+R_TDSR2: M_dsbdrd_c + M_dsbgox_p --> M_dsbdox_c + M_dsbgrd_p
+R_TGBPA: M_tagdp__D_c <-> M_dhap_c + M_g3p_c
+R_THD2pp: 2.0 M_h_p + M_nadh_c + M_nadp_c --> 2.0 M_h_c + M_nad_c + M_nadph_c
+R_THDPS: M_h2o_c + M_succoa_c + M_thdp_c --> M_coa_c + M_sl2a6o_c
+R_THFAT: M_h2o_c + M_methf_c --> M_5fthf_c + M_h_c
+R_THIORDXi: M_h2o2_c + M_trdrd_c --> 2.0 M_h2o_c + M_trdox_c
+R_THMDt2pp_copy1: M_h_p + M_thymd_p --> M_h_c + M_thymd_c
+R_THMDt2pp_copy2: M_h_p + M_thymd_p <-> M_h_c + M_thymd_c
+R_THMDtex: M_thymd_e <-> M_thymd_p
+R_THMabcpp: M_atp_c + M_h2o_c + M_thm_p --> M_adp_c + M_h_c + M_pi_c + M_thm_c
+R_THMtex: M_thm_e <-> M_thm_p
+R_THRA2i: M_athr__L_c --> M_acald_c + M_gly_c
+R_THRAi: M_thr__L_c --> M_acald_c + M_gly_c
+R_THRD: M_nad_c + M_thr__L_c --> M_2aobut_c + M_h_c + M_nadh_c
+R_THRD_L: M_thr__L_c --> M_2obut_c + M_nh4_c
+R_THRPtex: M_thrp_e <-> M_thrp_p
+R_THRS: M_h2o_c + M_phom_c --> M_pi_c + M_thr__L_c
+R_THRTRS: M_atp_c + M_thr__L_c + M_trnathr_c --> M_amp_c + M_ppi_c + M_thrtrna_c
+R_THRabcpp: M_atp_c + M_h2o_c + M_thr__L_p --> M_adp_c + M_h_c + M_pi_c + M_thr__L_c
+R_THRt2pp: M_h_p + M_thr__L_c --> M_h_c + M_thr__L_p
+R_THRt2rpp: M_h_p + M_thr__L_p <-> M_h_c + M_thr__L_c
+R_THRt4pp: M_na1_p + M_thr__L_p --> M_na1_c + M_thr__L_c
+R_THRtex: M_thr__L_e <-> M_thr__L_p
+R_THYMt3pp: M_h_p + M_thym_c --> M_h_c + M_thym_p
+R_THYMtex: M_thym_e <-> M_thym_p
+R_THZPSN3: M_atp_c + M_dhgly_c + M_dxyl5p_c + M_h_c + M_iscssh_c + M_nadph_c --> M_4mpetz_c + M_amp_c + M_co2_c + 2.0 M_h2o_c + M_iscs_c + M_nadp_c + M_ppi_c
+R_TKT1: M_r5p_c + M_xu5p__D_c <-> M_g3p_c + M_s7p_c
+R_TKT2: M_e4p_c + M_xu5p__D_c <-> M_f6p_c + M_g3p_c
+R_TMAOR1: M_h_c + M_mql8_c + M_tmao_c --> M_h2o_c + M_mqn8_c + M_tma_c
+R_TMAOR1pp: M_h_p + M_mql8_c + M_tmao_p --> M_h2o_p + M_mqn8_c + M_tma_p
+R_TMAOR2: M_2dmmql8_c + M_h_c + M_tmao_c --> M_2dmmq8_c + M_h2o_c + M_tma_c
+R_TMAOR2pp: M_2dmmql8_c + M_h_p + M_tmao_p --> M_2dmmq8_c + M_h2o_p + M_tma_p
+R_TMAOtex: M_tmao_e <-> M_tmao_p
+R_TMAtex: M_tma_e <-> M_tma_p
+R_TMDK1: M_atp_c + M_thymd_c --> M_adp_c + M_dtmp_c + M_h_c
+R_TMDPP: M_pi_c + M_thymd_c <-> M_2dr1p_c + M_thym_c
+R_TMDS: M_dump_c + M_mlthf_c --> M_dhf_c + M_dtmp_c
+R_TMK: M_atp_c + M_thm_c --> M_adp_c + M_h_c + M_thmmp_c
+R_TMPK: M_atp_c + M_thmmp_c --> M_adp_c + M_thmpp_c
+R_TMPPP: M_2mahmp_c + M_4mpetz_c + M_h_c --> M_ppi_c + M_thmmp_c
+R_TPI: M_dhap_c <-> M_g3p_c
+R_TPRDCOAS: M_atp_c + M_dpcoa_c --> M_2tpr3dpcoa_c + M_ade_c
+R_TRDR: M_h_c + M_nadph_c + M_trdox_c --> M_nadp_c + M_trdrd_c
+R_TRE6PH: M_h2o_c + M_tre6p_c --> M_g6p_c + M_glc__D_c
+R_TRE6PP: M_h2o_c + M_tre6p_c --> M_pi_c + M_tre_c
+R_TRE6PS: M_g6p_c + M_udpg_c --> M_h_c + M_tre6p_c + M_udp_c
+R_TREH: M_h2o_c + M_tre_c --> 2.0 M_glc__D_c
+R_TREHpp: M_h2o_p + M_tre_p --> 2.0 M_glc__D_p
+R_TREptspp: M_pep_c + M_tre_p --> M_pyr_c + M_tre6p_c
+R_TREtex: M_tre_e <-> M_tre_p
+R_TRPAS2: M_h2o_c + M_trp__L_c <-> M_indole_c + M_nh4_c + M_pyr_c
+R_TRPS1: M_3ig3p_c + M_ser__L_c --> M_g3p_c + M_h2o_c + M_trp__L_c
+R_TRPS2: M_indole_c + M_ser__L_c --> M_h2o_c + M_trp__L_c
+R_TRPS3: M_3ig3p_c --> M_g3p_c + M_indole_c
+R_TRPTRS: M_atp_c + M_trnatrp_c + M_trp__L_c --> M_amp_c + M_ppi_c + M_trptrna_c
+R_TRPt2rpp: M_h_p + M_trp__L_p <-> M_h_c + M_trp__L_c
+R_TRPtex: M_trp__L_e <-> M_trp__L_p
+R_TRSARr: M_2h3oppan_c + M_h_c + M_nadh_c <-> M_glyc__R_c + M_nad_c
+R_TSULabcpp: M_atp_c + M_h2o_c + M_tsul_p --> M_adp_c + M_h_c + M_pi_c + M_tsul_c
+R_TSULtex: M_tsul_e <-> M_tsul_p
+R_TTDCAtexi: M_ttdca_e --> M_ttdca_p
+R_TTDCEAtexi: M_ttdcea_e --> M_ttdcea_p
+R_TTRCYCtex: M_ttrcyc_e <-> M_ttrcyc_p
+R_TTRCYCtpp: M_h_p + M_ttrcyc_p --> M_h_c + M_ttrcyc_e
+R_TUNGSabcpp: M_atp_c + M_h2o_c + M_tungs_p --> M_adp_c + M_h_c + M_pi_c + M_tungs_c
+R_TUNGStex: M_tungs_e <-> M_tungs_p
+R_TYMtex: M_tym_e <-> M_tym_p
+R_TYRL: M_amet_c + M_nadph_c + M_tyr__L_c --> M_4crsol_c + M_dad_5_c + M_dhgly_c + M_h_c + M_met__L_c + M_nadp_c
+R_TYROXDApp: M_h2o_p + M_o2_p + M_tym_p --> M_4hoxpacd_p + M_h2o2_p + M_nh4_p
+R_TYRPpp: M_h2o_p + M_tyrp_p --> M_pi_p + M_tyr__L_p
+R_TYRPtex: M_tyrp_e <-> M_tyrp_p
+R_TYRTA: M_akg_c + M_tyr__L_c <-> M_34hpp_c + M_glu__L_c
+R_TYRTRS: M_atp_c + M_trnatyr_c + M_tyr__L_c --> M_amp_c + M_ppi_c + M_tyrtrna_c
+R_TYRt2rpp: M_h_p + M_tyr__L_p <-> M_h_c + M_tyr__L_c
+R_TYRtex: M_tyr__L_e <-> M_tyr__L_p
+R_ThDPAT: M_adp_c + M_h_c + M_thmpp_c --> M_athtp_c + M_pi_c
+R_U23GAAT: M_3hmrsACP_c + M_u3hga_c --> M_ACP_c + M_h_c + M_u23ga_c
+R_UAAGDS: M_26dap__M_c + M_atp_c + M_uamag_c --> M_adp_c + M_h_c + M_pi_c + M_ugmd_c
+R_UACGALPpp: M_h2o_p + M_udpacgal_p --> M_acgal1p_p + 2.0 M_h_p + M_ump_p
+R_UACGAMPpp: M_h2o_p + M_uacgam_p --> M_acgam1p_p + 2.0 M_h_p + M_ump_p
+R_UACGAMtex: M_uacgam_e <-> M_uacgam_p
+R_UACMAMO: M_h2o_c + 2.0 M_nad_c + M_uacmam_c --> 3.0 M_h_c + 2.0 M_nadh_c + M_uacmamu_c
+R_UAG2E: M_uacgam_c <-> M_uacmam_c
+R_UAGAAT: M_3hmrsACP_c + M_uacgam_c <-> M_ACP_c + M_u3aga_c
+R_UAGCVT: M_pep_c + M_uacgam_c --> M_pi_c + M_uaccg_c
+R_UAGDP: M_acgam1p_c + M_h_c + M_utp_c --> M_ppi_c + M_uacgam_c
+R_UAGPT3: M_uacgam_c + M_uagmda_c --> M_h_c + M_uaagmda_c + M_udp_c
+R_UAMAGS: M_atp_c + M_glu__D_c + M_uama_c --> M_adp_c + M_h_c + M_pi_c + M_uamag_c
+R_UAMAS: M_ala__L_c + M_atp_c + M_uamr_c --> M_adp_c + M_h_c + M_pi_c + M_uama_c
+R_UAPGR: M_h_c + M_nadph_c + M_uaccg_c --> M_nadp_c + M_uamr_c
+R_UDCPDP: M_h2o_c + M_udcpdp_c --> M_h_c + M_pi_c + M_udcpp_c
+R_UDCPDPS: M_frdp_c + 8.0 M_ipdp_c --> 8.0 M_ppi_c + M_udcpdp_c
+R_UDCPDPpp: M_h2o_p + M_udcpdp_p --> M_h_p + M_pi_p + M_udcpp_p
+R_UDCPPtppi: M_udcpp_p --> M_udcpp_c
+R_UDPACGALtex: M_udpacgal_e <-> M_udpacgal_p
+R_UDPG4E: M_udpg_c <-> M_udpgal_c
+R_UDPGALM: M_udpgal_c --> M_udpgalfur_c
+R_UDPGALPpp: M_h2o_p + M_udpgal_p --> M_gal1p_p + 2.0 M_h_p + M_ump_p
+R_UDPGALtex: M_udpgal_e <-> M_udpgal_p
+R_UDPGD: M_h2o_c + 2.0 M_nad_c + M_udpg_c --> 3.0 M_h_c + 2.0 M_nadh_c + M_udpglcur_c
+R_UDPGDC: M_nad_c + M_udpglcur_c --> M_co2_c + M_nadh_c + M_udpLa4o_c
+R_UDPGLCURtex: M_udpglcur_e <-> M_udpglcur_p
+R_UDPGPpp: M_h2o_p + M_udpg_p --> M_g1p_p + 2.0 M_h_p + M_ump_p
+R_UDPGtex: M_udpg_e <-> M_udpg_p
+R_UDPKAAT: M_glu__L_c + M_udpLa4o_c <-> M_akg_c + M_udpLa4n_c
+R_UGLCURPpp: M_h2o_p + M_udpglcur_p --> M_glcur1p_p + 2.0 M_h_p + M_ump_p
+R_UGLT: M_gal1p_c + M_udpg_c <-> M_g1p_c + M_udpgal_c
+R_UGLYCH: M_h2o_c + 2.0 M_h_c + M_urdglyc_c --> M_co2_c + M_glx_c + 2.0 M_nh4_c
+R_UGMDDS: M_alaala_c + M_atp_c + M_ugmd_c --> M_adp_c + M_h_c + M_pi_c + M_ugmda_c
+R_UHGADA: M_h2o_c + M_u3aga_c --> M_ac_c + M_u3hga_c
+R_ULA4NFT: M_10fthf_c + M_udpLa4n_c --> M_h_c + M_thf_c + M_udpLa4fn_c
+R_ULA4Ntppi: M_uLa4n_c --> M_uLa4n_p
+R_UM3PL: M_LalaDgluMdap_c + M_atp_c + M_uamr_c --> M_adp_c + M_h_c + M_pi_c + M_ugmd_c
+R_UM4PCP: M_h2o_c + M_um4p_c --> M_ala__D_c + M_ugmd_c
+R_UM4PL: M_LalaDgluMdapDala_c + M_atp_c + M_uamr_c --> M_adp_c + M_h_c + M_pi_c + M_um4p_c
+R_UMPK: M_atp_c + M_ump_c <-> M_adp_c + M_udp_c
+R_UMPtex: M_ump_e <-> M_ump_p
+R_UPLA4FNF: M_h2o_c + M_uLa4fn_c --> M_for_c + M_uLa4n_c
+R_UPLA4FNT: M_udcpp_c + M_udpLa4fn_c --> M_uLa4fn_c + M_udp_c
+R_UPP3MT: 2.0 M_amet_c + M_uppg3_c --> 2.0 M_ahcys_c + M_dscl_c + M_h_c
+R_UPP3S: M_hmbil_c --> M_h2o_c + M_uppg3_c
+R_UPPDC1: 4.0 M_h_c + M_uppg3_c --> 4.0 M_co2_c + M_cpppg3_c
+R_UPPRT: M_prpp_c + M_ura_c --> M_ppi_c + M_ump_c
+R_URACPAH: M_h2o_c + M_uracp_c --> M_cbm_c + M_h_c + M_poaac_c
+R_URAt2pp_copy1: M_h_p + M_ura_p --> M_h_c + M_ura_c
+R_URAt2pp_copy2: M_h_p + M_ura_p <-> M_h_c + M_ura_c
+R_URAtex: M_ura_e <-> M_ura_p
+R_URDGLYCD: M_nad_c + M_urdglyc_c --> M_h_c + M_nadh_c + M_oxur_c
+R_UREAtex: M_urea_e <-> M_urea_p
+R_UREAtpp: M_urea_p <-> M_urea_c
+R_URIC: 2.0 M_h2o_c + M_o2_c + M_urate_c --> M_alltn_c + M_co2_c + M_h2o2_c
+R_URIH: M_h2o_c + M_uri_c --> M_rib__D_c + M_ura_c
+R_URIK2: M_gtp_c + M_uri_c --> M_gdp_c + M_h_c + M_ump_c
+R_URIt2pp_copy1: M_h_p + M_uri_p --> M_h_c + M_uri_c
+R_URIt2pp_copy2: M_h_p + M_uri_p <-> M_h_c + M_uri_c
+R_URItex: M_uri_e <-> M_uri_p
+R_USHD: M_h2o_c + M_u23ga_c --> 2.0 M_h_c + M_lipidX_c + M_ump_c
+R_VALTA: M_akg_c + M_val__L_c <-> M_3mob_c + M_glu__L_c
+R_VALTRS: M_atp_c + M_trnaval_c + M_val__L_c --> M_amp_c + M_ppi_c + M_valtrna_c
+R_VALabcpp: M_atp_c + M_h2o_c + M_val__L_p --> M_adp_c + M_h_c + M_pi_c + M_val__L_c
+R_VALt2rpp: M_h_p + M_val__L_p <-> M_h_c + M_val__L_c
+R_VALtex: M_val__L_e <-> M_val__L_p
+R_VPAMTr: M_3mob_c + M_ala__L_c <-> M_pyr_c + M_val__L_c
+R_WCOS: 2.0 M_h_c + M_mptamp_c + M_tungs_c --> M_amp_c + M_cu2_c + M_h2o_c + M_wco_c
+R_X5PL3E: M_xu5p__L_c --> M_ru5p__L_c
+R_XAND: M_h2o_c + M_nad_c + M_xan_c --> M_h_c + M_nadh_c + M_urate_c
+R_XANt2pp: M_h_p + M_xan_p --> M_h_c + M_xan_c
+R_XANtex: M_xan_e <-> M_xan_p
+R_XANtpp: M_xan_p <-> M_xan_c
+R_XMPtex: M_xmp_e <-> M_xmp_p
+R_XPPT: M_prpp_c + M_xan_c --> M_ppi_c + M_xmp_c
+R_XTSNH: M_h2o_c + M_xtsn_c --> M_rib__D_c + M_xan_c
+R_XTSNt2rpp: M_h_p + M_xtsn_p <-> M_h_c + M_xtsn_c
+R_XTSNtex: M_xtsn_e <-> M_xtsn_p
+R_XYLI1: M_xyl__D_c <-> M_xylu__D_c
+R_XYLI2: M_glc__D_c <-> M_fru_c
+R_XYLK: M_atp_c + M_xylu__D_c --> M_adp_c + M_h_c + M_xu5p__D_c
+R_XYLK2: M_atp_c + M_xylu__L_c --> M_adp_c + M_h_c + M_xu5p__L_c
+R_XYLUt2pp: M_h_p + M_xylu__L_p --> M_h_c + M_xylu__L_c
+R_XYLUtex: M_xylu__L_e <-> M_xylu__L_p
+R_XYLabcpp: M_atp_c + M_h2o_c + M_xyl__D_p --> M_adp_c + M_h_c + M_pi_c + M_xyl__D_c
+R_XYLt2pp: M_h_p + M_xyl__D_p --> M_h_c + M_xyl__D_c
+R_XYLtex: M_xyl__D_e <-> M_xyl__D_p
+R_ZN2abcpp: M_atp_c + M_h2o_c + M_zn2_c --> M_adp_c + M_h_c + M_pi_c + M_zn2_p
+R_ZN2t3pp: M_h_p + M_zn2_c --> M_h_c + M_zn2_p
+R_ZN2tpp: M_zn2_p --> M_zn2_c
+R_ZNabcpp: M_atp_c + M_h2o_c + M_zn2_p --> M_adp_c + M_h_c + M_pi_c + M_zn2_c
+R_Zn2tex: M_zn2_e <-> M_zn2_p

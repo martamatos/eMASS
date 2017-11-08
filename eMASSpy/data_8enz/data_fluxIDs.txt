@@ -1,0 +1,1 @@
+["vENO", "vFBA1", "vFBA2", "vGAPD", "vPGK", "vPGMd", "vPGMi", "vTPI"]

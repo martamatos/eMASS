@@ -1,0 +1,1 @@
+["ENO_total", "FBA1_total", "FBA2_total", "GAPD_total", "PGK_total", "PGMd_total", "PGMi_total", "TPI_total", "dpg", "twopg", "threepg", "adp", "atp", "dhap", "fdp", "g3p", "nad", "nadh", "pep", "pi", "two3pg"]
