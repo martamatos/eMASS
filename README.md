@@ -74,8 +74,8 @@ Under "Simulate data", run only the subsection "Simulate data without uncertaint
 ##### System-level models generated through eMASS2
 
 1. Open model_prototype_8enz.nb, change "mainDir" and run the sections
- - "Initialize notebook"
- - "Model generation"
+   - "Initialize notebook"
+   - "Model generation"
 This will create all the data needed to fit the free metabolite and total enzyme concentrations and store it in eMASSpy/data_fitLabel.
 2. On an HPC cluster create a folder that will contain all data and results, e.g. concentrations_fit;
 3. inside the folder "concentrations_fit", create two folders: "data" and "results";
@@ -86,14 +86,14 @@ This will create all the data needed to fit the free metabolite and total enzyme
 5. once all the jobs have ran, copy the results in concentrations_fit/results to eMASSpy/cluster_results/results_fitLabel, also copy eMASSpy/data_fitLabel
 6. analyze the results by running analyze_results_eMASS2 under eMASSpy/process_results
 7. go back to model_prototype_8enz.nb, here you need to run again 
- - "Initialize notebook"
- - "Model generation" - except "Export flux equations" and "Export rate constants"
+   - "Initialize notebook"
+   - "Model generation" - except "Export flux equations" and "Export rate constants"
 8. In "Model building", run:
- - "Plug-in concentrations from python"
- - "Build and export models" or "Import models"
- - "Get models with different initial ATP concentrations"
- - "Select subsets of models with low/high and in between ATP concentrations"
- - "Export subsets of models with low/high and in between ATP concentrations"
+   - "Plug-in concentrations from python"
+   - "Build and export models" or "Import models"
+   - "Get models with different initial ATP concentrations"
+   - "Select subsets of models with low/high and in between ATP concentrations"
+   - "Export subsets of models with low/high and in between ATP concentrations"
 9. Run everything under "Model simulation" except possibly "Plot simulations"
 10. Run everything under "Model analysis"
 
@@ -103,10 +103,10 @@ This will create all the data needed to fit the free metabolite and total enzyme
 1. Go to eMASS/old_model_building_flux, and run all enzyme_name.nb notebooks - you will need to change "baseDir" in each notebook though. 
 
 2. Open whole_model_building.nb, change "baseDir", and run:
- - "Initialize notebook"
- - "Build models"
- - "Model simulation"
- - "Model analysis"
+   - "Initialize notebook"
+   - "Build models"
+   - "Model simulation"
+   - "Model analysis"
 
 
 
